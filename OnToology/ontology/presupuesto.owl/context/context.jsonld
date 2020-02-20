@@ -1,0 +1,354 @@
+{
+  "@context" : {
+    "derechosCancelados" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#derechosCancelados",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "codigoIdentificador" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#codigoIdentificador",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "abstract" : {
+      "@id" : "http://purl.org/dc/terms/abstract"
+    },
+    "obligacionesPendientes31Dic" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#obligacionesPendientes31Dic",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "ejecucionGasto" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionGasto",
+      "@type" : "@id"
+    },
+    "scopeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "bibliographicCitation" : {
+      "@id" : "http://purl.org/dc/terms/bibliographicCitation"
+    },
+    "derechosPendientesCobro31Dic" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#derechosPendientesCobro31Dic",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "fechaAprobacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "EjecucionGasto" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto"
+    },
+    "District" : {
+      "@id" : "http://dbpedia.org/ontology/District"
+    },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
+    },
+    "liquidacionIngreso" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionIngreso",
+      "@type" : "@id"
+    },
+    "Instant" : {
+      "@id" : "http://www.w3.org/2006/time#Instant"
+    },
+    "creditoRetenido" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoRetenido",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "liquidacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacion",
+      "@type" : "@id"
+    },
+    "featureCode" : {
+      "@id" : "http://www.geonames.org/ontology#featureCode",
+      "@type" : "@id"
+    },
+    "Presupuesto" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto"
+    },
+    "periodoEjecucion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion",
+      "@type" : "@id"
+    },
+    "Feature" : {
+      "@id" : "http://www.geonames.org/ontology#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "ingreso" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso",
+      "@type" : "@id"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "previsionInicial" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionInicial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Municipio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio"
+    },
+    "ambito" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito",
+      "@type" : "@id"
+    },
+    "previsionModificaciones" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionModificaciones",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "ejecucionIngreso" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionIngreso",
+      "@type" : "@id"
+    },
+    "Ingreso" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso"
+    },
+    "InversionFinancieramenteSostenible" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible"
+    },
+    "EjecucionIngreso" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso"
+    },
+    "LiquidacionGasto" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionGasto"
+    },
+    "note" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "LiquidacionIngreso" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionIngreso"
+    },
+    "Interval" : {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    },
+    "featureClass" : {
+      "@id" : "http://www.geonames.org/ontology#featureClass",
+      "@type" : "@id"
+    },
+    "derechosReconocidosNetos" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#derechosReconocidosNetos",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "Gasto" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "clasificacionInversion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionInversion",
+      "@type" : "@id"
+    },
+    "hasTime" : {
+      "@id" : "http://www.w3.org/2006/time#hasTime",
+      "@type" : "@id"
+    },
+    "excesoDefectoPrevision" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#excesoDefectoPrevision",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "hasEnd" : {
+      "@id" : "http://www.w3.org/2006/time#hasEnd",
+      "@type" : "@id"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "totalGastoComprometido" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#totalGastoComprometido",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "TemporalEntity" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+    },
+    "hasBeginning" : {
+      "@id" : "http://www.w3.org/2006/time#hasBeginning",
+      "@type" : "@id"
+    },
+    "recaudacionNeta" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#recaudacionNeta",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Distrito" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/elements/1.1/identifier"
+    },
+    "ProperInterval" : {
+      "@id" : "http://www.w3.org/2006/time#ProperInterval"
+    },
+    "gasto" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto",
+      "@type" : "@id"
+    },
+    "estadoProrroga" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#estadoProrroga",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "todosLosDistritos" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#todosLosDistritos",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#preferredNamespacePrefix"
+    },
+    "inXSDgYearMonth" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDgYearMonth",
+      "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2008/05/skos#definition"
+    },
+    "denonimacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#denonimacion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "previsionDefinitiva" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionDefinitiva",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "tableOfContents" : {
+      "@id" : "http://purl.org/dc/terms/tableOfContents"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "derechosReconocidos" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#derechosReconocidos",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "obligacionesReconocidasNetas" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#obligacionesReconocidasNetas",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "clasificacionEconomicaIngreso" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "creditoPresupuestarioInicial" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoPresupuestarioInicial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "resultadoPresupuestario" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoPresupuestario",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "accessRights" : {
+      "@id" : "http://purl.org/dc/terms/accessRights"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "creditoModificaciones" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoModificaciones",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "creditoAutorizado" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoAutorizado",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "clasificacionEconomicaGasto" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto",
+      "@type" : "@id"
+    },
+    "pagos" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#pagos",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Liquidacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "liquidacionGasto" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionGasto",
+      "@type" : "@id"
+    },
+    "creditoDefinitivoVigente" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoDefinitivoVigente",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "alternative" : {
+      "@id" : "http://purl.org/dc/terms/alternative"
+    },
+    "hasFormat" : {
+      "@id" : "http://purl.org/dc/terms/hasFormat"
+    },
+    "clasificacionPrograma" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma",
+      "@type" : "@id"
+    },
+    "creditoDisponible" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoDisponible",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "anioFiscal" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal",
+      "@type" : "http://www.w3.org/2001/XMLSchema#gYear"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#preferredNamespaceUri"
+    },
+    "clasificacionOrganica" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionOrganica",
+      "@type" : "@id"
+    },
+    "relation" : {
+      "@id" : "http://purl.org/dc/elements/1.1/relation"
+    },
+    "derechosAnulados" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#derechosAnulados",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "municipio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio",
+      "@type" : "@id"
+    }
+  }
+}

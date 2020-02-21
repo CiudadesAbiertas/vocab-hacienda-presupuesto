@@ -27,7 +27,7 @@
                                                                         "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)"^^xsd:string ;
                                                              dc:identifier "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"@es ;
                                                              dc:title "Vocabulario para la representación de la información de los presupuestos y la ejecución presupuestaria de acuerdo a los datos de gestión económica municipal. "@es ,
-                                                                      "Vocabulary for the representation of budget information and budget execution according to municipal management data"@en ;
+                                                                      "Vocabulary for the representation of budget information and budget execution according to the data managed by the economic area of the city council."@en ;
                                                              terms:creator "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"^^xsd:string ;
                                                              terms:hasFormat "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto.owl"@es ;
                                                              terms:issued "2020-02-06"@es ;

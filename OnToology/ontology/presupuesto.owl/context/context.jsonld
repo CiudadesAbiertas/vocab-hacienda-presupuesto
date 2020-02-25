@@ -78,10 +78,6 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacion",
       "@type" : "@id"
     },
-    "featureCode" : {
-      "@id" : "http://www.geonames.org/ontology#featureCode",
-      "@type" : "@id"
-    },
     "Presupuesto" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto"
     },
@@ -141,10 +137,6 @@
     },
     "Interval" : {
       "@id" : "http://www.w3.org/2006/time#Interval"
-    },
-    "featureClass" : {
-      "@id" : "http://www.geonames.org/ontology#featureClass",
-      "@type" : "@id"
     },
     "derechosReconocidosNetos" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#derechosReconocidosNetos",

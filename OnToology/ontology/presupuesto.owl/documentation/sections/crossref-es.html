@@ -11,6 +11,11 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
       </li>
       <li>
+         <a href="#http://dbpedia.org/ontology/District" title="http://dbpedia.org/ontology/District">
+            <span>district</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
             title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito">Distrito</a>
       </li>
@@ -21,6 +26,11 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <li>
          <a href="#EjecucionIngreso"
             title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso">Ejecución Ingreso</a>
+      </li>
+      <li>
+         <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">
+            <span>feature</span>
+         </a>
       </li>
       <li>
          <a href="#Gasto"
@@ -45,6 +55,10 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <li>
          <a href="#LiquidacionIngreso"
             title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionIngreso">Liquidación Ingreso</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio">Municipio</a>
       </li>
       <li>
          <a href="#Presupuesto"
@@ -82,6 +96,11 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <dl class="description">
          <dt>tiene superclases</dt>
          <dd/>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
          <dt>disjunto a</dt>
          <dd>
             <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme"
@@ -113,29 +132,54 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dd>
       </dl>
       <dl class="description">
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
          <dt>miembros</dt>
          <dd>
-            <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto"
-               title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto">clasificacion economica gasto</a>
-            <sup class="type-ni" title="Individuo">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto-ayuntamiento"
-               title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto-ayuntamiento">clasificacion economica gasto ayuntamiento</a>
-            <sup class="type-ni" title="Individuo">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso"
-               title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso">clasificacion economica ingreso</a>
-            <sup class="type-ni" title="Individuo">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso-ayuntamiento"
-               title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso-ayuntamiento">clasificacion economica ingreso ayuntamiento</a>
-            <sup class="type-ni" title="Individuo">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-inversion-ayuntamiento"
-               title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-inversion-ayuntamiento">clasificacion inversion ayuntamiento</a>
-            <sup class="type-ni" title="Individuo">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-organica-ayuntamiento"
-               title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-organica-ayuntamiento">clasificacion organica ayuntamiento</a>
-            <sup class="type-ni" title="Individuo">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa"
-               title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa">clasificacion programa</a>
-            <sup class="type-ni" title="Individuo">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa-ayuntamiento"
-               title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa-ayuntamiento">clasificacion programa ayuntamiento</a>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto">economica gasto</a>
+            <sup class="type-ni" title="Individuo">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto">economica gasto</a>
+            <sup class="type-ni" title="Individuo">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso">economica ingreso</a>
+            <sup class="type-ni" title="Individuo">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso">economica ingreso</a>
+            <sup class="type-ni" title="Individuo">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion">inversion</a>
+            <sup class="type-ni" title="Individuo">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica">organica</a>
+            <sup class="type-ni" title="Individuo">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto">programas gasto</a>
+            <sup class="type-ni" title="Individuo">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto"
+               title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto">programas gasto</a>
             <sup class="type-ni" title="Individuo">ni</sup>
          </dd>
          <dt>disjunto a</dt>
          <dd>
             <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://dbpedia.org/ontology/District">
+      <h3>district<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://dbpedia.org/ontology/District</p>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
+      </dl>
+      <dl class="description">
+         <dt>tiene subclases</dt>
+         <dd>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito">Distrito</a>
             <sup class="type-c" title="clase">c</sup>
          </dd>
       </dl>
@@ -159,8 +203,8 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <dl class="description">
          <dt>tiene superclases</dt>
          <dd>
-            <span class="dotted" title="http://dbpedia.org/ontology/District">district</span>
-            <sup class="type-c" title="clase">c</sup>, <span class="dotted" title="http://www.geonames.org/ontology#Feature">feature</span>
+            <a href="#http://dbpedia.org/ontology/District" title="http://dbpedia.org/ontology/District">district</a>
+            <sup class="type-c" title="clase">c</sup>, <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">feature</a>
             <sup class="type-c" title="clase">c</sup>
          </dd>
          <dt>en rango de</dt>
@@ -228,7 +272,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso</p>
       <div class="comment">
-         <span class="markdown">The execution of income reports the income in a period of accounting activity, generally from January 1 of the fiscal year until the date of execution.</span>
+         <span class="markdown">La ejecución de ingresos informa de los ingresos en un periodo de actividad contable, generalmente a partir del 1 de enero del año fiscal hasta la fecha de la ejecución.</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -264,6 +308,28 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             <a href="#ejecucionIngreso"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionIngreso">ejecución ingreso</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.geonames.org/ontology#Feature">
+      <h3>feature<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.geonames.org/ontology#Feature</p>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
+      </dl>
+      <dl class="description">
+         <dt>tiene subclases</dt>
+         <dd>
+            <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito">Distrito</a>
+            <sup class="type-c" title="clase">c</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio">Municipio</a>
+            <sup class="type-c" title="clase">c</sup>
          </dd>
       </dl>
    </div>
@@ -411,7 +477,11 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dd>
             <a href="#excesoDefectoPrevision"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#excesoDefectoPrevision">exceso defecto previsión</a>
-            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#resultadoPresupuestario"
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#liquidacionGasto"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionGasto">liquidación gasto</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#liquidacionIngreso"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionIngreso">liquidación ingreso</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#resultadoPresupuestario"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoPresupuestario">resultado presupuestario</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>
          </dd>
@@ -444,6 +514,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto">Ejecución gasto</a>
             <sup class="type-c" title="clase">c</sup>
          </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#liquidacionGasto"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionGasto">liquidación gasto</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="LiquidacionIngreso">
@@ -465,6 +541,36 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dd>
             <a href="#EjecucionIngreso"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso">Ejecución Ingreso</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#liquidacionIngreso"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionIngreso">liquidación ingreso</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio">
+      <h3>Municipio<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio</p>
+      <div class="comment">
+         <span class="markdown">Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del REgistro Central de Cartografía del IGN. Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
+         <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
+         <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
+      </dl>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">feature</a>
             <sup class="type-c" title="clase">c</sup>
          </dd>
       </dl>
@@ -573,6 +679,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dd>
             <a href="#http://www.w3.org/2006/time#hasBeginning" title="http://www.w3.org/2006/time#hasBeginning">has beginning</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#http://www.w3.org/2006/time#hasEnd" title="http://www.w3.org/2006/time#hasEnd">has end</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#http://www.w3.org/2006/time#hasTime" title="http://www.w3.org/2006/time#hasTime">has time</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>
          </dd>
       </dl>
@@ -682,6 +789,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <a href="#http://www.w3.org/2006/time#hasEnd" title="http://www.w3.org/2006/time#hasEnd">has end</a>
       </li>
       <li>
+         <a href="#http://www.w3.org/2006/time#hasTime" title="http://www.w3.org/2006/time#hasTime">has time</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a>
+      </li>
+      <li>
          <a href="#ingreso"
             title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso">ingreso</a>
       </li>
@@ -739,15 +852,15 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
             <dd>
                <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
                <sup class="type-c" title="clase">c</sup> 
-               <span class="logic">and</span> ((<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <span class="logic">and</span> ((<a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup> 
                <span class="logic">value</span> 
-               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto"
-                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto">clasificacion economica gasto</a>) <span class="logic">or</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto"
+                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto">economica gasto</a>) <span class="logic">or</span> (<a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup> 
                <span class="logic">value</span> 
-               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto-ayuntamiento"
-                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto-ayuntamiento">clasificacion economica gasto ayuntamiento</a>))</dd>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto"
+                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto">economica gasto</a>))</dd>
          </dl>
       </div>
    </div>
@@ -779,15 +892,15 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
             <dd>
                <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
                <sup class="type-c" title="clase">c</sup> 
-               <span class="logic">and</span> ((<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <span class="logic">and</span> ((<a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup> 
                <span class="logic">value</span> 
-               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso"
-                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso">clasificacion economica ingreso</a>) <span class="logic">or</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso"
+                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso">economica ingreso</a>) <span class="logic">or</span> (<a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup> 
                <span class="logic">value</span> 
-               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso-ayuntamiento"
-                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso-ayuntamiento">clasificacion economica ingreso ayuntamiento</a>))</dd>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso"
+                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso">economica ingreso</a>))</dd>
          </dl>
       </div>
    </div>
@@ -819,11 +932,11 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
             <dd>
                <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
                <sup class="type-c" title="clase">c</sup> 
-               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <span class="logic">and</span> (<a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup> 
                <span class="logic">value</span> 
-               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-inversion-ayuntamiento"
-                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-inversion-ayuntamiento">clasificacion inversion ayuntamiento</a>)</dd>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion"
+                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion">inversion</a>)</dd>
          </dl>
       </div>
    </div>
@@ -859,11 +972,11 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
             <dd>
                <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
                <sup class="type-c" title="clase">c</sup> 
-               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <span class="logic">and</span> (<a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup> 
                <span class="logic">value</span> 
-               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-organica-ayuntamiento"
-                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-organica-ayuntamiento">clasificacion organica ayuntamiento</a>)</dd>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica"
+                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica">organica</a>)</dd>
          </dl>
       </div>
    </div>
@@ -895,15 +1008,15 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
             <dd>
                <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
                <sup class="type-c" title="clase">c</sup> 
-               <span class="logic">and</span> ((<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <span class="logic">and</span> ((<a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup> 
                <span class="logic">value</span> 
-               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa"
-                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa">clasificacion programa</a>) <span class="logic">or</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto"
+                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto">programas gasto</a>) <span class="logic">or</span> (<a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup> 
                <span class="logic">value</span> 
-               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa-ayuntamiento"
-                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa-ayuntamiento">clasificacion programa ayuntamiento</a>))</dd>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto"
+                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto">programas gasto</a>))</dd>
          </dl>
       </div>
    </div>
@@ -1017,7 +1130,7 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2006/time#hasTime">has time</span>
+               <a href="#http://www.w3.org/2006/time#hasTime" title="http://www.w3.org/2006/time#hasTime">has time</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>dominio</dt>
@@ -1050,7 +1163,7 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
          <dl>
             <dt>tiene superpropiedades</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2006/time#hasTime">has time</span>
+               <a href="#http://www.w3.org/2006/time#hasTime" title="http://www.w3.org/2006/time#hasTime">has time</a>
                <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
             <dt>dominio</dt>
@@ -1061,6 +1174,66 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
             <dt>rango</dt>
             <dd>
                <a href="#http://www.w3.org/2006/time#Instant" title="http://www.w3.org/2006/time#Instant">Time instant</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/2006/time#hasTime">
+      <h3>has time<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2006/time#hasTime</p>
+      <div class="comment">
+         <span class="markdown">Supports the association of a temporal entity (instant or interval) to any thing.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>tiene subpropiedades</dt>
+            <dd>
+               <a href="#http://www.w3.org/2006/time#hasBeginning" title="http://www.w3.org/2006/time#hasBeginning">has beginning</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#http://www.w3.org/2006/time#hasEnd" title="http://www.w3.org/2006/time#hasEnd">has end</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#http://www.w3.org/2006/time#TemporalEntity" title="http://www.w3.org/2006/time#TemporalEntity">Temporal entity</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#inScheme">
+      <h3>in Scheme<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#inScheme</p>
+      <div class="comment">
+         <span class="markdown">A concept may be a member of more than one concept scheme.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme"
+                  title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
                <sup class="type-c" title="clase">c</sup>
             </dd>
          </dl>
@@ -1144,6 +1317,22 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
          <dt>Definida por</dt>
          <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
       </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Liquidacion"
+                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion">Liquidación</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#LiquidacionGasto"
+                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionGasto">Liquidación gasto</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="liquidacionIngreso">
       <h3>liquidación ingreso<sup class="type-op" title="Propiedad entre objetos">op</sup>
@@ -1159,6 +1348,22 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
          <dt>Definida por</dt>
          <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
       </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Liquidacion"
+                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion">Liquidación</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#LiquidacionIngreso"
+                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionIngreso">Liquidación Ingreso</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="periodoEjecucion">
       <h3>período ejecución<sup class="type-op" title="Propiedad entre objetos">op</sup>
@@ -1351,6 +1556,9 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal</p>
+      <div class="comment">
+         <span class="markdown">Ejercicio fiscal. Período de 12 meses entre el 1 de enero y 31 de diciembre.</span>
+      </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
          <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
@@ -1524,6 +1732,9 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#codigoIdentificador</p>
+      <div class="comment">
+         <span class="markdown">Código interno del proyecto de inversión.</span>
+      </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
          <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
@@ -2162,61 +2373,61 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
    <h3 id="namedindividuals" class="list">Individuos</h3>
    <ul class="hlist">
       <li>
-         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto"
-            title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto">
-            <span>clasificacion economica gasto</span>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto">
+            <span>economica gasto</span>
          </a>
       </li>
       <li>
-         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto-ayuntamiento"
-            title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto-ayuntamiento">
-            <span>clasificacion economica gasto ayuntamiento</span>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto">
+            <span>economica gasto</span>
          </a>
       </li>
       <li>
-         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso"
-            title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso">
-            <span>clasificacion economica ingreso</span>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso">
+            <span>economica ingreso</span>
          </a>
       </li>
       <li>
-         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso-ayuntamiento"
-            title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso-ayuntamiento">
-            <span>clasificacion economica ingreso ayuntamiento</span>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso">
+            <span>economica ingreso</span>
          </a>
       </li>
       <li>
-         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-inversion-ayuntamiento"
-            title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-inversion-ayuntamiento">
-            <span>clasificacion inversion ayuntamiento</span>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion">
+            <span>inversion</span>
          </a>
       </li>
       <li>
-         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-organica-ayuntamiento"
-            title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-organica-ayuntamiento">
-            <span>clasificacion organica ayuntamiento</span>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica">
+            <span>organica</span>
          </a>
       </li>
       <li>
-         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa"
-            title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa">
-            <span>clasificacion programa</span>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto">
+            <span>programas gasto</span>
          </a>
       </li>
       <li>
-         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa-ayuntamiento"
-            title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa-ayuntamiento">
-            <span>clasificacion programa ayuntamiento</span>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto"
+            title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto">
+            <span>programas gasto</span>
          </a>
       </li>
    </ul>
-   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto">
-      <h3>clasificacion economica gasto<sup class="type-ni" title="Individuo">ni</sup>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto">
+      <h3>economica gasto<sup class="type-ni" title="Individuo">ni</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto</p>
       <dl class="description">
          <dt>pertenece a</dt>
          <dd>
@@ -2226,13 +2437,13 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto-ayuntamiento">
-      <h3>clasificacion economica gasto ayuntamiento<sup class="type-ni" title="Individuo">ni</sup>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto">
+      <h3>economica gasto<sup class="type-ni" title="Individuo">ni</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto-ayuntamiento</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto</p>
       <dl class="description">
          <dt>pertenece a</dt>
          <dd>
@@ -2242,13 +2453,13 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso">
-      <h3>clasificacion economica ingreso<sup class="type-ni" title="Individuo">ni</sup>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso">
+      <h3>economica ingreso<sup class="type-ni" title="Individuo">ni</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso</p>
       <dl class="description">
          <dt>pertenece a</dt>
          <dd>
@@ -2258,13 +2469,13 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso-ayuntamiento">
-      <h3>clasificacion economica ingreso ayuntamiento<sup class="type-ni" title="Individuo">ni</sup>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso">
+      <h3>economica ingreso<sup class="type-ni" title="Individuo">ni</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso-ayuntamiento</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso</p>
       <dl class="description">
          <dt>pertenece a</dt>
          <dd>
@@ -2274,13 +2485,13 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-inversion-ayuntamiento">
-      <h3>clasificacion inversion ayuntamiento<sup class="type-ni" title="Individuo">ni</sup>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion">
+      <h3>inversion<sup class="type-ni" title="Individuo">ni</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-inversion-ayuntamiento</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion</p>
       <dl class="description">
          <dt>pertenece a</dt>
          <dd>
@@ -2290,13 +2501,13 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-organica-ayuntamiento">
-      <h3>clasificacion organica ayuntamiento<sup class="type-ni" title="Individuo">ni</sup>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica">
+      <h3>organica<sup class="type-ni" title="Individuo">ni</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-organica-ayuntamiento</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica</p>
       <dl class="description">
          <dt>pertenece a</dt>
          <dd>
@@ -2306,13 +2517,13 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa">
-      <h3>clasificacion programa<sup class="type-ni" title="Individuo">ni</sup>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto">
+      <h3>programas gasto<sup class="type-ni" title="Individuo">ni</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto</p>
       <dl class="description">
          <dt>pertenece a</dt>
          <dd>
@@ -2322,13 +2533,13 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa-ayuntamiento">
-      <h3>clasificacion programa ayuntamiento<sup class="type-ni" title="Individuo">ni</sup>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto">
+      <h3>programas gasto<sup class="type-ni" title="Individuo">ni</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#namedindividuals">Índice de individuos</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa-ayuntamiento</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto</p>
       <dl class="description">
          <dt>pertenece a</dt>
          <dd>

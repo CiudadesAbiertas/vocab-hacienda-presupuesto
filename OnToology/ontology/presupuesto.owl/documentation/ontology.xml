@@ -360,11 +360,11 @@
                         <owl:unionOf rdf:parseType="Collection">
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                                <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto"/>
+                                <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto"/>
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                                <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto-ayuntamiento"/>
+                                <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto"/>
                             </owl:Restriction>
                         </owl:unionOf>
                     </owl:Class>
@@ -396,11 +396,11 @@ Based on their economic nature, the chapters will be broken down into articles, 
                         <owl:unionOf rdf:parseType="Collection">
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                                <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso"/>
+                                <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso"/>
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                                <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso-ayuntamiento"/>
+                                <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso"/>
                             </owl:Restriction>
                         </owl:unionOf>
                     </owl:Class>
@@ -428,7 +428,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-inversion-ayuntamiento"/>
+                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -461,7 +461,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-organica-ayuntamiento"/>
+                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -489,11 +489,11 @@ Based on their economic nature, the chapters will be broken down into articles, 
                         <owl:unionOf rdf:parseType="Collection">
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                                <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa"/>
+                                <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto"/>
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                                <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa-ayuntamiento"/>
+                                <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto"/>
                             </owl:Restriction>
                         </owl:unionOf>
                     </owl:Class>
@@ -589,6 +589,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
 
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionGasto">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion"/>
+        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionGasto"/>
         <rdfs:comment xml:lang="es">El presupuesto de gastos se liquida al final del año fiscal.</rdfs:comment>
         <rdfs:comment xml:lang="en">The expense budget is liquidated at the end of the fiscal year.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
@@ -602,6 +604,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
 
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionIngreso">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion"/>
+        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionIngreso"/>
         <rdfs:comment xml:lang="es">El presupuesto de ingresos se liquida al final del año fiscal.</rdfs:comment>
         <rdfs:comment xml:lang="en">The income budget is liquidated at the end of the fiscal year.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
@@ -641,24 +645,16 @@ Based on their economic nature, the chapters will be broken down into articles, 
     
 
 
-    <!-- http://www.geonames.org/ontology#featureClass -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.geonames.org/ontology#featureClass"/>
-    
-
-
-    <!-- http://www.geonames.org/ontology#featureCode -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.geonames.org/ontology#featureCode"/>
-    
-
-
     <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">A concept may be a member of more than one concept scheme.</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">in Scheme</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -693,7 +689,12 @@ Based on their economic nature, the chapters will be broken down into articles, 
     <!-- http://www.w3.org/2006/time#hasTime -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasTime"/>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasTime">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment xml:lang="en">Supports the association of a temporal entity (instant or interval) to any thing.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.w3.org/2006/time</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">has time</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -716,6 +717,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:comment xml:lang="es">Ejercicio fiscal. Período de 12 meses entre el 1 de enero y 31 de diciembre.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fiscal year. Period of 12 months between the 1st of January and the 31st of December.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">año fiscal</rdfs:label>
         <rdfs:label xml:lang="en">fiscal year</rdfs:label>
@@ -730,6 +733,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Código interno del proyecto de inversión.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Internal code for the investment project.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">código identificador</rdfs:label>
         <rdfs:label xml:lang="en">identifier code</rdfs:label>
@@ -1142,7 +1147,9 @@ Based on their economic nature, the chapters will be broken down into articles, 
     <!-- http://dbpedia.org/ontology/District -->
 
 
-    <owl:Class rdf:about="http://dbpedia.org/ontology/District"/>
+    <owl:Class rdf:about="http://dbpedia.org/ontology/District">
+        <rdfs:isDefinedBy>http://dbpedia.org/ontology/</rdfs:isDefinedBy>
+    </owl:Class>
     
 
 
@@ -1177,11 +1184,11 @@ Based on their economic nature, the chapters will be broken down into articles, 
                 <owl:onClass rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="es">La ejecución de ingresos informa de los ingresos en un periodo de actividad contable, generalmente a partir del 1 de enero del año fiscal hasta la fecha de la ejecución.</rdfs:comment>
         <rdfs:comment xml:lang="en">The execution of income reports the income in a period of accounting activity, generally from January 1 of the fiscal year until the date of execution.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">Ejecución Ingreso</rdfs:label>
         <rdfs:label xml:lang="en">Income execution</rdfs:label>
-        <rdfs:label xml:lang="en">La ejecución de ingresos informa de los ingresos en un periodo de actividad contable, generalmente a partir del 1 de enero del año fiscal hasta la fecha de la ejecución.</rdfs:label>
     </owl:Class>
     
 
@@ -1351,18 +1358,6 @@ Based on their economic nature, the chapters will be broken down into articles, 
         <rdfs:subClassOf rdf:resource="http://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.geonames.org/ontology#featureClass"/>
-                <owl:hasValue rdf:resource="http://www.geonames.org/ontology#P"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.geonames.org/ontology#featureCode"/>
-                <owl:hasValue rdf:resource="http://www.geonames.org/ontology#P.PPLX"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio"/>
@@ -1379,14 +1374,23 @@ Based on their economic nature, the chapters will be broken down into articles, 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio -->
 
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio"/>
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio">
+        <rdfs:subClassOf rdf:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:comment xml:lang="es">Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del REgistro Central de Cartografía del IGN. Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/derecho/vocabulario</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>http://www.ign.es/ign/resources/acercaDe/tablon/ModeloDireccionesAGE.pdf‎</rdfs:isDefinedBy>
+        <rdfs:label>Municipio</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://www.geonames.org/ontology#Feature -->
 
 
-    <owl:Class rdf:about="http://www.geonames.org/ontology#Feature"/>
+    <owl:Class rdf:about="http://www.geonames.org/ontology#Feature">
+        <rdfs:isDefinedBy>http://www.geonames.org/ontology</rdfs:isDefinedBy>
+    </owl:Class>
     
 
 
@@ -1491,89 +1495,75 @@ Based on their economic nature, the chapters will be broken down into articles, 
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto -->
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto">
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto-ayuntamiento -->
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto-ayuntamiento">
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso -->
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso">
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso-ayuntamiento -->
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-ingreso-ayuntamiento">
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-inversion-ayuntamiento -->
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-inversion-ayuntamiento">
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-organica-ayuntamiento -->
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-organica-ayuntamiento">
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa -->
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa">
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa-ayuntamiento -->
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-programa-ayuntamiento">
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.geonames.org/ontology#P -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.geonames.org/ontology#P"/>
-    
-
-
-    <!-- http://www.geonames.org/ontology#P.PPLX -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.geonames.org/ontology#P.PPLX"/>
     
 
 

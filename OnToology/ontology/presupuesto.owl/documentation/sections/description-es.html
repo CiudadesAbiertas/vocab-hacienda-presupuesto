@@ -21,7 +21,7 @@ En la Figura 1 se muestran varias relaciones con la clase de conceptos SKOS. Cad
   <span class="markdown">
   Con la finalidad de facilitar la comprensión del uso de algunas clases y propiedades de este vocabulario se proporcionarán a continuación algunos ejemplos.
 
-  En el siguiente ejemplo se muestra una instancia de un presupuesto de gastos del año 2019. Se tiene su crédito inicial, en este caso no hay modificaciones por lo que es igual al crédito definitivo. La clasificación por programas de gasto corresponde al programa de "Gestión tributaria", a la clasificación económica de "Productividad" del capítulo de "Gastos de Personal" y al como clasificación orgánica se tiene a la "Agencia Tributaria de Madrid".
+  En el siguiente ejemplo se muestra una instancia de un presupuesto de gastos del año 2019. Se tiene su crédito inicial, en este caso no hay modificaciones por lo que es igual al crédito definitivo. La clasificación por programas de gasto corresponde al programa de "Gestión tributaria", a la clasificación económica de "Productividad" del capítulo de "Gastos de Personal" y como clasificación orgánica se tiene a la "Agencia Tributaria de Madrid".
   </span>
   <pre>
     &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/gasto/5060579320015000&gt;
@@ -33,15 +33,14 @@ En la Figura 1 se muestran varias relaciones con la clase de conceptos SKOS. Cad
 	   espresup:clasificacionOrganica &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/madrid/057&gt; .
   </pre>
 
-  <span class="markdown">
-    Otro ejemplo es el de una inversión financieramente sostenible. En este caso la inversión está clasificada dentro de la taxonomía de línea y sublínea de inversión como "Promoción de la Cultura", tiene como ámbito el distrito "Centro" y se alinea con un gasto con crédito  de 40.000 euros , su clasificación económica corresponde al "PATRIMONIO HISTÓRICO, ARTÍSTICO Y CULTURAL",la sección de la clasificación orgánica es el "Pleno" y el programa es de "Presidencia del Pleno"
+  <span class="markdown">Otro ejemplo es el de una inversión financieramente sostenible. En este caso la inversión está clasificada dentro de la taxonomía de línea y sublínea de inversión como "Promoción de la Cultura", tiene como ámbito el distrito "Centro" y se alinea con un gasto con crédito  de 40.000 euros, su clasificación económica corresponde al "PATRIMONIO HISTÓRICO, ARTÍSTICO Y CULTURAL", la sección de la clasificación orgánica es el "Pleno" y el programa es de "Presidencia del Pleno"
   </span>
   <pre>
     &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/inversion/2019/000249&gt;
       espresup:codigoidentificador "2019/000249" ;
 	    espresup:denominacion "CUADROS Y PLACAS DE ALCALDES DE MADRID EN PLAZA DE LA VILLA, 4"@es ;
 	    espresup:clasificacionInversion &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/inversion/madrid/5&gt; ;
-	    espresup:ambito &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/distrito/201&gt; ;
+	    espresup:ambito &lt;http://vocab.ciudadesabiertas.es/recurso/territorio/distrito/201&gt; ;
 	    espresup:variosDistritos "false"^^xsd:boolean .
 
       &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/gasto/0010029121660900&gt;
@@ -53,9 +52,34 @@ En la Figura 1 se muestran varias relaciones con la clase de conceptos SKOS. Cad
   	    espresup:clasificacionOrganica &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/madrid/002&gt; .
 
   </pre>
+  <span class="markdown">Como ejemplo de ejeución presupuestaria de un gasto de un ayuntamiento al 30-11-2019 se tiene la ejecución asociada a un intervalo de tiempo entre el 1 de enero y el 30 de noviembre de 2019. La ejecución corresponde a un gasto con clasificación económica de "COMPLEMENTO ESPECÍFICO" del capítulo de "GASTOS DE PERSONAL" y al programa de "PRESIDENCIA DEL PLENO". Tiene un crédito inicial de 57.543,00 euros con un crédito autorizado de 65.439 euros y obligaciones reconocidas netas por esa misma cuantía, el crédito disponible es de 68,00 euros.
+  </span>
+  <pre>
+    &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/ejecucionGasto/0010029121612101&gt;
+      espresup:creditoAutorizado "65.439,00"^^xsd:double ;
+  	  espresup:creditoDisponible "68,00"^^xsd:double ;
+  	  espresup:obligacionesReconocidadNetas "65.439,00"^^xsd:double ;
+  	  espresup:periodoEjecucion &lt;http://vocab.ciudadesabiertas.es/ recurso/hacienda/presupuesto/intervaloPropioTiempo/123&gt; .
+
+    &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/intervaloPropioTiempo/123&gt; a time:ProperInterval ;
+      time:hasBeginning &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/instanciaTiempo/1234&gt; ;
+      time:hasEnd &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/instanciaTiempo/5678&gt; .
+    &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/instanciaTiempo/1234&gt; a time:Instance ;
+      	xsd:inXSDYearMonth "2019-01-01"^^xsd:date .
+    &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/instanciaTiempo/5678&gt; a time:Instance ;
+      	xsd:inXSDYearMonth "2019-11-30"^^xsd:date .
+
+    &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/gasto/0010029121612101&gt;
+      a espresup:EjecucionGasto;
+      espresup:creditoPresupuestarioInicial "57.543,00"^^xsd:double ;
+    	espresup:creditoModificaciones "0"^^xsd:double ;
+    	espresup:creditoDefinitivo "57.543,00"^^xsd:double ;
+    	espresup:clasificacionEconomicaGasto &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto/madrid/12101&gt; ;
+    	espresup:clasificacionPrograma &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto/madrid/91216&gt; ;
+    	espresup:clasificacionOrganica &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/madrid/002&gt; .
+    </pre>
   <h3>3.2 Ejemplos de SKOS<span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h3>
-  <span class="markdown">
-  A continuación se mostrarán algunos ejemplos de los SKOS que se han creado para las clasificaciones normadas por ley y aquellas que son propias de cada ayuntamiento.
+  <span class="markdown">A continuación se mostrarán algunos ejemplos de los SKOS que se han creado para las clasificaciones normadas por ley y aquellas que son propias de cada ayuntamiento.
   En primer lugar, para la clasificación por programa se ha desarrollado un SKOS que contiene por ejemplo el área de gasto "2" que es un  concepto SKOS que pertenece a la taxonomía de programas de gasto y que corresponde a "ACTUACIONES DE PROTECCIÓN Y PROMOCIÓN SOCIAL."". Luego, la política 21 de "Pensiones" tiene una relación "broader", es decir su concepto más general correspondiente  es el área "2".
   </span>
   <pre>
@@ -68,8 +92,7 @@ En la Figura 1 se muestran varias relaciones con la clase de conceptos SKOS. Cad
     &lt;http://www.w3.org/2004/02/skos/core#prefLabel&gt; "Pensiones."@es;
     &lt;http://www.w3.org/2004/02/skos/core#broader&gt; &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto/2&gt;.
     </pre>
-    <span class="markdown">
-    Un ejemplo de una taxonomía propia de un ayuntamiento es el de los subprogramas de gasto de Madrid. Se tiene el programa "13001" de "COORDINACIÓN GENERAL DE SEGURIDAD Y EMERGENCIAS" que corresponde al grupo de programas (más general) "130" de "Administración general de la seguridad y protección civil".
+    <span class="markdown">Un ejemplo de una taxonomía propia de un ayuntamiento es el de los subprogramas de gasto de Madrid. Se tiene el programa "13001" de "COORDINACIÓN GENERAL DE SEGURIDAD Y EMERGENCIAS" que corresponde al grupo de programas (más general) "130" de "Administración general de la seguridad y protección civil".
     </span>
     <pre>
       &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto/madrid/13001>
@@ -78,8 +101,7 @@ En la Figura 1 se muestran varias relaciones con la clase de conceptos SKOS. Cad
         &lt;http://www.w3.org/2004/02/skos/core#prefLabel&gt; "COORDINACIÓN GENERAL DE SEGURIDAD Y EMERGENCIAS"@es;
         &lt;http://www.w3.org/2004/02/skos/core#broader&gt; &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto/130&gt;.
     </pre>
-    <span class="markdown">
-      Otro ejemplo de una clasificación no normativa es la clasificación orgánica que puede tener un ayuntamiento. En el ayuntamiento de Zaragoza se manejan áreas de gobierno y organismo autónomo o unidad de gasto. Así se tiene por ejemplo el área de gobierno "3" que corresponde al "Área de Urbanismo y Equipamientos".
+    <span class="markdown">Otro ejemplo de una clasificación no normativa es la clasificación orgánica que puede tener un ayuntamiento. En el ayuntamiento de Zaragoza se manejan áreas de gobierno y organismo autónomo o unidad de gasto. Así se tiene por ejemplo el área de gobierno "3" que corresponde al "Área de Urbanismo y Equipamientos".
     </span>
       <pre>
         &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/zaragoza/3>

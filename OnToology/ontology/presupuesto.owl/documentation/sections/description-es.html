@@ -1,0 +1,112 @@
+<html>
+<h2 id="desc" class="list">Vocabulario para la representación de la información de los presupuestos y la ejecución presupuestaria de acuerdo a los datos de gestión económica municipal. : Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+<span class="markdown">La Figura 1 muestra las clases y propiedades del vocabulario que representa la información de los presupuestos y la ejecución presupuestaria de acuerdo a los datos de gestión económica municipal:</span>
+<center><img src="resources/images/modeloConceptual.png"><figcaption>Figura 1. - Vocabulario para la representación de la información de los presupuestos y la ejecución presupuestaria</figcaption>
+</center>
+<span class="markdown">
+En este vocabulario se manejan los conceptos relacionados a los proyectos de presupuesto, a su ejecución y a su correspondiente liquidación. El concepto [espresup:Presupuesto](#Presupuesto) representa las características generales de un proyecto de presupuesto: su fecha de aprobación, si el presupuesto ha sido prorrogado y el año fiscal al cuál corresponde. De esta manera se pueden representar no solamente el presupuesto del año fiscal, sino presupuestos de años anteriores y el proyecto de presupuesto del siguiente año. El presupuesto se relaciona con un concepto general de [Liquidacion](#Liquidacion) que representa el resultado presupuestario y el exceso o defecto de previsión.
+
+El presupuesto  se relaciona con la propiedad [espresup:ingreso](#ingreso) a las previsiones de ingreso, [espresup:Ingreso](#Ingreso) y con la propiedad [espresup:gasto](#gasto) a los créditos del gasto, [espresup:Gasto](#Gasto). Los ingresos corresponden a las previsiones iniciales y sus modificaciones, y los gastos a los créditos iniciales y sus modificaciones. Los gastos pueden (opcionalmente) ser inversiones financiermente sostenibles, [espresup:InversionesFinancieramenteSostenibles](#InversionesFinancieramenteSostenibles) que contienen específicamente propiedades como un id, una denominación, información acerca de si tiene como ámbito todos los distritos o uno o varios distritos en particular.
+
+Cada ingreso se relaciona mediante la propiedad [espresup:ejecucionIngreso](#ejecucionIngreso) con las ejecuciones de ingreso [espresup:EjecucionIngreso](#EjecucionIngreso) que se han generado durante el año fiscal. De forma similar, cada gasto se relaciona mediante la propiedad [espresup:ejecucionGasto](#ejecucionGasto) con las ejecuciones de gasto, [espresup:EjecucionGasto](#ejecucionGasto). Cada ejecución corresponde mediante la propiedad [espresup:periodoEjecucion](#periodoEjecucion) a un período de ejecución, el cual se ha representado como un intervalo de tiempo mediante la clase [time:ProperInterval](#time:ProperInterval) de la ontología [Time Ontology](https://www.w3.org/TR/owl-time/). La ejecución de ingresos contiene todas las propiedades relacionadas con las fases de la ejecución. Igualmente, la ejeución de gastos contiene las propiedades de las fases de la ejecución de gastos. La liquidación de ingresos [espresup:LiquidacionIngreso](#LiquidacionIngreso) corresponde a la última ejecución de ingresos de un presupuesto. Similarmente, se tiene la liquidación de gastos [espresup:LiquidacionGasto](#LiquidacionGasto).
+
+
+Adicionalmente, en este vocabulario se han utilizado esquemas de conceptos SKOS para representar las clasificaciones orgánicas de gastos e ingresos, [espresup:clasificacionOrganica](#clasificacionOrganica), la clasificación económica de los gastos [espresup:clasificacionEconomicaGasto](#clasificacionEconomicaGasto) y similarmente la de los ingresos [espresup:clasificacionEconomicaIngreso](#clasificacionEconomicaIngreso), y la clasificación por programas de gasto, [espresup:clasificacionPrograma](#clasificacionPrograma). Una inversión financieramente sostenible de un ayuntamiento puede tener su propia clasificación de inversión, [espresup:clasificacionInversion](#clasificacionInversion).
+
+
+En la Figura 1 se muestran varias relaciones con la clase de conceptos SKOS. Cada clase skos:Concept corresponde a una taxonomía específica y se indica su nombre entre << >>. Las clasificaciones económica y por programa de gastos son abiertas, es decir, los ayuntamientos pueden crear niveles adicionales en la clasificación. Por ejemplo, en el caso de la clasificación por programas de gasto la clasificación es "cerrada" en los tres primeros niveles, luego en los siguientes niveles es  opcional para cada ayuntamiento. Además, cada ayuntamiento puede crear nuevos grupos de programas,  en este caso se tiene un SKOS para la clasificación normada llamada clasificacion-economica-gasto, y otro SKOS para la clasificación propia del ayuntamiento, clasificacion-economica-gasto-ayuntamiento. Estos dos SKOS se relacionan para indicar por ejemplo que un nuevo programa creado por el ayuntamiento corresponde a uno de los grupos de programas ya establecidos por la norma.
+  </span>
+
+  <h3>3.1 Ejemplos de uso<span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h3>
+  <span class="markdown">
+  Con la finalidad de facilitar la comprensión del uso de algunas clases y propiedades de este vocabulario se proporcionarán a continuación algunos ejemplos.
+
+  En el siguiente ejemplo se muestra una instancia de un presupuesto de gastos del año 2019. Se tiene su crédito inicial, en este caso no hay modificaciones por lo que es igual al crédito definitivo. La clasificación por programas de gasto corresponde al programa de "Gestión tributaria", a la clasificación económica de "Productividad" del capítulo de "Gastos de Personal" y como clasificación orgánica se tiene a la "Agencia Tributaria de Madrid".
+  </span>
+  <pre>
+    &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/gasto/5060579320015000&gt;
+     espresup:creditoPresupuestarioInicial "4.323.560,00"^^xsd:double ;
+	   espresup:creditoModificaciones "0"^^xsd:double ;
+	   espresup:creditoDefinitivo "4.323.560,00"^^xsd:double ;
+	   espresup:clasificacionEconomicaGasto &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto/madrid/15000&gt; ;
+	   espresup:clasificacionPrograma &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto/madrid/93200&gt; ;
+	   espresup:clasificacionOrganica &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/madrid/057&gt; .
+  </pre>
+
+  <span class="markdown">Otro ejemplo es el de una inversión financieramente sostenible. En este caso la inversión está clasificada dentro de la taxonomía de línea y sublínea de inversión como "Promoción de la Cultura", tiene como ámbito el distrito "Centro" y se alinea con un gasto con crédito  de 40.000 euros, su clasificación económica corresponde al "PATRIMONIO HISTÓRICO, ARTÍSTICO Y CULTURAL", la sección de la clasificación orgánica es el "Pleno" y el programa es de "Presidencia del Pleno"
+  </span>
+  <pre>
+    &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/inversion/2019/000249&gt;
+      espresup:codigoidentificador "2019/000249" ;
+	    espresup:denominacion "CUADROS Y PLACAS DE ALCALDES DE MADRID EN PLAZA DE LA VILLA, 4"@es ;
+	    espresup:clasificacionInversion &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/inversion/madrid/5&gt; ;
+	    espresup:ambito &lt;http://vocab.ciudadesabiertas.es/recurso/territorio/distrito/201&gt; ;
+	    espresup:variosDistritos "false"^^xsd:boolean .
+
+      &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/gasto/0010029121660900&gt;
+        espresup:creditoPresupuestarioInicial "40.000,00"^^xsd:double ;
+  	    espresup:creditoModificaciones "0"^^xsd:double ;
+  	    espresup:creditoDefinitivo "40.000,00"^^xsd:double ;
+  	    espresup:clasificacionEconomicaGasto &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto/madrid/60900&gt; ;
+  	    espresup:clasificacionPrograma &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto/madrid/91216&gt; ;
+  	    espresup:clasificacionOrganica &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/madrid/002&gt; .
+
+  </pre>
+  <span class="markdown">Como ejemplo de ejeución presupuestaria de un gasto de un ayuntamiento al 30-11-2019 se tiene la ejecución asociada a un intervalo de tiempo entre el 1 de enero y el 30 de noviembre de 2019. La ejecución corresponde a un gasto con clasificación económica de "COMPLEMENTO ESPECÍFICO" del capítulo de "GASTOS DE PERSONAL" y al programa de "PRESIDENCIA DEL PLENO". Tiene un crédito inicial de 57.543,00 euros con un crédito autorizado de 65.439 euros y obligaciones reconocidas netas por esa misma cuantía, el crédito disponible es de 68,00 euros.
+  </span>
+  <pre>
+    &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/ejecucionGasto/0010029121612101&gt;
+      espresup:creditoAutorizado "65.439,00"^^xsd:double ;
+  	  espresup:creditoDisponible "68,00"^^xsd:double ;
+  	  espresup:obligacionesReconocidadNetas "65.439,00"^^xsd:double ;
+  	  espresup:periodoEjecucion &lt;http://vocab.ciudadesabiertas.es/ recurso/hacienda/presupuesto/intervaloPropioTiempo/123&gt; .
+
+    &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/intervaloPropioTiempo/123&gt; a time:ProperInterval ;
+      time:hasBeginning &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/instanciaTiempo/1234&gt; ;
+      time:hasEnd &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/instanciaTiempo/5678&gt; .
+    &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/instanciaTiempo/1234&gt; a time:Instance ;
+      	xsd:inXSDYearMonth "2019-01-01"^^xsd:date .
+    &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/instanciaTiempo/5678&gt; a time:Instance ;
+      	xsd:inXSDYearMonth "2019-11-30"^^xsd:date .
+
+    &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/gasto/0010029121612101&gt;
+      a espresup:EjecucionGasto;
+      espresup:creditoPresupuestarioInicial "57.543,00"^^xsd:double ;
+    	espresup:creditoModificaciones "0"^^xsd:double ;
+    	espresup:creditoDefinitivo "57.543,00"^^xsd:double ;
+    	espresup:clasificacionEconomicaGasto &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto/madrid/12101&gt; ;
+    	espresup:clasificacionPrograma &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto/madrid/91216&gt; ;
+    	espresup:clasificacionOrganica &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/madrid/002&gt; .
+    </pre>
+  <h3>3.2 Ejemplos de SKOS<span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h3>
+  <span class="markdown">A continuación se mostrarán algunos ejemplos de los SKOS que se han creado para las clasificaciones normadas por ley y aquellas que son propias de cada ayuntamiento.
+  En primer lugar, para la clasificación por programa se ha desarrollado un SKOS que contiene por ejemplo el área de gasto "2" que es un  concepto SKOS que pertenece a la taxonomía de programas de gasto y que corresponde a "ACTUACIONES DE PROTECCIÓN Y PROMOCIÓN SOCIAL."". Luego, la política 21 de "Pensiones" tiene una relación "broader", es decir su concepto más general correspondiente  es el área "2".
+  </span>
+  <pre>
+    &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto/2&gt;
+      &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://www.w3.org/2004/02/skos/core#Concept&gt;;
+      &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt; "http:vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto";
+      &lt;http://www.w3.org/2004/02/skos/core#prefLabel&gt; "ACTUACIONES DE PROTECCIÓN Y PROMOCIÓN SOCIAL."@es .
+
+  &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto/21&gt;
+    &lt;http://www.w3.org/2004/02/skos/core#prefLabel&gt; "Pensiones."@es;
+    &lt;http://www.w3.org/2004/02/skos/core#broader&gt; &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto/2&gt;.
+    </pre>
+    <span class="markdown">Un ejemplo de una taxonomía propia de un ayuntamiento es el de los subprogramas de gasto de Madrid. Se tiene el programa "13001" de "COORDINACIÓN GENERAL DE SEGURIDAD Y EMERGENCIAS" que corresponde al grupo de programas (más general) "130" de "Administración general de la seguridad y protección civil".
+    </span>
+    <pre>
+      &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto/madrid/13001>
+        &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://www.w3.org/2004/02/skos/core#Concept&gt;;
+        &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt; &lt;http:vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto/madrid&gt;;
+        &lt;http://www.w3.org/2004/02/skos/core#prefLabel&gt; "COORDINACIÓN GENERAL DE SEGURIDAD Y EMERGENCIAS"@es;
+        &lt;http://www.w3.org/2004/02/skos/core#broader&gt; &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto/130&gt;.
+    </pre>
+    <span class="markdown">Otro ejemplo de una clasificación no normativa es la clasificación orgánica que puede tener un ayuntamiento. En el ayuntamiento de Zaragoza se manejan áreas de gobierno y organismo autónomo o unidad de gasto. Así se tiene por ejemplo el área de gobierno "3" que corresponde al "Área de Urbanismo y Equipamientos".
+    </span>
+      <pre>
+        &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/zaragoza/3>
+          &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://www.w3.org/2004/02/skos/core#Concept&gt;;
+          &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt; &lt;http:vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organiza/zaragoza&gt;;
+          &lt;http://www.w3.org/2004/02/skos/core#prefLabel&gt; "Área de Urbanismo y Equipamientos"@es.
+      </pre>
+</html>

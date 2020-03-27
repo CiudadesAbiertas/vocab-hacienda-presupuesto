@@ -209,7 +209,9 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dd>
          <dt>en rango de</dt>
          <dd>
-            <a href="#ambito"
+            <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito">pertenece al distrito</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#ambito"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito">ámbito</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>
          </dd>
@@ -446,8 +448,8 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionInversion">clasificación inversión</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#ambito"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito">ámbito</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#ambitoGlobal"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal">ámbito global</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#ambitoGlobalCiudad"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad">ámbito global ciudad</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>
          </dd>
       </dl>
@@ -823,8 +825,16 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionIngreso">liquidación ingreso</a>
       </li>
       <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito">pertenece al distrito</a>
+      </li>
+      <li>
          <a href="#periodoEjecucion"
             title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion">período ejecución</a>
+      </li>
+      <li>
+         <a href="#presupuestoInversion"
+            title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion">presupuesto inversión</a>
       </li>
       <li>
          <a href="#ambito"
@@ -1377,6 +1387,44 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito">
+      <h3>pertenece al distrito<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito</p>
+      <div class="comment">
+         <span class="markdown">Distrito al que pertenece un fenómeno geográfico o una entidad administrativa</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://www.opengis.net/ont/geosparql#sfWithin">sf within</span>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+            <dt>tiene subpropiedades</dt>
+            <dd>
+               <a href="#ambito"
+                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito">ámbito</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito">Distrito</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="periodoEjecucion">
       <h3>período ejecución<sup class="type-op" title="Propiedad entre objetos">op</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
@@ -1413,6 +1461,21 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
          </dl>
       </div>
    </div>
+   <div class="entity" id="presupuestoInversion">
+      <h3>presupuesto inversión<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion</p>
+      <div class="comment">
+         <span class="markdown">Presuopuesto de gastos correspondiente al proyecto de inversión.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
+      </dl>
+   </div>
    <div class="entity" id="ambito">
       <h3>ámbito<sup class="type-op" title="Propiedad entre objetos">op</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
@@ -1431,6 +1494,12 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
          <p>
             <strong>tiene características:</strong> funcional</p>
          <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito">pertenece al distrito</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
             <dt>dominio</dt>
             <dd>
                <a href="#InversionFinancieramenteSostenible"
@@ -1569,8 +1638,8 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
             title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#totalGastoComprometido">total gasto comprometido</a>
       </li>
       <li>
-         <a href="#ambitoGlobal"
-            title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal">ámbito global</a>
+         <a href="#ambitoGlobalCiudad"
+            title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad">ámbito global ciudad</a>
       </li>
    </ul>
    <div class="entity" id="ajustes">
@@ -2435,13 +2504,13 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
          </dl>
       </div>
    </div>
-   <div class="entity" id="ambitoGlobal">
-      <h3>ámbito global<sup class="type-dp" title="Propiedad de datos">dp</sup>
+   <div class="entity" id="ambitoGlobalCiudad">
+      <h3>ámbito global ciudad<sup class="type-dp" title="Propiedad de datos">dp</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal</p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad</p>
       <div class="comment">
          <span class="markdown">Indica que el proyecto de inversión financieramente sostenible tiene como ámbito todos los distritos de una ciudad.</span>
       </div>

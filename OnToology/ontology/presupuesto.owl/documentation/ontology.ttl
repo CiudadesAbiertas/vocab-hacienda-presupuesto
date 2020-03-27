@@ -188,8 +188,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito
-:ambito rdf:type owl:ObjectProperty ,
-                 owl:FunctionalProperty ;
+:ambito rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> ;
+        rdf:type owl:FunctionalProperty ;
         rdfs:domain :InversionFinancieramenteSostenible ;
         rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> ;
         rdfs:comment "A financially sustainable investment may have as its scope a specific district, several districts or all districts."@en ,
@@ -416,8 +417,31 @@ Based on their economic nature, the chapters will be broken down into articles, 
                              "período ejecución"@es .
 
 
+###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion
+:presupuestoInversion rdf:type owl:ObjectProperty ;
+                      rdfs:comment "Expense budget corresponding to the investment project."@en ,
+                                   "Presuopuesto de gastos correspondiente al proyecto de inversión."@es ;
+                      rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
+                      rdfs:label "investment budget"@en ,
+                                 "presupuesto inversión"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                                                                                  rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> ;
+                                                                                  <http://purl.org/dc/terms/issued> "2014-03-28" ;
+                                                                                  rdfs:comment "Distrito al que pertenece un fenómeno geográfico o una entidad administrativa"@es ;
+                                                                                  rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                  rdfs:label "pertenece al distrito"@es .
+
+
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio> rdf:type owl:ObjectProperty .
+
+
+###  http://www.opengis.net/ont/geosparql#sfWithin
+<http://www.opengis.net/ont/geosparql#sfWithin> rdf:type owl:ObjectProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#inScheme
@@ -472,15 +496,15 @@ Based on their economic nature, the chapters will be broken down into articles, 
                     "ajustes"@es .
 
 
-###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal
-:ambitoGlobal rdf:type owl:DatatypeProperty ;
-              rdfs:domain :InversionFinancieramenteSostenible ;
-              rdfs:range xsd:boolean ;
-              rdfs:comment "Indica que el proyecto de inversión financieramente sostenible tiene como ámbito todos los distritos de una ciudad."@es ,
-                           "Indicates that the financially sustainable investment project has as its scope all the districts of a city."@en ;
-              rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
-              rdfs:label "global scope"@en ,
-                         "ámbito global"@es .
+###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad
+:ambitoGlobalCiudad rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :InversionFinancieramenteSostenible ;
+                    rdfs:range xsd:boolean ;
+                    rdfs:comment "Indica que el proyecto de inversión financieramente sostenible tiene como ámbito todos los distritos de una ciudad."@es ,
+                                 "Indicates that the financially sustainable investment project has as its scope all the districts of a city."@en ;
+                    rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
+                    rdfs:label "global city scope"@en ,
+                               "ámbito global ciudad"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal

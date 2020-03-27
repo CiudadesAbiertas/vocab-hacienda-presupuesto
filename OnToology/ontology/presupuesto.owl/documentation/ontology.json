@@ -831,9 +831,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito"
   } ]
 }, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -850,10 +853,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "global scope"
+    "@value" : "global city scope"
   }, {
     "@language" : "es",
-    "@value" : "ámbito global"
+    "@value" : "ámbito global ciudad"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -1693,6 +1696,26 @@
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Expense budget corresponding to the investment project."
+  }, {
+    "@language" : "es",
+    "@value" : "Presuopuesto de gastos correspondiente al proyecto de inversión."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "investment budget"
+  }, {
+    "@language" : "es",
+    "@value" : "presupuesto inversión"
+  } ]
+}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionDefinitiva",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1974,6 +1997,29 @@
     "@id" : "http://www.geonames.org/ontology#Feature"
   } ]
 }, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2014-03-28"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Distrito al que pertenece un fenómeno geográfico o una entidad administrativa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "pertenece al distrito"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#sfWithin"
+  } ]
+}, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
@@ -2006,6 +2052,9 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://www.geonames.org/ontology"
   } ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#sfWithin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#gYear",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]

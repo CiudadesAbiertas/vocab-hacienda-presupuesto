@@ -306,6 +306,7 @@
     <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito -->
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito">
+        <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"/>
@@ -598,9 +599,40 @@ Based on their economic nature, the chapters will be broken down into articles, 
     
 
 
+    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion">
+        <rdfs:comment xml:lang="en">Expense budget corresponding to the investment project.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Presuopuesto de gastos correspondiente al proyecto de inversión.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">investment budget</rdfs:label>
+        <rdfs:label xml:lang="es">presupuesto inversión</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfWithin"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"/>
+        <terms:issued>2014-03-28</terms:issued>
+        <rdfs:comment xml:lang="es">Distrito al que pertenece un fenómeno geográfico o una entidad administrativa</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
+        <rdfs:label xml:lang="es">pertenece al distrito</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio"/>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfWithin -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfWithin"/>
     
 
 
@@ -678,16 +710,16 @@ Based on their economic nature, the chapters will be broken down into articles, 
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal -->
+    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad">
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="es">Indica que el proyecto de inversión financieramente sostenible tiene como ámbito todos los distritos de una ciudad.</rdfs:comment>
         <rdfs:comment xml:lang="en">Indicates that the financially sustainable investment project has as its scope all the districts of a city.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">global scope</rdfs:label>
-        <rdfs:label xml:lang="es">ámbito global</rdfs:label>
+        <rdfs:label xml:lang="en">global city scope</rdfs:label>
+        <rdfs:label xml:lang="es">ámbito global ciudad</rdfs:label>
     </owl:DatatypeProperty>
     
 

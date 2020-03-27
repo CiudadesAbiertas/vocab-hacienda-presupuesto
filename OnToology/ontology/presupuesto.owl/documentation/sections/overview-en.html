@@ -28,8 +28,8 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto">Ejecución gasto</a>
    </li>
    <li>
-      <a href="#Gasto"
-         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto">Expense</a>
+      <a href="#PresupuestoGasto"
+         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto">Expense budget</a>
    </li>
    <li>
       <a href="#LiquidacionGasto"
@@ -45,8 +45,8 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible">Financially Sustainable Investment</a>
    </li>
    <li>
-      <a href="#Ingreso"
-         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso">Income</a>
+      <a href="#PresupuestoIngreso"
+         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso">Income budget</a>
    </li>
    <li>
       <a href="#EjecucionIngreso"
@@ -130,6 +130,10 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionIngreso">income liquidation</a>
    </li>
    <li>
+      <a href="#presupuestoInversion"
+         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion">investment budget</a>
+   </li>
+   <li>
       <a href="#clasificacionInversion"
          title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionInversion">investment classification</a>
    </li>
@@ -142,17 +146,21 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionOrganica">organizational classification</a>
    </li>
    <li>
+      <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito"
+         title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito">pertenece al distrito</a>
+   </li>
+   <li>
       <a href="#ambito"
          title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito">scope</a>
    </li>
 </ul><h4>Data Properties</h4><ul class="hlist">
    <li>
-      <a href="#todosLosDistritos"
-         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#todosLosDistritos">all districts</a>
+      <a href="#resultadoAjustado"
+         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoAjustado">adjusted result</a>
    </li>
    <li>
-      <a href="#fechaAprobacion"
-         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacion">approval date</a>
+      <a href="#ajustes"
+         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ajustes">adjustements</a>
    </li>
    <li>
       <a href="#creditoAutorizado"
@@ -171,6 +179,10 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoModificaciones">credit modifications</a>
    </li>
    <li>
+      <a href="#remanenteCredito"
+         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteCredito">credit remnant</a>
+   </li>
+   <li>
       <a href="#creditoRetenido"
          title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoRetenido">credit withheld</a>
    </li>
@@ -181,10 +193,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#creditoDefinitivoVigente"
          title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoDefinitivoVigente">current final credit</a>
-   </li>
-   <li>
-      <a href="#denonimacion"
-         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#denonimacion">Denomination of an investment project.</a>
    </li>
    <li>
       <a href="#previsionModificaciones"
@@ -203,8 +211,8 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal">fiscal year</a>
    </li>
    <li>
-      <a href="#codigoIdentificador"
-         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#codigoIdentificador">identifier code</a>
+      <a href="#ambitoGlobalCiudad"
+         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad">global city scope</a>
    </li>
    <li>
       <a href="#http://www.w3.org/2006/time#inXSDgYearMonth" title="http://www.w3.org/2006/time#inXSDgYearMonth">in XSD g-YearMonth</a>
@@ -220,6 +228,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#excesoDefectoPrevision"
          title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#excesoDefectoPrevision">lack or excess estimate</a>
+   </li>
+   <li>
+      <a href="#fechaAprobLiquidacion"
+         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobLiquidacion">liquidation approval date</a>
    </li>
    <li>
       <a href="#recaudacionNeta"
@@ -246,8 +258,16 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#obligacionesPendientes31Dic">pending duties 31 December</a>
    </li>
    <li>
+      <a href="#fechaAprobacionPleno"
+         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionPleno">plenary approval date</a>
+   </li>
+   <li>
       <a href="#derechosReconocidos"
          title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#derechosReconocidos">recognized rights</a>
+   </li>
+   <li>
+      <a href="#remanenteTesoreria"
+         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteTesoreria">remnant of treasury</a>
    </li>
    <li>
       <a href="#derechosPendientesCobro31Dic"
@@ -265,45 +285,15 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto"
-         title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto">
-         <span>economica gasto</span>
-      </a>
-   </li>
-   <li>
       <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso"
          title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso">
          <span>economica ingreso</span>
       </a>
    </li>
    <li>
-      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso"
-         title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso">
-         <span>economica ingreso</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion"
-         title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion">
-         <span>inversion</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica"
-         title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica">
-         <span>organica</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto"
-         title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto">
-         <span>programas gasto</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto"
-         title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto">
-         <span>programas gasto</span>
+      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto"
+         title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto">
+         <span>programa gasto</span>
       </a>
    </li>
 </ul></html>

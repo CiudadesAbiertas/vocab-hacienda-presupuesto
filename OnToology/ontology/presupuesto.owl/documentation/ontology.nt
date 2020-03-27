@@ -175,31 +175,10 @@
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid3 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid5 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#comment> "La clasificación económica del gasto agrupará los créditos por capítulos separando las operaciones corrientes, las de capital y las financieras.\nAtendiendo a su naturaleza económica, los capítulos se desglosarán en artículos, y éstos, a su vez, en conceptos, que se podrán subdividir en subconceptos. Los subconceptos podrán desarrollarse en partidas."@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#comment> "La clasificación económica puede  referirse a la taxonomía propia del ayuntamiento, es decir a sus propios conceptos o subconceptos (representada como un esquema SKOS) o a la taxonomía general establecida por la Orden EHA/3565/2008, de 3 de diciembre, por la que se aprueba la estructura de los presupuestos de las entidades locales, representada también como un esquema SKOS:\nhttps://www.boe.es/buscar/act.php?id=BOE-A-2008-19916. \nEn esta ontología se implementa la taxonomía general. Cada ayuntamiento implementa su propia taxonomía y la relaciona con la taxonomía general. Un ejemplo se puede encontrar en la documentación de la ontología: http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto/"@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#comment> "The economic classification of the expenses will group the credits by chapters separating the current operations, those of capital and the financial ones.\nBased on their economic nature, the chapters will be broken down into articles, and these, in turn, into concepts, which can be subdivided into subconcepts. Subconcepts may be developed in budget items."@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#label> "clasificación económica gasto"@es .
@@ -208,30 +187,9 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
-_:genid9 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid11 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid15 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid13 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso> <http://www.w3.org/2000/01/rdf-schema#comment> "La clasificación económica puede  referirse a la taxonomía propia del ayuntamiento, es decir a sus propios conceptos o subconceptos (representada como un esquema SKOS) o a la taxonomía general establecida por la Orden EHA/3565/2008, de 3 de diciembre, por la que se aprueba la estructura de los presupuestos de las entidades locales, representada también como un esquema SKOS:\nhttps://www.boe.es/buscar/act.php?id=BOE-A-2008-19916. \nEn esta ontología se implementa la taxonomía general. Cada ayuntamiento implementa su propia taxonomía y la relaciona con la taxonomía general. Un ejemplo se puede encontrar en la documentación de la ontología: http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto/"@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso> <http://www.w3.org/2000/01/rdf-schema#comment> "Las previsiones incluidas en los estados de ingresos del presupuesto de la entidad local se clasificarán separando las operaciones corrientes, las de capital y las financieras, de acuerdo con la estructura por capítulos, artículos, conceptos y subconceptos."@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso> <http://www.w3.org/2000/01/rdf-schema#comment> "The estimates included in the income statements of the budget of the local entity will be classified by separating current, capital and financial operations, according to the structure by chapters, articles, concepts and subconcepts."@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
@@ -242,20 +200,9 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionInversion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionInversion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionInversion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionInversion> <http://www.w3.org/2000/01/rdf-schema#range> _:genid17 .
-_:genid17 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid19 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionInversion> <http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación propia que puede utilizar un ayuntamiento para agrupar los proyectos según el destino de las inversiones."@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionInversion> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the own classification that a city council can use to group the projects according to the destination of the investments."@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionInversion> <http://www.w3.org/2000/01/rdf-schema#comment> "La clasificación de una inversión financieramente sostenible puede  referirse a una taxonomía propia del ayuntamiento. Esta taxonomía debe ser implementada por cada ayuntamiento."@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionInversion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionInversion> <http://www.w3.org/2000/01/rdf-schema#label> "clasificación inversión"@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionInversion> <http://www.w3.org/2000/01/rdf-schema#label> "investment classification"@en .
@@ -263,28 +210,17 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionOrganica
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionOrganica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionOrganica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionOrganica> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid21 <http://www.w3.org/2002/07/owl#unionOf> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionOrganica> <http://www.w3.org/2000/01/rdf-schema#range> _:genid24 .
-_:genid24 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid27 .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid26 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionOrganica> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionOrganica> <http://www.w3.org/2000/01/rdf-schema#comment> "La clasificación orgánica agrupa por secciones y servicios los créditos asignados a los distintos centros gestores de gasto."@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionOrganica> <http://www.w3.org/2000/01/rdf-schema#comment> "La clasificación orgánica puede  referirse a una taxonomía propia del ayuntamiento. Esta taxonomía debe ser implementada por cada ayuntamiento."@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionOrganica> <http://www.w3.org/2000/01/rdf-schema#comment> "The organizational classification groups the credits assigned to the different expense management centers by sections and services."@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionOrganica> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionOrganica> <http://www.w3.org/2000/01/rdf-schema#label> "clasificación orgánica"@es .
@@ -293,30 +229,9 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> <http://www.w3.org/2000/01/rdf-schema#range> _:genid28 .
-_:genid28 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid30 <http://www.w3.org/2002/07/owl#unionOf> _:genid33 .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid34 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid32 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> <http://www.w3.org/2000/01/rdf-schema#comment> "La clasificación por programa de gasto puede  referirse a la taxonomía propia del ayuntamiento, es decir a sus propios grupos de programas o programas (representada como un esquema SKOS) o a la taxonomía general establecida por la Orden EHA/3565/2008, de 3 de diciembre, por la que se aprueba la estructura de los presupuestos de las entidades locales, representada también como un esquema SKOS:\nhttps://www.boe.es/buscar/act.php?id=BOE-A-2008-19916. \nEn esta ontología se implementa la taxonomía general. Cada ayuntamiento implementa su propia taxonomía y la relaciona con la taxonomía general. Un ejemplo se puede encontrar en la documentación de la ontología: http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto/"@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> <http://www.w3.org/2000/01/rdf-schema#comment> "Los créditos se ordenarán según su finalidad y los objetivos que con ellos se proponga conseguir, con arreglo a la clasificación por áreas de gasto, políticas de gasto, grupos de programas y programas. Estos últimos podrán desarrollarse en subprogramas."@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> <http://www.w3.org/2000/01/rdf-schema#comment> "The credits will be arranged according to their purpose and the objectives that they intend to achieve, according to the classification by areas of expenditure, expenditure policies, groups of programs and programs. The latter may be developed in subprograms."@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
@@ -325,7 +240,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionGasto
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionGasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionGasto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionGasto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionGasto> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionGasto> <http://www.w3.org/2000/01/rdf-schema#comment> "La ejecución presupuestaria del gasto informa de un periodo de actividad contable, generalmente a partir del 1 de enero del año fiscal hasta la fecha de la ejecución."@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionGasto> <http://www.w3.org/2000/01/rdf-schema#comment> "The execution of expense reports the income in a period of accounting activity, generally from January 1 of the fiscal year until the date of execution."@en .
@@ -335,7 +250,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionIngreso
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionIngreso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionIngreso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionIngreso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionIngreso> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionIngreso> <http://www.w3.org/2000/01/rdf-schema#comment> "La ejecución presupuestaria del ingreso informa de un periodo de actividad contable, generalmente a partir del 1 de enero del año fiscal hasta la fecha de la ejecución."@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionIngreso> <http://www.w3.org/2000/01/rdf-schema#comment> "The execution of income reports the income in a period of accounting activity, generally from January 1 of the fiscal year until the date of execution."@en .
@@ -346,7 +261,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa las asignaciones a las aplicaciones presupuestarias de gasto en el presupuesto."@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the allocations to budget line expense items."@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
@@ -356,7 +271,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso> <http://www.w3.org/2000/01/rdf-schema#comment> "Prevision of the resources that the entity expects to obtain in the year to finance the expenses that appear in its budget."@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso> <http://www.w3.org/2000/01/rdf-schema#comment> "Previsión de los recursos que la entidad espera obtener en el año para financiar los gastos que figuran en su presupuesto."@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
@@ -397,15 +312,15 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid36 <http://www.w3.org/2002/07/owl#unionOf> _:genid38 .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#ProperInterval> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion> <http://www.w3.org/2000/01/rdf-schema#comment> "Corresponds to the period of activity reported in the execution, in general from January 1 of the fiscal year until the date of execution."@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion> <http://www.w3.org/2000/01/rdf-schema#comment> "Corrresponde al período de actividad reportada en la ejecución, en general  a partir del 1 de enero del año fiscal hasta la fecha de la ejecución."@es .
@@ -521,7 +436,7 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoDefinitivoVigente
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoDefinitivoVigente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoDefinitivoVigente> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoDefinitivoVigente> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoDefinitivoVigente> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoDefinitivoVigente> <http://www.w3.org/2000/01/rdf-schema#comment> "El crédito definitivo vigente en cada momento vendrá determinado por el crédito inicial aumentado o disminuido como consecuencia de modificaciones presupuestarias."@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoDefinitivoVigente> <http://www.w3.org/2000/01/rdf-schema#comment> "The active final credit at any time will be determined by the initial credit increased or decreased as a result of budgetary modifications."@en .
@@ -541,7 +456,7 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoModificaciones
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoModificaciones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoModificaciones> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoModificaciones> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoModificaciones> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoModificaciones> <http://www.w3.org/2000/01/rdf-schema#comment> "An initial budget credit may undergo modifications with which you have a valid final credit."@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoModificaciones> <http://www.w3.org/2000/01/rdf-schema#comment> "Un crédito presupuestario inicial puede sufrir modificaciones  con lo cual se tiene un crédito definitivo vigente."@es .
@@ -551,7 +466,7 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoPresupuestarioInicial
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoPresupuestarioInicial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoPresupuestarioInicial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoPresupuestarioInicial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoPresupuestarioInicial> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoPresupuestarioInicial> <http://www.w3.org/2000/01/rdf-schema#comment> "Credit initially approved for a specific budget item."@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoPresupuestarioInicial> <http://www.w3.org/2000/01/rdf-schema#comment> "Crédito aprobado inicialmente para determinada aplicación presupuestaria."@es .
@@ -690,7 +605,7 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionDefinitiva
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionDefinitiva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionDefinitiva> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionDefinitiva> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionDefinitiva> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionDefinitiva> <http://www.w3.org/2000/01/rdf-schema#comment> "Es la suma de la previsión inicial y sus modificaciones"@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionDefinitiva> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the sum of the initial estimate and its modifications"@en .
@@ -700,7 +615,7 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionInicial
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionInicial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionInicial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionInicial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionInicial> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionInicial> <http://www.w3.org/2000/01/rdf-schema#comment> "Es el importe previsto inicialmente, en términos de recaudación (caja) o derechos reconocidos"@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionInicial> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the amount initially planned, in terms of collection (cash) or recognized rights."@en .
@@ -710,7 +625,7 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionModificaciones
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionModificaciones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionModificaciones> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionModificaciones> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionModificaciones> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionModificaciones> <http://www.w3.org/2000/01/rdf-schema#comment> "An initial income estimate may undergo modifications which leads to a definitive forecast."@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionModificaciones> <http://www.w3.org/2000/01/rdf-schema#comment> "Una previsión inicial de ingreso puede sufrir modificaciones lo cual conlleva a una previsión definitiva."@es .
@@ -802,11 +717,11 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion> .
-_:genid39 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid39 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2006/time#ProperInterval> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion> .
+_:genid7 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2006/time#ProperInterval> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto> <http://www.w3.org/2000/01/rdf-schema#comment> "La ejecución presupuestaria del gasto informa de un periodo de actividad contable, generalmente a partir del 1 de enero del año fiscal hasta la fecha de la ejecución."@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto> <http://www.w3.org/2000/01/rdf-schema#comment> "The execution of expense reports the income in a period of accounting activity, generally from January 1 of the fiscal year until the date of execution."@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
@@ -815,56 +730,20 @@ _:genid39 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2006/time#P
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion> .
-_:genid40 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid40 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2006/time#ProperInterval> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion> .
+_:genid8 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2006/time#ProperInterval> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso> <http://www.w3.org/2000/01/rdf-schema#comment> "La ejecución de ingresos informa de los ingresos en un periodo de actividad contable, generalmente a partir del 1 de enero del año fiscal hasta la fecha de la ejecución."@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso> <http://www.w3.org/2000/01/rdf-schema#comment> "The execution of income reports the income in a period of accounting activity, generally from January 1 of the fiscal year until the date of execution."@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso> <http://www.w3.org/2000/01/rdf-schema#label> "Ejecución Ingreso"@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso> <http://www.w3.org/2000/01/rdf-schema#label> "Income execution"@en .
 # 
-# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> .
-_:genid41 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid41 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> .
-_:genid42 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid42 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionGasto> .
-_:genid43 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid43 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa las asignaciones a las aplicaciones presupuestarias de gasto en el presupuesto."@es .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the allocations to budget line expense items."@en .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> <http://www.w3.org/2000/01/rdf-schema#label> "Expense"@en .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> <http://www.w3.org/2000/01/rdf-schema#label> "Gasto"@es .
-# 
-# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionIngreso> .
-_:genid44 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid44 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso> <http://www.w3.org/2000/01/rdf-schema#comment> "Prevision of the resources that the entity expects to obtain in the year to finance the expenses that appear in its budget."@en .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso> <http://www.w3.org/2000/01/rdf-schema#comment> "Previsión de los recursos que la entidad espera obtener en el año para financiar los gastos que figuran en su presupuesto."@es .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso> <http://www.w3.org/2000/01/rdf-schema#label> "Income"@en .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso> <http://www.w3.org/2000/01/rdf-schema#label> "Ingreso" .
-# 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> <http://www.w3.org/2000/01/rdf-schema#comment> "Expenses incurred or planned to be incurred by local entities or their autonomous bodies for the creation of infrastructure, and the creation or acquisition of goods of an inventoried nature, necessary for the operation of the services and those other expenses that are amortizable."@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> <http://www.w3.org/2000/01/rdf-schema#comment> "Gastos en los que incurran o prevean incurrir las entidades locales o sus organismos autónomos destinados a la creación de infraestructuras y a la creación o adquisición de bienes de naturaleza inventariable necesarios para el funcionamiento de los servicios y aquellos otros gastos que tengan carácter amortizable"@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
@@ -873,16 +752,16 @@ _:genid44 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionGasto> .
-_:genid45 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid45 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionGasto> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionIngreso> .
-_:genid46 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid46 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionIngreso> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionGasto> .
+_:genid9 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionGasto> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionIngreso> .
+_:genid10 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionIngreso> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion> <http://www.w3.org/2000/01/rdf-schema#comment> "El presupuesto se liquida al final del año fiscal y corresponde a la última ejecución presupuestaria."@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion> <http://www.w3.org/2000/01/rdf-schema#comment> "The budget is liquidated at the end of the fiscal year and corresponds to the last execution of the budget."@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
@@ -909,36 +788,72 @@ _:genid46 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto> .
-_:genid47 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid47 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso> .
-_:genid48 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid48 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacion> .
-_:genid49 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid49 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto> .
+_:genid11 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso> .
+_:genid12 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacion> .
+_:genid13 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto> <http://www.w3.org/2000/01/rdf-schema#comment> "Los presupuestos generales de las entidades locales constituyen la expresión cifrada, conjunta y sistemática de las obligaciones que, como máximo, pueden reconocer la entidad, y sus organismos autónomos, y de los derechos que prevean liquidar durante el correspondiente ejercicio, así como de las previsiones de ingresos y gastos de las sociedades mercantiles cuyo capital social pertenezca íntegramente a la entidad local correspondiente."@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto> <http://www.w3.org/2000/01/rdf-schema#comment> "The general budgets of the local entities constitute the systematic expression of the obligations that, at most, the entity and its autonomous bodies can recognize, and of the rights they plan to liquidate during the corresponding fiscal year, as well as of the estimates of income and expenses of mercantile companies whose capital stock belongs entirely to the corresponding local entity."@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto> <http://www.w3.org/2000/01/rdf-schema#label> "Budget"@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto> <http://www.w3.org/2000/01/rdf-schema#label> "Presupuesto"@es .
 # 
+# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> .
+_:genid14 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma> .
+_:genid15 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionGasto> .
+_:genid16 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa las asignaciones a las aplicaciones presupuestarias de gasto en el presupuesto."@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the allocations to budget line expense items."@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> <http://www.w3.org/2000/01/rdf-schema#label> "Expense budget"@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> <http://www.w3.org/2000/01/rdf-schema#label> "Presupuesto gasto"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionIngreso> .
+_:genid17 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso> <http://www.w3.org/2000/01/rdf-schema#comment> "Prevision of the resources that the entity expects to obtain in the year to finance the expenses that appear in its budget."@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso> <http://www.w3.org/2000/01/rdf-schema#comment> "Previsión de los recursos que la entidad espera obtener en el año para financiar los gastos que figuran en su presupuesto."@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso> <http://www.w3.org/2000/01/rdf-schema#label> "Income budget"@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso> <http://www.w3.org/2000/01/rdf-schema#label> "Presupuesto ingreso" .
+# 
 # http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/District> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.geonames.org/ontology#Feature> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio> .
-_:genid50 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid50 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio> .
+_:genid18 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://purl.org/dc/terms/issued> "2014-03-28" .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#comment> "Un distrito es cada una de las demarcaciones en que se subdivide un territorio o una población para distribuir y ordenar el ejercicio de los derechos civiles y políticos, o de las funciones públicas, o de los servicios administrativos [fuente: Diccionario de la Real Academia (DRAE) 2011]"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
@@ -959,11 +874,11 @@ _:genid50 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/da
 # 
 # http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso> .
-_:genid51 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid51 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso> .
+_:genid19 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core> .
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept"@en .
@@ -1001,15 +916,15 @@ _:genid51 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2004/02/sko
 # 
 # http://www.w3.org/2006/time#TemporalEntity
 <http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid52 .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid52 <http://www.w3.org/2002/07/owl#unionOf> _:genid54 .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Instant> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Interval> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid20 <http://www.w3.org/2002/07/owl#unionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Instant> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Interval> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal interval or instant."@en .
 <http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Temporal entity"@en .
@@ -1032,29 +947,9 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 # 
-# http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-# 
-# http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-# 
-# http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-# 
-# http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-# 
-# http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-# 
-# http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto
+<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 # 
 # 
 # 

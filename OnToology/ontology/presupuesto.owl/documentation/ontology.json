@@ -1,240 +1,15 @@
 [ {
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-    }, {
-      "@id" : "_:genid3"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid15"
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
     }, {
-      "@id" : "_:genid13"
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"
     } ]
   } ]
 }, {
-  "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
-  } ]
-}, {
-  "@id" : "_:genid15",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
-  } ]
-}, {
-  "@id" : "_:genid17",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-    }, {
-      "@id" : "_:genid19"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid19",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
-  } ]
-}, {
-  "@id" : "_:genid21",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto"
-    }, {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid24",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-    }, {
-      "@id" : "_:genid26"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid26",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
-  } ]
-}, {
-  "@id" : "_:genid28",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-    }, {
-      "@id" : "_:genid30"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid7"
-    }, {
-      "@id" : "_:genid5"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid30",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid34"
-    }, {
-      "@id" : "_:genid32"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid32",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
-  } ]
-}, {
-  "@id" : "_:genid34",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
-  } ]
-}, {
-  "@id" : "_:genid36",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto"
-    }, {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid39",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.w3.org/2006/time#ProperInterval"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion"
-  } ]
-}, {
-  "@id" : "_:genid40",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.w3.org/2006/time#ProperInterval"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion"
-  } ]
-}, {
-  "@id" : "_:genid41",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto"
-  } ]
-}, {
-  "@id" : "_:genid42",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma"
-  } ]
-}, {
-  "@id" : "_:genid43",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionGasto"
-  } ]
-}, {
-  "@id" : "_:genid44",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionIngreso"
-  } ]
-}, {
-  "@id" : "_:genid45",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionGasto"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionGasto"
-  } ]
-}, {
-  "@id" : "_:genid46",
+  "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -247,33 +22,33 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionIngreso"
   } ]
 }, {
-  "@id" : "_:genid47",
+  "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto"
   } ]
 }, {
-  "@id" : "_:genid48",
+  "@id" : "_:genid12",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso"
   } ]
 }, {
-  "@id" : "_:genid49",
+  "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -286,16 +61,59 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacion"
   } ]
 }, {
-  "@id" : "_:genid5",
+  "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto"
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto"
   } ]
 }, {
-  "@id" : "_:genid50",
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionGasto"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionIngreso"
+  } ]
+}, {
+  "@id" : "_:genid18",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio"
@@ -308,7 +126,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid51",
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -321,7 +139,7 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso"
   } ]
 }, {
-  "@id" : "_:genid52",
+  "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -331,23 +149,53 @@
     } ]
   } ]
 }, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto"
+    }, {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso"
+    } ]
+  } ]
+}, {
   "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto"
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3.org/2006/time#ProperInterval"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3.org/2006/time#ProperInterval"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion"
   } ]
 }, {
   "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-    }, {
-      "@id" : "_:genid11"
-    } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionGasto"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionGasto"
   } ]
 }, {
   "@id" : "http://dbpedia.org/ontology/District",
@@ -585,7 +433,7 @@
     "@value" : "Expense execution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid39"
+    "@id" : "_:genid7"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso",
@@ -608,56 +456,7 @@
     "@value" : "Income execution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid40"
-  } ]
-}, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Representa las asignaciones a las aplicaciones presupuestarias de gasto en el presupuesto."
-  }, {
-    "@language" : "en",
-    "@value" : "Represents the allocations to budget line expense items."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Expense"
-  }, {
-    "@language" : "es",
-    "@value" : "Gasto"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid41"
-  }, {
-    "@id" : "_:genid42"
-  }, {
-    "@id" : "_:genid43"
-  } ]
-}, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Prevision of the resources that the entity expects to obtain in the year to finance the expenses that appear in its budget."
-  }, {
-    "@language" : "es",
-    "@value" : "Previsión de los recursos que la entidad espera obtener en el año para financiar los gastos que figuran en su presupuesto."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Income"
-  }, {
-    "@value" : "Ingreso"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid44"
+    "@id" : "_:genid8"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible",
@@ -680,7 +479,7 @@
     "@value" : "Inversión Financieramente Sostenible"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion",
@@ -703,9 +502,9 @@
     "@value" : "Liquidation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid45"
+    "@id" : "_:genid9"
   }, {
-    "@id" : "_:genid46"
+    "@id" : "_:genid10"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionGasto",
@@ -774,11 +573,60 @@
     "@value" : "Presupuesto"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid47"
+    "@id" : "_:genid11"
   }, {
-    "@id" : "_:genid48"
+    "@id" : "_:genid12"
   }, {
-    "@id" : "_:genid49"
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representa las asignaciones a las aplicaciones presupuestarias de gasto en el presupuesto."
+  }, {
+    "@language" : "en",
+    "@value" : "Represents the allocations to budget line expense items."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Expense budget"
+  }, {
+    "@language" : "es",
+    "@value" : "Presupuesto gasto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Prevision of the resources that the entity expects to obtain in the year to finance the expenses that appear in its budget."
+  }, {
+    "@language" : "es",
+    "@value" : "Previsión de los recursos que la entidad espera obtener en el año para financiar los gastos que figuran en su presupuesto."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Income budget"
+  }, {
+    "@value" : "Presupuesto ingreso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid17"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ajustes",
@@ -894,11 +742,14 @@
     "@language" : "es",
     "@value" : "La clasificación económica del gasto agrupará los créditos por capítulos separando las operaciones corrientes, las de capital y las financieras.\nAtendiendo a su naturaleza económica, los capítulos se desglosarán en artículos, y éstos, a su vez, en conceptos, que se podrán subdividir en subconceptos. Los subconceptos podrán desarrollarse en partidas."
   }, {
+    "@language" : "es",
+    "@value" : "La clasificación económica puede  referirse a la taxonomía propia del ayuntamiento, es decir a sus propios conceptos o subconceptos (representada como un esquema SKOS) o a la taxonomía general establecida por la Orden EHA/3565/2008, de 3 de diciembre, por la que se aprueba la estructura de los presupuestos de las entidades locales, representada también como un esquema SKOS:\nhttps://www.boe.es/buscar/act.php?id=BOE-A-2008-19916. \nEn esta ontología se implementa la taxonomía general. Cada ayuntamiento implementa su propia taxonomía y la relaciona con la taxonomía general. Un ejemplo se puede encontrar en la documentación de la ontología: http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto/"
+  }, {
     "@language" : "en",
     "@value" : "The economic classification of the expenses will group the credits by chapters separating the current operations, those of capital and the financial ones.\nBased on their economic nature, the chapters will be broken down into articles, and these, in turn, into concepts, which can be subdivided into subconcepts. Subconcepts may be developed in budget items."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
@@ -911,7 +762,7 @@
     "@value" : "expense economic classification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid1"
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
@@ -921,13 +772,16 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
+    "@value" : "La clasificación económica puede  referirse a la taxonomía propia del ayuntamiento, es decir a sus propios conceptos o subconceptos (representada como un esquema SKOS) o a la taxonomía general establecida por la Orden EHA/3565/2008, de 3 de diciembre, por la que se aprueba la estructura de los presupuestos de las entidades locales, representada también como un esquema SKOS:\nhttps://www.boe.es/buscar/act.php?id=BOE-A-2008-19916. \nEn esta ontología se implementa la taxonomía general. Cada ayuntamiento implementa su propia taxonomía y la relaciona con la taxonomía general. Un ejemplo se puede encontrar en la documentación de la ontología: http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto/"
+  }, {
+    "@language" : "es",
     "@value" : "Las previsiones incluidas en los estados de ingresos del presupuesto de la entidad local se clasificarán separando las operaciones corrientes, las de capital y las financieras, de acuerdo con la estructura por capítulos, artículos, conceptos y subconceptos."
   }, {
     "@language" : "en",
     "@value" : "The estimates included in the income statements of the budget of the local entity will be classified by separating current, capital and financial operations, according to the structure by chapters, articles, concepts and subconcepts."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
@@ -940,7 +794,7 @@
     "@value" : "income economic classification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid9"
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionInversion",
@@ -951,6 +805,9 @@
   }, {
     "@language" : "en",
     "@value" : "It is the own classification that a city council can use to group the projects according to the destination of the investments."
+  }, {
+    "@language" : "es",
+    "@value" : "La clasificación de una inversión financieramente sostenible puede  referirse a una taxonomía propia del ayuntamiento. Esta taxonomía debe ser implementada por cada ayuntamiento."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible"
@@ -964,9 +821,6 @@
   }, {
     "@language" : "en",
     "@value" : "investment classification"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid17"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionOrganica",
@@ -975,11 +829,14 @@
     "@language" : "es",
     "@value" : "La clasificación orgánica agrupa por secciones y servicios los créditos asignados a los distintos centros gestores de gasto."
   }, {
+    "@language" : "es",
+    "@value" : "La clasificación orgánica puede  referirse a una taxonomía propia del ayuntamiento. Esta taxonomía debe ser implementada por cada ayuntamiento."
+  }, {
     "@language" : "en",
     "@value" : "The organizational classification groups the credits assigned to the different expense management centers by sections and services."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid21"
+    "@id" : "_:genid1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
@@ -990,14 +847,14 @@
   }, {
     "@language" : "en",
     "@value" : "organizational classification"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid24"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La clasificación por programa de gasto puede  referirse a la taxonomía propia del ayuntamiento, es decir a sus propios grupos de programas o programas (representada como un esquema SKOS) o a la taxonomía general establecida por la Orden EHA/3565/2008, de 3 de diciembre, por la que se aprueba la estructura de los presupuestos de las entidades locales, representada también como un esquema SKOS:\nhttps://www.boe.es/buscar/act.php?id=BOE-A-2008-19916. \nEn esta ontología se implementa la taxonomía general. Cada ayuntamiento implementa su propia taxonomía y la relaciona con la taxonomía general. Un ejemplo se puede encontrar en la documentación de la ontología: http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto/"
+  }, {
     "@language" : "es",
     "@value" : "Los créditos se ordenarán según su finalidad y los objetivos que con ellos se proponga conseguir, con arreglo a la clasificación por áreas de gasto, políticas de gasto, grupos de programas y programas. Estos últimos podrán desarrollarse en subprogramas."
   }, {
@@ -1005,7 +862,7 @@
     "@value" : "The credits will be arranged according to their purpose and the objectives that they intend to achieve, according to the classification by areas of expenditure, expenditure policies, groups of programs and programs. The latter may be developed in subprograms."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
@@ -1018,7 +875,7 @@
     "@value" : "expense program classification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid28"
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoAutorizado",
@@ -1057,7 +914,7 @@
     "@value" : "The active final credit at any time will be determined by the initial credit increased or decreased as a result of budgetary modifications."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
@@ -1108,7 +965,7 @@
     "@value" : "Un crédito presupuestario inicial puede sufrir modificaciones  con lo cual se tiene un crédito definitivo vigente."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
@@ -1134,7 +991,7 @@
     "@value" : "Crédito aprobado inicialmente para determinada aplicación presupuestaria."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
@@ -1316,7 +1173,7 @@
     "@value" : "The execution of expense reports the income in a period of accounting activity, generally from January 1 of the fiscal year until the date of execution."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
@@ -1342,7 +1199,7 @@
     "@value" : "The execution of income reports the income in a period of accounting activity, generally from January 1 of the fiscal year until the date of execution."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
@@ -1479,7 +1336,7 @@
     "@value" : "gasto"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso",
@@ -1505,7 +1362,7 @@
     "@value" : "ingreso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacion",
@@ -1674,7 +1531,7 @@
     "@value" : "Corrresponde al período de actividad reportada en la ejecución, en general  a partir del 1 de enero del año fiscal hasta la fecha de la ejecución."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid36"
+    "@id" : "_:genid4"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
@@ -1726,7 +1583,7 @@
     "@value" : "It is the sum of the initial estimate and its modifications"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
@@ -1752,7 +1609,7 @@
     "@value" : "It is the amount initially planned, in terms of collection (cash) or recognized rights."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
@@ -1778,7 +1635,7 @@
     "@value" : "Una previsión inicial de ingreso puede sufrir modificaciones lo cual conlleva a una previsión definitiva."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
@@ -1974,7 +1831,7 @@
   }, {
     "@id" : "http://www.geonames.org/ontology#Feature"
   }, {
-    "@id" : "_:genid50"
+    "@id" : "_:genid18"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio",
@@ -2023,28 +1880,13 @@
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
-}, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto",
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
   "@id" : "http://www.geonames.org/ontology#Feature",
@@ -2075,7 +1917,7 @@
     "@value" : "Concept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid51"
+    "@id" : "_:genid19"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
@@ -2210,7 +2052,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid52"
+    "@id" : "_:genid20"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",

@@ -98,6 +98,9 @@
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
+    "PresupuestoGasto" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
+    },
     "ingreso" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso",
       "@type" : "@id"
@@ -128,9 +131,6 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionIngreso",
       "@type" : "@id"
     },
-    "Ingreso" : {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso"
-    },
     "InversionFinancieramenteSostenible" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible"
     },
@@ -159,9 +159,6 @@
     },
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
-    },
-    "Gasto" : {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto"
     },
     "topObjectProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
@@ -224,6 +221,9 @@
     "fechaAprobacionPleno" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionPleno",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "PresupuestoIngreso" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"
     },
     "inXSDgYearMonth" : {
       "@id" : "http://www.w3.org/2006/time#inXSDgYearMonth",

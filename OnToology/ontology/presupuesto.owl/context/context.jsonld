@@ -62,6 +62,10 @@
     "hasVersion" : {
       "@id" : "http://purl.org/dc/terms/hasVersion"
     },
+    "distrito" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito",
+      "@type" : "@id"
+    },
     "liquidacionIngreso" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionIngreso",
       "@type" : "@id"
@@ -75,6 +79,10 @@
     },
     "liquidacion" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacion",
+      "@type" : "@id"
+    },
+    "sfWithin" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfWithin",
       "@type" : "@id"
     },
     "Presupuesto" : {
@@ -140,6 +148,10 @@
     },
     "Interval" : {
       "@id" : "http://www.w3.org/2006/time#Interval"
+    },
+    "presupuestoInversion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion",
+      "@type" : "@id"
     },
     "derechosReconocidosNetos" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#derechosReconocidosNetos",
@@ -252,16 +264,16 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso",
       "@type" : "@id"
     },
-    "ambitoGlobal" : {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal",
-      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
-    },
     "modified" : {
       "@id" : "http://purl.org/dc/terms/modified"
     },
     "creditoPresupuestarioInicial" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoPresupuestarioInicial",
       "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "ambitoGlobalCiudad" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
     "resultadoPresupuestario" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoPresupuestario",

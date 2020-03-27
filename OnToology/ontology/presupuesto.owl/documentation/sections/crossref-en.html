@@ -244,7 +244,9 @@ This section provides details for each class and property defined by Vocabulario
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#ambito"
+            <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito">pertenece al distrito</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#ambito"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito">scope</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -426,8 +428,8 @@ This section provides details for each class and property defined by Vocabulario
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#ambitoGlobal"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal">global scope</a>
+            <a href="#ambitoGlobalCiudad"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad">global city scope</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#clasificacionInversion"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionInversion">investment classification</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#ambito"
@@ -815,6 +817,10 @@ This section provides details for each class and property defined by Vocabulario
             title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionIngreso">income liquidation</a>
       </li>
       <li>
+         <a href="#presupuestoInversion"
+            title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion">investment budget</a>
+      </li>
+      <li>
          <a href="#clasificacionInversion"
             title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionInversion">investment classification</a>
       </li>
@@ -825,6 +831,10 @@ This section provides details for each class and property defined by Vocabulario
       <li>
          <a href="#clasificacionOrganica"
             title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionOrganica">organizational classification</a>
+      </li>
+      <li>
+         <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito">pertenece al distrito</a>
       </li>
       <li>
          <a href="#ambito"
@@ -1304,6 +1314,21 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dl>
       </div>
    </div>
+   <div class="entity" id="presupuestoInversion">
+      <h3>investment budget<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion</p>
+      <div class="comment">
+         <span class="markdown">Expense budget corresponding to the investment project.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
+      </dl>
+   </div>
    <div class="entity" id="clasificacionInversion">
       <h3>investment classification<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1413,6 +1438,44 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito">
+      <h3>pertenece al distrito<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito</p>
+      <div class="comment">
+         <span class="markdown">Distrito al que pertenece un fenómeno geográfico o una entidad administrativa</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.opengis.net/ont/geosparql#sfWithin">sf within</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#ambito"
+                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito">scope</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito">Distrito</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="ambito">
       <h3>scope<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1431,6 +1494,12 @@ Based on their economic nature, the chapters will be broken down into articles, 
          <p>
             <strong>has characteristics:</strong> functional</p>
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito">pertenece al distrito</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#InversionFinancieramenteSostenible"
@@ -1506,8 +1575,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
             title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal">fiscal year</a>
       </li>
       <li>
-         <a href="#ambitoGlobal"
-            title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal">global scope</a>
+         <a href="#ambitoGlobalCiudad"
+            title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad">global city scope</a>
       </li>
       <li>
          <a href="#http://www.w3.org/2006/time#inXSDgYearMonth" title="http://www.w3.org/2006/time#inXSDgYearMonth">in XSD g-YearMonth</a>
@@ -1981,13 +2050,13 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dl>
       </div>
    </div>
-   <div class="entity" id="ambitoGlobal">
-      <h3>global scope<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="ambitoGlobalCiudad">
+      <h3>global city scope<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal</p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad</p>
       <div class="comment">
          <span class="markdown">Indicates that the financially sustainable investment project has as its scope all the districts of a city.</span>
       </div>

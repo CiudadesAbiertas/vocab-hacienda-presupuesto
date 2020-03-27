@@ -161,6 +161,7 @@
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> .
@@ -412,8 +413,28 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion> <http://www.w3.org/2000/01/rdf-schema#label> "execution period"@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion> <http://www.w3.org/2000/01/rdf-schema#label> "período ejecución"@es .
 # 
+# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion> <http://www.w3.org/2000/01/rdf-schema#comment> "Expense budget corresponding to the investment project."@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion> <http://www.w3.org/2000/01/rdf-schema#comment> "Presuopuesto de gastos correspondiente al proyecto de inversión."@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion> <http://www.w3.org/2000/01/rdf-schema#label> "investment budget"@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion> <http://www.w3.org/2000/01/rdf-schema#label> "presupuesto inversión"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.opengis.net/ont/geosparql#sfWithin> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/2000/01/rdf-schema#comment> "Distrito al que pertenece un fenómeno geográfico o una entidad administrativa"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/2000/01/rdf-schema#label> "pertenece al distrito"@es .
+# 
 # http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.opengis.net/ont/geosparql#sfWithin
+<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # http://www.w3.org/2004/02/skos/core#inScheme
 <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -467,15 +488,15 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ajustes> <http://www.w3.org/2000/01/rdf-schema#label> "adjustements"@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ajustes> <http://www.w3.org/2000/01/rdf-schema#label> "ajustes"@es .
 # 
-# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que el proyecto de inversión financieramente sostenible tiene como ámbito todos los distritos de una ciudad."@es .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the financially sustainable investment project has as its scope all the districts of a city."@en .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal> <http://www.w3.org/2000/01/rdf-schema#label> "global scope"@en .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal> <http://www.w3.org/2000/01/rdf-schema#label> "ámbito global"@es .
+# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que el proyecto de inversión financieramente sostenible tiene como ámbito todos los distritos de una ciudad."@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the financially sustainable investment project has as its scope all the districts of a city."@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad> <http://www.w3.org/2000/01/rdf-schema#label> "global city scope"@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad> <http://www.w3.org/2000/01/rdf-schema#label> "ámbito global ciudad"@es .
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .

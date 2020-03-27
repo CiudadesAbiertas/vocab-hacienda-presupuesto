@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "espresup:EjecucionGasto" "espresup:InversionFinancieramenteSostenible" "time:ProperInterval" "espresup:Gasto" "http://dbpedia.org/ontology/District" "espresup:LiquidacionGasto" "time:Interval" "time:TemporalEntity" "espresup:LiquidacionIngreso" "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito" "http://www.geonames.org/ontology#Feature" "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio" "espresup:EjecucionIngreso" "time:Instant" ; /*classes style*/
+node [shape = rectangle, color="black"]; "espresup:EjecucionGasto" "espresup:InversionFinancieramenteSostenible" "time:ProperInterval" "espresup:Gasto" "http://dbpedia.org/ontology/District" "espresup:LiquidacionGasto" "time:Interval" "time:TemporalEntity" "espresup:LiquidacionIngreso" "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito" "http://www.geonames.org/ontology#Feature" "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio" "time:Instant" "espresup:EjecucionIngreso" ; /*classes style*/
 	"time:ProperInterval" -> "time:Interval" [ label = "rdfs:subClassOf" ];
 	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito" -> "http://www.geonames.org/ontology#Feature" [ label = "rdfs:subClassOf" ];
 	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito" -> "http://dbpedia.org/ontology/District" [ label = "rdfs:subClassOf" ];

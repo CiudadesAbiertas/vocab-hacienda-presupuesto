@@ -664,6 +664,34 @@ Based on their economic nature, the chapters will be broken down into articles, 
     
 
 
+    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ajustes -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ajustes">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="es">Los ajustes corresponden a los créditos financiados con el remanente de tesorería y las desviaciones positivas y negativas del ejercicio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The adjustments correspond to the credits financed with the treasury remnant, and the positive and negative deviations for the fiscal year.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">adjustements</rdfs:label>
+        <rdfs:label xml:lang="es">ajustes</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="es">Indica que el proyecto de inversión financieramente sostenible tiene como ámbito todos los distritos de una ciudad.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates that the financially sustainable investment project has as its scope all the districts of a city.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">global scope</rdfs:label>
+        <rdfs:label xml:lang="es">ámbito global</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal">
@@ -675,21 +703,6 @@ Based on their economic nature, the chapters will be broken down into articles, 
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">año fiscal</rdfs:label>
         <rdfs:label xml:lang="en">fiscal year</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#codigoIdentificador -->
-
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#codigoIdentificador">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="es">Código interno del proyecto de inversión.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Internal code for the investment project.</rdfs:comment>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="es">código identificador</rdfs:label>
-        <rdfs:label xml:lang="en">identifier code</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -774,20 +787,6 @@ Based on their economic nature, the chapters will be broken down into articles, 
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">credit withheld</rdfs:label>
         <rdfs:label xml:lang="es">crédito retenido</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#denonimacion -->
-
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#denonimacion">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="es">Denonimación del proyecto de inversión.</rdfs:comment>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">Denomination of an investment project.</rdfs:label>
-        <rdfs:label xml:lang="es">denominación</rdfs:label>
-        <rdfs:label xml:lang="en">denomination</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -879,7 +878,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
     <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#excesoDefectoPrevision -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#excesoDefectoPrevision">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionIngreso"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="es">Informa sobre la desviación que ha existido en las previsiones de ingresos. Es el resultado de restar a las previsiones definitivas los derechos reconocidos netos. Si la diferencia es positiva, significa que se estimaron más recursos de los que se han obtenido; y, si la diferencia es negativa, significa que se han obtenido más recursos de los previstos.</rdfs:comment>
         <rdfs:comment xml:lang="en">Reports on the deviation that has existed in the revenue estimates. It is the result of subtracting the net recognized rights from the final estimates. If the difference is positive, it means that more resources were estimated than have been obtained; and, if the difference is negative, it means that more resources have been obtained than expected.</rdfs:comment>
@@ -890,17 +889,29 @@ Based on their economic nature, the chapters will be broken down into articles, 
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacion -->
+    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobLiquidacion -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacion">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobLiquidacion">
+        <rdfs:comment xml:lang="en">Date in which the liquidation statement is approved.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Fecha de aprobación del estado de liquidación.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="es">fecha aprobación liquidación</rdfs:label>
+        <rdfs:label xml:lang="en">liquidation approval date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionPleno -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionPleno">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="en">Date of approval in plenary. The final approval of the general budget by the Plenary of the corporation must be carried out before December 31 of the year prior to the year in which it should be applied.</rdfs:comment>
         <rdfs:comment xml:lang="es">Fecha de aprobación en el Pleno. La aprobación definitiva del presupuesto general por el Pleno de la corporación habrá de realizarse antes del día 31 de diciembre del año anterior al del ejercicio en que deba aplicarse</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">approval date</rdfs:label>
-        <rdfs:label xml:lang="es">fecha aprobación</rdfs:label>
+        <rdfs:label xml:lang="es">fecha aprobación pleno</rdfs:label>
+        <rdfs:label xml:lang="en">plenary approval date</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1003,6 +1014,48 @@ Based on their economic nature, the chapters will be broken down into articles, 
     
 
 
+    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteCredito -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteCredito">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionGasto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Amount of the final credits that have not been consumed in the fiscal year. Its amount will be that resulting from deducting the net recognized duties from the final credits.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Importe de los créditos definitivos que no se han consumido en el año fiscal. Su importe será el que resulte de deducir de los créditos definitivos las obligaciones reconocidas netas.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">credit remnant</rdfs:label>
+        <rdfs:label xml:lang="es">remanente crédito</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteTesoreria -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteTesoreria">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="es">Las obligaciones reconocidas y liquidadas no satisfechas el último día del ejercicio, los derechos pendientes de cobro y los fondos líquidos a 31 de diciembre configurarán el remanente de tesorería de la entidad local.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The recognized and settled obligations not satisfied on the last day of the fiscal year, the rights pending collection and the liquid funds as of December 31 will configure the remnant of treasury treasury of the local entity.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="es">remanente de tesorería</rdfs:label>
+        <rdfs:label xml:lang="en">remnant of treasury</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoAjustado -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoAjustado">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion"/>
+        <rdfs:comment xml:lang="es">El resultado presupuestario deberá ajustarse, en su caso, en función de las obligaciones financiadas con el remanente de tesorería para gastos generales y las desviaciones de financiación del ejercicio derivadas de los gastos con financiación afectada.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The budgetary result should be adjusted, where appropriate, based on the duties financed with the remnant credit for general expenses, and the financing deviations for the year derived from the expenses with affected financing.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">adjusted result</rdfs:label>
+        <rdfs:label xml:lang="es">resultado ajustado</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoPresupuestario -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoPresupuestario">
@@ -1013,20 +1066,6 @@ Based on their economic nature, the chapters will be broken down into articles, 
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">budget result</rdfs:label>
         <rdfs:label xml:lang="es">resultado presupuestario</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#todosLosDistritos -->
-
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#todosLosDistritos">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment xml:lang="es">Indica que el proyecto de inversión financieramente sostenible tiene como ámbito todos los distritos de una ciudad.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Indicates that the financially sustainable investment project has as its scope all the districts of a city.</rdfs:comment>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">all districts</rdfs:label>
-        <rdfs:label xml:lang="es">todos los distritos</rdfs:label>
     </owl:DatatypeProperty>
     
 

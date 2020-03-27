@@ -781,6 +781,32 @@
     "@id" : "_:genid49"
   } ]
 }, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ajustes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Los ajustes corresponden a los créditos financiados con el remanente de tesorería y las desviaciones positivas y negativas del ejercicio."
+  }, {
+    "@language" : "en",
+    "@value" : "The adjustments correspond to the credits financed with the treasury remnant, and the positive and negative deviations for the fiscal year."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "adjustements"
+  }, {
+    "@language" : "es",
+    "@value" : "ajustes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -805,6 +831,32 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica que el proyecto de inversión financieramente sostenible tiene como ámbito todos los distritos de una ciudad."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates that the financially sustainable investment project has as its scope all the districts of a city."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "global scope"
+  }, {
+    "@language" : "es",
+    "@value" : "ámbito global"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal",
@@ -966,32 +1018,6 @@
     "@id" : "_:genid28"
   } ]
 }, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#codigoIdentificador",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Código interno del proyecto de inversión."
-  }, {
-    "@language" : "en",
-    "@value" : "Internal code for the investment project."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "código identificador"
-  }, {
-    "@language" : "en",
-    "@value" : "identifier code"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoAutorizado",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1145,32 +1171,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
-  } ]
-}, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#denonimacion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Denonimación del proyecto de inversión."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Denomination of an investment project."
-  }, {
-    "@language" : "es",
-    "@value" : "denominación"
-  }, {
-    "@language" : "en",
-    "@value" : "denomination"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#derechosAnulados",
@@ -1391,7 +1391,7 @@
     "@value" : "Reports on the deviation that has existed in the revenue estimates. It is the result of subtracting the net recognized rights from the final estimates. If the difference is positive, it means that more resources were estimated than have been obtained; and, if the difference is negative, it means that more resources have been obtained than expected."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionIngreso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
@@ -1407,7 +1407,27 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacion",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobLiquidacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Date in which the liquidation statement is approved."
+  }, {
+    "@language" : "es",
+    "@value" : "Fecha de aprobación del estado de liquidación."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "fecha aprobación liquidación"
+  }, {
+    "@language" : "en",
+    "@value" : "liquidation approval date"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionPleno",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1423,11 +1443,11 @@
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "approval date"
-  }, {
     "@language" : "es",
-    "@value" : "fecha aprobación"
+    "@value" : "fecha aprobación pleno"
+  }, {
+    "@language" : "en",
+    "@value" : "plenary approval date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
@@ -1777,6 +1797,84 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteCredito",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Amount of the final credits that have not been consumed in the fiscal year. Its amount will be that resulting from deducting the net recognized duties from the final credits."
+  }, {
+    "@language" : "es",
+    "@value" : "Importe de los créditos definitivos que no se han consumido en el año fiscal. Su importe será el que resulte de deducir de los créditos definitivos las obligaciones reconocidas netas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionGasto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "credit remnant"
+  }, {
+    "@language" : "es",
+    "@value" : "remanente crédito"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteTesoreria",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Las obligaciones reconocidas y liquidadas no satisfechas el último día del ejercicio, los derechos pendientes de cobro y los fondos líquidos a 31 de diciembre configurarán el remanente de tesorería de la entidad local."
+  }, {
+    "@language" : "en",
+    "@value" : "The recognized and settled obligations not satisfied on the last day of the fiscal year, the rights pending collection and the liquid funds as of December 31 will configure the remnant of treasury treasury of the local entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "remanente de tesorería"
+  }, {
+    "@language" : "en",
+    "@value" : "remnant of treasury"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoAjustado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El resultado presupuestario deberá ajustarse, en su caso, en función de las obligaciones financiadas con el remanente de tesorería para gastos generales y las desviaciones de financiación del ejercicio derivadas de los gastos con financiación afectada."
+  }, {
+    "@language" : "en",
+    "@value" : "The budgetary result should be adjusted, where appropriate, based on the duties financed with the remnant credit for general expenses, and the financing deviations for the year derived from the expenses with affected financing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "adjusted result"
+  }, {
+    "@language" : "es",
+    "@value" : "resultado ajustado"
+  } ]
+}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoPresupuestario",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1801,32 +1899,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
-  } ]
-}, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#todosLosDistritos",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Indica que el proyecto de inversión financieramente sostenible tiene como ámbito todos los distritos de una ciudad."
-  }, {
-    "@language" : "en",
-    "@value" : "Indicates that the financially sustainable investment project has as its scope all the districts of a city."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "all districts"
-  }, {
-    "@language" : "es",
-    "@value" : "todos los distritos"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#totalGastoComprometido",

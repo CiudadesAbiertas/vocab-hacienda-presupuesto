@@ -457,6 +457,26 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # #################################################################
 # 
 # 
+# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ajustes
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ajustes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ajustes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ajustes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ajustes> <http://www.w3.org/2000/01/rdf-schema#comment> "Los ajustes corresponden a los créditos financiados con el remanente de tesorería y las desviaciones positivas y negativas del ejercicio."@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ajustes> <http://www.w3.org/2000/01/rdf-schema#comment> "The adjustments correspond to the credits financed with the treasury remnant, and the positive and negative deviations for the fiscal year."@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ajustes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ajustes> <http://www.w3.org/2000/01/rdf-schema#label> "adjustements"@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ajustes> <http://www.w3.org/2000/01/rdf-schema#label> "ajustes"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que el proyecto de inversión financieramente sostenible tiene como ámbito todos los distritos de una ciudad."@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the financially sustainable investment project has as its scope all the districts of a city."@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal> <http://www.w3.org/2000/01/rdf-schema#label> "global scope"@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobal> <http://www.w3.org/2000/01/rdf-schema#label> "ámbito global"@es .
+# 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
@@ -467,17 +487,6 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#label> "año fiscal"@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#label> "fiscal year"@en .
-# 
-# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#codigoIdentificador
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#codigoIdentificador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#codigoIdentificador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#codigoIdentificador> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#codigoIdentificador> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#codigoIdentificador> <http://www.w3.org/2000/01/rdf-schema#comment> "Código interno del proyecto de inversión."@es .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#codigoIdentificador> <http://www.w3.org/2000/01/rdf-schema#comment> "Internal code for the investment project."@en .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#codigoIdentificador> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#codigoIdentificador> <http://www.w3.org/2000/01/rdf-schema#label> "código identificador"@es .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#codigoIdentificador> <http://www.w3.org/2000/01/rdf-schema#label> "identifier code"@en .
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoAutorizado
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoAutorizado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -538,16 +547,6 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoRetenido> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoRetenido> <http://www.w3.org/2000/01/rdf-schema#label> "credit withheld"@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoRetenido> <http://www.w3.org/2000/01/rdf-schema#label> "crédito retenido"@es .
-# 
-# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#denonimacion
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#denonimacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#denonimacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#denonimacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#denonimacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Denonimación del proyecto de inversión."@es .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#denonimacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#denonimacion> <http://www.w3.org/2000/01/rdf-schema#label> "Denomination of an investment project."@en .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#denonimacion> <http://www.w3.org/2000/01/rdf-schema#label> "denominación"@es .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#denonimacion> <http://www.w3.org/2000/01/rdf-schema#label> "denomination"@en .
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#derechosAnulados
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#derechosAnulados> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -611,7 +610,7 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#excesoDefectoPrevision
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#excesoDefectoPrevision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#excesoDefectoPrevision> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#excesoDefectoPrevision> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionIngreso> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#excesoDefectoPrevision> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#excesoDefectoPrevision> <http://www.w3.org/2000/01/rdf-schema#comment> "Informa sobre la desviación que ha existido en las previsiones de ingresos. Es el resultado de restar a las previsiones definitivas los derechos reconocidos netos. Si la diferencia es positiva, significa que se estimaron más recursos de los que se han obtenido; y, si la diferencia es negativa, significa que se han obtenido más recursos de los previstos."@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#excesoDefectoPrevision> <http://www.w3.org/2000/01/rdf-schema#comment> "Reports on the deviation that has existed in the revenue estimates. It is the result of subtracting the net recognized rights from the final estimates. If the difference is positive, it means that more resources were estimated than have been obtained; and, if the difference is negative, it means that more resources have been obtained than expected."@en .
@@ -619,16 +618,24 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#excesoDefectoPrevision> <http://www.w3.org/2000/01/rdf-schema#label> "exceso defecto previsión"@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#excesoDefectoPrevision> <http://www.w3.org/2000/01/rdf-schema#label> "lack or excess estimate"@en .
 # 
-# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacion
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of approval in plenary. The final approval of the general budget by the Plenary of the corporation must be carried out before December 31 of the year prior to the year in which it should be applied."@en .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de aprobación en el Pleno. La aprobación definitiva del presupuesto general por el Pleno de la corporación habrá de realizarse antes del día 31 de diciembre del año anterior al del ejercicio en que deba aplicarse"@es .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacion> <http://www.w3.org/2000/01/rdf-schema#label> "approval date"@en .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacion> <http://www.w3.org/2000/01/rdf-schema#label> "fecha aprobación"@es .
+# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobLiquidacion
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobLiquidacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobLiquidacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Date in which the liquidation statement is approved."@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobLiquidacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de aprobación del estado de liquidación."@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobLiquidacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobLiquidacion> <http://www.w3.org/2000/01/rdf-schema#label> "fecha aprobación liquidación"@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobLiquidacion> <http://www.w3.org/2000/01/rdf-schema#label> "liquidation approval date"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionPleno
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionPleno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionPleno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionPleno> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionPleno> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionPleno> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of approval in plenary. The final approval of the general budget by the Plenary of the corporation must be carried out before December 31 of the year prior to the year in which it should be applied."@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionPleno> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de aprobación en el Pleno. La aprobación definitiva del presupuesto general por el Pleno de la corporación habrá de realizarse antes del día 31 de diciembre del año anterior al del ejercicio en que deba aplicarse"@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionPleno> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionPleno> <http://www.w3.org/2000/01/rdf-schema#label> "fecha aprobación pleno"@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionPleno> <http://www.w3.org/2000/01/rdf-schema#label> "plenary approval date"@en .
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#obligacionesPendientes31Dic
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#obligacionesPendientes31Dic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -700,6 +707,36 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#recaudacionNeta> <http://www.w3.org/2000/01/rdf-schema#label> "net collection"@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#recaudacionNeta> <http://www.w3.org/2000/01/rdf-schema#label> "recaudación neta"@es .
 # 
+# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteCredito
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteCredito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteCredito> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteCredito> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#LiquidacionGasto> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteCredito> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteCredito> <http://www.w3.org/2000/01/rdf-schema#comment> "Amount of the final credits that have not been consumed in the fiscal year. Its amount will be that resulting from deducting the net recognized duties from the final credits."@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteCredito> <http://www.w3.org/2000/01/rdf-schema#comment> "Importe de los créditos definitivos que no se han consumido en el año fiscal. Su importe será el que resulte de deducir de los créditos definitivos las obligaciones reconocidas netas."@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteCredito> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteCredito> <http://www.w3.org/2000/01/rdf-schema#label> "credit remnant"@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteCredito> <http://www.w3.org/2000/01/rdf-schema#label> "remanente crédito"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteTesoreria
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteTesoreria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteTesoreria> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteTesoreria> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteTesoreria> <http://www.w3.org/2000/01/rdf-schema#comment> "Las obligaciones reconocidas y liquidadas no satisfechas el último día del ejercicio, los derechos pendientes de cobro y los fondos líquidos a 31 de diciembre configurarán el remanente de tesorería de la entidad local."@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteTesoreria> <http://www.w3.org/2000/01/rdf-schema#comment> "The recognized and settled obligations not satisfied on the last day of the fiscal year, the rights pending collection and the liquid funds as of December 31 will configure the remnant of treasury treasury of the local entity."@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteTesoreria> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteTesoreria> <http://www.w3.org/2000/01/rdf-schema#label> "remanente de tesorería"@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteTesoreria> <http://www.w3.org/2000/01/rdf-schema#label> "remnant of treasury"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoAjustado
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoAjustado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoAjustado> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoAjustado> <http://www.w3.org/2000/01/rdf-schema#comment> "El resultado presupuestario deberá ajustarse, en su caso, en función de las obligaciones financiadas con el remanente de tesorería para gastos generales y las desviaciones de financiación del ejercicio derivadas de los gastos con financiación afectada."@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoAjustado> <http://www.w3.org/2000/01/rdf-schema#comment> "The budgetary result should be adjusted, where appropriate, based on the duties financed with the remnant credit for general expenses, and the financing deviations for the year derived from the expenses with affected financing."@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoAjustado> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoAjustado> <http://www.w3.org/2000/01/rdf-schema#label> "adjusted result"@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoAjustado> <http://www.w3.org/2000/01/rdf-schema#label> "resultado ajustado"@es .
+# 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoPresupuestario
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoPresupuestario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoPresupuestario> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion> .
@@ -709,16 +746,6 @@ _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoPresupuestario> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoPresupuestario> <http://www.w3.org/2000/01/rdf-schema#label> "budget result"@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoPresupuestario> <http://www.w3.org/2000/01/rdf-schema#label> "resultado presupuestario"@es .
-# 
-# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#todosLosDistritos
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#todosLosDistritos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#todosLosDistritos> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#todosLosDistritos> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#todosLosDistritos> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica que el proyecto de inversión financieramente sostenible tiene como ámbito todos los distritos de una ciudad."@es .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#todosLosDistritos> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the financially sustainable investment project has as its scope all the districts of a city."@en .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#todosLosDistritos> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#todosLosDistritos> <http://www.w3.org/2000/01/rdf-schema#label> "all districts"@en .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#todosLosDistritos> <http://www.w3.org/2000/01/rdf-schema#label> "todos los distritos"@es .
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#totalGastoComprometido
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#totalGastoComprometido> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .

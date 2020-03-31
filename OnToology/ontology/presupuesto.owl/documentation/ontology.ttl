@@ -372,6 +372,8 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion
 :presupuestoInversion rdf:type owl:ObjectProperty ;
+                      rdfs:domain :InversionFinancieramenteSostenible ;
+                      rdfs:range :PresupuestoGasto ;
                       rdfs:comment "Expense budget corresponding to the investment project."@en ,
                                    "Presuopuesto de gastos correspondiente al proyecto de inversión."@es ;
                       rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
@@ -817,7 +819,6 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible
 :InversionFinancieramenteSostenible rdf:type owl:Class ;
-                                    rdfs:subClassOf :PresupuestoGasto ;
                                     rdfs:comment "Expenses incurred or planned to be incurred by local entities or their autonomous bodies for the creation of infrastructure, and the creation or acquisition of goods of an inventoried nature, necessary for the operation of the services and those other expenses that are amortizable."@en ,
                                                  "Gastos en los que incurran o prevean incurrir las entidades locales o sus organismos autónomos destinados a la creación de infraestructuras y a la creación o adquisición de bienes de naturaleza inventariable necesarios para el funcionamiento de los servicios y aquellos otros gastos que tengan carácter amortizable"@es ;
                                     rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;

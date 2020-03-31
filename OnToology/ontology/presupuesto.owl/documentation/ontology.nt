@@ -330,6 +330,8 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion> <http://www.w3.org/2000/01/rdf-schema#comment> "Expense budget corresponding to the investment project."@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion> <http://www.w3.org/2000/01/rdf-schema#comment> "Presuopuesto de gastos correspondiente al proyecto de inversión."@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
@@ -743,7 +745,6 @@ _:genid8 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2006/time#Pr
 # 
 # http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto> .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> <http://www.w3.org/2000/01/rdf-schema#comment> "Expenses incurred or planned to be incurred by local entities or their autonomous bodies for the creation of infrastructure, and the creation or acquisition of goods of an inventoried nature, necessary for the operation of the services and those other expenses that are amortizable."@en .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> <http://www.w3.org/2000/01/rdf-schema#comment> "Gastos en los que incurran o prevean incurrir las entidades locales o sus organismos autónomos destinados a la creación de infraestructuras y a la creación o adquisición de bienes de naturaleza inventariable necesarios para el funcionamiento de los servicios y aquellos otros gastos que tengan carácter amortizable"@es .
 <http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .

@@ -537,6 +537,8 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
     <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion -->
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible"/>
+        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"/>
         <rdfs:comment xml:lang="en">Expense budget corresponding to the investment project.</rdfs:comment>
         <rdfs:comment xml:lang="es">Presuopuesto de gastos correspondiente al proyecto de inversión.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
@@ -1124,7 +1126,6 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
     <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible -->
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible">
-        <rdfs:subClassOf rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"/>
         <rdfs:comment xml:lang="en">Expenses incurred or planned to be incurred by local entities or their autonomous bodies for the creation of infrastructure, and the creation or acquisition of goods of an inventoried nature, necessary for the operation of the services and those other expenses that are amortizable.</rdfs:comment>
         <rdfs:comment xml:lang="es">Gastos en los que incurran o prevean incurrir las entidades locales o sus organismos autónomos destinados a la creación de infraestructuras y a la creación o adquisición de bienes de naturaleza inventariable necesarios para el funcionamiento de los servicios y aquellos otros gastos que tengan carácter amortizable</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>

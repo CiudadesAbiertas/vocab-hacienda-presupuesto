@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="109" parse.nodes="77" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="110" parse.nodes="77" parse.order="free">
       <node id="nid_terms:alternative">
          <data key="d0">
             <y:ShapeNode>
@@ -483,47 +483,24 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_-18c42cbb:17130ee76de:-7ff8">
+      <node id="nid_espresup:liquidacion">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="200.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-18c42cbb:17130ee76de:-7ff8</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">espresup:liquidacion</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:unionOf15" source="nid_NULL" target="nid_-18c42cbb:17130ee76de:-7ff8">
+    <edge id="eid_owl:onProperty15" source="nid_NULL" target="nid_espresup:liquidacion">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_-18c42cbb:17130ee76de:-7fe8">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-18c42cbb:17130ee76de:-7fe8</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:unionOf16" source="nid_NULL" target="nid_-18c42cbb:17130ee76de:-7fe8">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -541,7 +518,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty17" source="nid_NULL" target="nid_espresup:clasificacionEconomicaGasto">
+    <edge id="eid_owl:onProperty16" source="nid_NULL" target="nid_espresup:clasificacionEconomicaGasto">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -552,19 +529,42 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-18c42cbb:17130ee76de:-7ffa">
+      <node id="nid_espresup:presupuestoGasto">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="250.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-18c42cbb:17130ee76de:-7ffa</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">espresup:presupuestoGasto</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:rest18" source="nid_NULL" target="nid_-18c42cbb:17130ee76de:-7ffa">
+    <edge id="eid_owl:onProperty17" source="nid_NULL" target="nid_espresup:presupuestoGasto">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_-3468df5f:172e6818278:-7ff7">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-3468df5f:172e6818278:-7ff7</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdf:rest18" source="nid_NULL" target="nid_-3468df5f:172e6818278:-7ff7">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -621,6 +621,29 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_-3468df5f:172e6818278:-7ffa">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-3468df5f:172e6818278:-7ffa</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdf:rest21" source="nid_NULL" target="nid_-3468df5f:172e6818278:-7ffa">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_espresup:PresupuestoGasto">
          <data key="d0">
             <y:ShapeNode>
@@ -633,7 +656,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onClass21" source="nid_NULL" target="nid_espresup:PresupuestoGasto">
+    <edge id="eid_owl:onClass22" source="nid_NULL" target="nid_espresup:PresupuestoGasto">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -644,7 +667,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdf:first22" source="nid_NULL" target="nid_time:Instant">
+    <edge id="eid_rdf:first23" source="nid_NULL" target="nid_time:Instant">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -655,24 +678,24 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_espresup:liquidacionGasto">
+      <node id="nid_-3468df5f:172e6818278:-7fe7">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="250.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">espresup:liquidacionGasto</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-3468df5f:172e6818278:-7fe7</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty23" source="nid_NULL" target="nid_espresup:liquidacionGasto">
+    <edge id="eid_rdf:rest24" source="nid_NULL" target="nid_-3468df5f:172e6818278:-7fe7">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -690,7 +713,30 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty24" source="nid_NULL" target="nid_espresup:clasificacionEconomicaIngreso">
+    <edge id="eid_owl:onProperty25" source="nid_NULL" target="nid_espresup:clasificacionEconomicaIngreso">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_espresup:liquidacionGasto">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="250.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">espresup:liquidacionGasto</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:onProperty26" source="nid_NULL" target="nid_espresup:liquidacionGasto">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -713,35 +759,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onClass25" source="nid_NULL" target="nid_espresup:Liquidacion">
+    <edge id="eid_owl:onClass27" source="nid_NULL" target="nid_espresup:Liquidacion">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onClass</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_espresup:ingreso">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="160.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">espresup:ingreso</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:onProperty26" source="nid_NULL" target="nid_espresup:ingreso">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -759,7 +782,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty27" source="nid_NULL" target="nid_http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio">
+    <edge id="eid_owl:onProperty28" source="nid_NULL" target="nid_http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -782,12 +805,35 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty28" source="nid_NULL" target="nid_espresup:periodoEjecucion">
+    <edge id="eid_owl:onProperty29" source="nid_NULL" target="nid_espresup:periodoEjecucion">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_-3468df5f:172e6818278:-7ffb">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-3468df5f:172e6818278:-7ffb</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:unionOf30" source="nid_NULL" target="nid_-3468df5f:172e6818278:-7ffb">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -805,7 +851,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:first29" source="nid_NULL" target="nid_time:Interval">
+    <edge id="eid_rdf:first31" source="nid_NULL" target="nid_time:Interval">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -828,7 +874,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onClass30" source="nid_NULL" target="nid_espresup:LiquidacionIngreso">
+    <edge id="eid_owl:onClass32" source="nid_NULL" target="nid_espresup:LiquidacionIngreso">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -851,46 +897,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onClass31" source="nid_NULL" target="nid_espresup:PresupuestoIngreso">
+    <edge id="eid_owl:onClass33" source="nid_NULL" target="nid_espresup:PresupuestoIngreso">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onClass</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_rdf:first32" source="nid_NULL" target="nid_espresup:PresupuestoGasto">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:first</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_espresup:ejecucionIngreso">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="250.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">espresup:ejecucionIngreso</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:onProperty33" source="nid_NULL" target="nid_espresup:ejecucionIngreso">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -919,6 +931,63 @@
          </data>
          <data key="d3" />
       </edge>
+    <edge id="eid_rdf:first35" source="nid_NULL" target="nid_espresup:PresupuestoGasto">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:first</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_espresup:ejecucionIngreso">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="250.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">espresup:ejecucionIngreso</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:onProperty36" source="nid_NULL" target="nid_espresup:ejecucionIngreso">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_-3468df5f:172e6818278:-7ff8">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-3468df5f:172e6818278:-7ff8</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:unionOf37" source="nid_NULL" target="nid_-3468df5f:172e6818278:-7ff8">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:unionOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_espresup:liquidacionIngreso">
          <data key="d0">
             <y:ShapeNode>
@@ -931,7 +1000,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty35" source="nid_NULL" target="nid_espresup:liquidacionIngreso">
+    <edge id="eid_owl:onProperty38" source="nid_NULL" target="nid_espresup:liquidacionIngreso">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -954,7 +1023,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:rest36" source="nid_NULL" target="nid_rdf:nil">
+    <edge id="eid_rdf:rest39" source="nid_NULL" target="nid_rdf:nil">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -965,7 +1034,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:onClass37" source="nid_NULL" target="nid_time:ProperInterval">
+    <edge id="eid_owl:onClass40" source="nid_NULL" target="nid_time:ProperInterval">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -976,7 +1045,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:onClass38" source="nid_NULL" target="nid_skos:Concept">
+    <edge id="eid_owl:onClass41" source="nid_NULL" target="nid_skos:Concept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -987,19 +1056,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-18c42cbb:17130ee76de:-7ffb">
+      <node id="nid_-3468df5f:172e6818278:-7fe8">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-18c42cbb:17130ee76de:-7ffb</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-3468df5f:172e6818278:-7fe8</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:unionOf39" source="nid_NULL" target="nid_-18c42cbb:17130ee76de:-7ffb">
+    <edge id="eid_owl:unionOf42" source="nid_NULL" target="nid_-3468df5f:172e6818278:-7fe8">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1010,41 +1079,7 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-18c42cbb:17130ee76de:-7ff7">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-18c42cbb:17130ee76de:-7ff7</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdf:rest40" source="nid_NULL" target="nid_-18c42cbb:17130ee76de:-7ff7">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_rdf:first41" source="nid_NULL" target="nid_espresup:EjecucionGasto">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:first</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_rdf:first42" source="nid_NULL" target="nid_espresup:PresupuestoIngreso">
+    <edge id="eid_rdf:first43" source="nid_NULL" target="nid_espresup:EjecucionGasto">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1067,7 +1102,41 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty43" source="nid_NULL" target="nid_espresup:clasificacionPrograma">
+    <edge id="eid_owl:onProperty44" source="nid_NULL" target="nid_espresup:clasificacionPrograma">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_rdf:first45" source="nid_NULL" target="nid_espresup:PresupuestoIngreso">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:first</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_espresup:presupuestoIngreso">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">espresup:presupuestoIngreso</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:onProperty46" source="nid_NULL" target="nid_espresup:presupuestoIngreso">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1090,7 +1159,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdf:first44" source="nid_NULL" target="nid_espresup:EjecucionIngreso">
+    <edge id="eid_rdf:first47" source="nid_NULL" target="nid_espresup:EjecucionIngreso">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1101,7 +1170,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:onClass45" source="nid_NULL" target="nid_espresup:EjecucionIngreso">
+    <edge id="eid_owl:onClass48" source="nid_NULL" target="nid_espresup:EjecucionIngreso">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1124,81 +1193,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onClass46" source="nid_NULL" target="nid_espresup:LiquidacionGasto">
+    <edge id="eid_owl:onClass49" source="nid_NULL" target="nid_espresup:LiquidacionGasto">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onClass</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_espresup:gasto">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="140.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">espresup:gasto</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:onProperty47" source="nid_NULL" target="nid_espresup:gasto">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_-18c42cbb:17130ee76de:-7fe7">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-18c42cbb:17130ee76de:-7fe7</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdf:rest48" source="nid_NULL" target="nid_-18c42cbb:17130ee76de:-7fe7">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdf:rest</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_espresup:liquidacion">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="200.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">espresup:liquidacion</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:onProperty49" source="nid_NULL" target="nid_espresup:liquidacion">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -1251,19 +1251,19 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_-18c42cbb:17130ee76de:-7fe9">
+      <node id="nid_-3468df5f:172e6818278:-7fe9">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-18c42cbb:17130ee76de:-7fe9</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-3468df5f:172e6818278:-7fe9</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:equivalentClass51" source="nid_time:TemporalEntity" target="nid_-18c42cbb:17130ee76de:-7fe9">
+    <edge id="eid_owl:equivalentClass51" source="nid_time:TemporalEntity" target="nid_-3468df5f:172e6818278:-7fe9">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1493,6 +1493,17 @@
          </data>
          <data key="d3" />
       </edge>
+    <edge id="eid_time:hasBeginning61" source="nid_time:TemporalEntity" target="nid_time:Instant">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">time:hasBeginning</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_espresup:Presupuesto">
          <data key="d0">
             <y:ShapeNode>
@@ -1505,28 +1516,6 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_espresup:ingreso61" source="nid_espresup:Presupuesto" target="nid_espresup:PresupuestoIngreso">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">espresup:ingreso</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_time:hasBeginning62" source="nid_time:TemporalEntity" target="nid_time:Instant">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">time:hasBeginning</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_xsd:boolean">
          <data key="d0">
             <y:ShapeNode>
@@ -1539,7 +1528,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_espresup:estadoProrroga63" source="nid_espresup:Presupuesto" target="nid_xsd:boolean">
+    <edge id="eid_espresup:estadoProrroga62" source="nid_espresup:Presupuesto" target="nid_xsd:boolean">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1562,7 +1551,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_espresup:pagos64" source="nid_espresup:EjecucionGasto" target="nid_xsd:float">
+    <edge id="eid_espresup:pagos63" source="nid_espresup:EjecucionGasto" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1573,7 +1562,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:creditoPresupuestarioInicial65" source="nid_espresup:PresupuestoGasto" target="nid_xsd:float">
+    <edge id="eid_espresup:creditoPresupuestarioInicial64" source="nid_espresup:PresupuestoGasto" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1584,12 +1573,35 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_skos:inScheme66" source="nid_skos:Concept" target="nid_skos:ConceptScheme">
+    <edge id="eid_skos:inScheme65" source="nid_skos:Concept" target="nid_skos:ConceptScheme">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">skos:inScheme</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_xsd:dateTime">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="120.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">xsd:dateTime</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_espresup:fechaAprobacionLiquidacion66" source="nid_espresup:Liquidacion" target="nid_xsd:dateTime">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">espresup:fechaAprobacionLiquidacion</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -1662,18 +1674,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_xsd:dateTime">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="120.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFA500" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">xsd:dateTime</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
     <edge id="eid_espresup:fechaAprobacionPleno72" source="nid_espresup:Presupuesto" target="nid_xsd:dateTime">
          <data key="d2">
             <y:PolyLineEdge>
@@ -1696,19 +1696,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-18c42cbb:17130ee76de:-7ff9">
+      <node id="nid_-3468df5f:172e6818278:-7ff9">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-18c42cbb:17130ee76de:-7ff9</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-3468df5f:172e6818278:-7ff9</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_espresup:periodoEjecucion74" source="nid_-18c42cbb:17130ee76de:-7ff9" target="nid_time:ProperInterval">
+    <edge id="eid_espresup:periodoEjecucion74" source="nid_-3468df5f:172e6818278:-7ff9" target="nid_time:ProperInterval">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1741,7 +1741,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:previsionModificaciones77" source="nid_espresup:PresupuestoIngreso" target="nid_xsd:float">
+    <edge id="eid_espresup:previsionModificaciones77" source="nid_espresup:EjecucionIngreso" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1763,7 +1763,18 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:remanenteTesoreria79" source="nid_espresup:Liquidacion" target="nid_xsd:float">
+    <edge id="eid_espresup:presupuestoIngreso79" source="nid_espresup:Presupuesto" target="nid_espresup:PresupuestoIngreso">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">espresup:presupuestoIngreso</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_espresup:remanenteTesoreria80" source="nid_espresup:Liquidacion" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1774,7 +1785,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:creditoDefinitivoVigente80" source="nid_espresup:PresupuestoGasto" target="nid_xsd:float">
+    <edge id="eid_espresup:creditoDefinitivoVigente81" source="nid_espresup:EjecucionGasto" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1785,7 +1796,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:presupuestoInversion81" source="nid_espresup:InversionFinancieramenteSostenible" target="nid_espresup:PresupuestoGasto">
+    <edge id="eid_espresup:presupuestoInversion82" source="nid_espresup:InversionFinancieramenteSostenible" target="nid_espresup:PresupuestoGasto">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1796,7 +1807,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_time:hasTime82" source="nid_time:TemporalEntity" target="nid_owl:Thing">
+    <edge id="eid_time:hasTime83" source="nid_time:TemporalEntity" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1807,7 +1818,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:recaudacionNeta83" source="nid_espresup:EjecucionIngreso" target="nid_xsd:float">
+    <edge id="eid_espresup:recaudacionNeta84" source="nid_espresup:EjecucionIngreso" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1830,7 +1841,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_time:inXSDgYearMonth84" source="nid_time:Instant" target="nid_xsd:gYearMonth">
+    <edge id="eid_time:inXSDgYearMonth85" source="nid_time:Instant" target="nid_xsd:gYearMonth">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1841,7 +1852,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:liquidacion85" source="nid_espresup:Presupuesto" target="nid_espresup:Liquidacion">
+    <edge id="eid_espresup:liquidacion86" source="nid_espresup:Presupuesto" target="nid_espresup:Liquidacion">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1852,19 +1863,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_-18c42cbb:17130ee76de:-7ffc">
+      <node id="nid_-3468df5f:172e6818278:-7ffc">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
                <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-18c42cbb:17130ee76de:-7ffc</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">-3468df5f:172e6818278:-7ffc</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_espresup:clasificacionOrganica86" source="nid_-18c42cbb:17130ee76de:-7ffc" target="nid_owl:Thing">
+    <edge id="eid_espresup:clasificacionOrganica87" source="nid_-3468df5f:172e6818278:-7ffc" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1875,7 +1886,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:ambito87" source="nid_espresup:InversionFinancieramenteSostenible" target="nid_http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito">
+    <edge id="eid_espresup:ambito88" source="nid_espresup:InversionFinancieramenteSostenible" target="nid_http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1886,7 +1897,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:derechosReconocidos88" source="nid_espresup:EjecucionIngreso" target="nid_xsd:float">
+    <edge id="eid_espresup:derechosReconocidos89" source="nid_espresup:EjecucionIngreso" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1897,7 +1908,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:clasificacionEconomicaGasto89" source="nid_espresup:PresupuestoGasto" target="nid_skos:Concept">
+    <edge id="eid_espresup:clasificacionEconomicaGasto90" source="nid_espresup:PresupuestoGasto" target="nid_skos:Concept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1908,7 +1919,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:ejecucionGasto90" source="nid_espresup:PresupuestoGasto" target="nid_espresup:EjecucionGasto">
+    <edge id="eid_espresup:ejecucionGasto91" source="nid_espresup:PresupuestoGasto" target="nid_espresup:EjecucionGasto">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1919,7 +1930,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:ajustes91" source="nid_espresup:Liquidacion" target="nid_xsd:float">
+    <edge id="eid_espresup:ajustes92" source="nid_espresup:Liquidacion" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1930,7 +1941,18 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:obligacionesReconocidasNetas92" source="nid_espresup:EjecucionGasto" target="nid_xsd:float">
+    <edge id="eid_espresup:presupuestoGasto93" source="nid_espresup:Presupuesto" target="nid_espresup:PresupuestoGasto">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">espresup:presupuestoGasto</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_espresup:obligacionesReconocidasNetas94" source="nid_espresup:EjecucionGasto" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1941,7 +1963,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:liquidacionGasto93" source="nid_espresup:Liquidacion" target="nid_espresup:LiquidacionGasto">
+    <edge id="eid_espresup:liquidacionGasto95" source="nid_espresup:Liquidacion" target="nid_espresup:LiquidacionGasto">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1952,7 +1974,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:derechosCancelados94" source="nid_espresup:EjecucionIngreso" target="nid_xsd:float">
+    <edge id="eid_espresup:derechosCancelados96" source="nid_espresup:EjecucionIngreso" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1963,7 +1985,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:excesoDefectoPrevision95" source="nid_espresup:LiquidacionIngreso" target="nid_xsd:float">
+    <edge id="eid_espresup:excesoDefectoPrevision97" source="nid_espresup:LiquidacionIngreso" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1974,18 +1996,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:gasto96" source="nid_espresup:Presupuesto" target="nid_espresup:PresupuestoGasto">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">espresup:gasto</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_espresup:previsionInicial97" source="nid_espresup:PresupuestoIngreso" target="nid_xsd:float">
+    <edge id="eid_espresup:previsionInicial98" source="nid_espresup:PresupuestoIngreso" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1996,7 +2007,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:creditoDisponible98" source="nid_espresup:EjecucionGasto" target="nid_xsd:float">
+    <edge id="eid_espresup:creditoDisponible99" source="nid_espresup:EjecucionGasto" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2007,7 +2018,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:previsionDefinitiva99" source="nid_espresup:PresupuestoIngreso" target="nid_xsd:float">
+    <edge id="eid_espresup:previsionDefinitiva100" source="nid_espresup:EjecucionIngreso" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2018,7 +2029,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:creditoModificaciones100" source="nid_espresup:PresupuestoGasto" target="nid_xsd:float">
+    <edge id="eid_espresup:creditoModificaciones101" source="nid_espresup:EjecucionGasto" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2029,7 +2040,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:resultadoAjustado101" source="nid_espresup:Liquidacion" target="nid_owl:Thing">
+    <edge id="eid_espresup:resultadoAjustado102" source="nid_espresup:Liquidacion" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2040,7 +2051,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:derechosAnulados102" source="nid_espresup:EjecucionIngreso" target="nid_xsd:float">
+    <edge id="eid_espresup:derechosAnulados103" source="nid_espresup:EjecucionIngreso" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2051,7 +2062,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:derechosPendientesCobro31Dic103" source="nid_espresup:EjecucionIngreso" target="nid_xsd:float">
+    <edge id="eid_espresup:derechosPendientesCobro31Dic104" source="nid_espresup:EjecucionIngreso" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2062,7 +2073,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:resultadoPresupuestario104" source="nid_espresup:Liquidacion" target="nid_xsd:float">
+    <edge id="eid_espresup:resultadoPresupuestario105" source="nid_espresup:Liquidacion" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2073,7 +2084,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:clasificacionInversion105" source="nid_espresup:InversionFinancieramenteSostenible" target="nid_owl:Thing">
+    <edge id="eid_espresup:clasificacionInversion106" source="nid_espresup:InversionFinancieramenteSostenible" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2084,7 +2095,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:creditoRetenido106" source="nid_espresup:EjecucionGasto" target="nid_xsd:float">
+    <edge id="eid_espresup:creditoRetenido107" source="nid_espresup:EjecucionGasto" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2095,7 +2106,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_espresup:creditoAutorizado107" source="nid_espresup:EjecucionGasto" target="nid_xsd:float">
+    <edge id="eid_espresup:creditoAutorizado108" source="nid_espresup:EjecucionGasto" target="nid_xsd:float">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2118,7 +2129,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_espresup:anioFiscal108" source="nid_espresup:Presupuesto" target="nid_xsd:gYear">
+    <edge id="eid_espresup:anioFiscal109" source="nid_espresup:Presupuesto" target="nid_xsd:gYear">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

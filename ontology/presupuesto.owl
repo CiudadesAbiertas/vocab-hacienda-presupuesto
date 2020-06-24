@@ -441,34 +441,6 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto -->
-
-    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto"/>
-        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"/>
-        <rdfs:comment xml:lang="es">Representa las asignaciones a las aplicaciones presupuestarias de gasto en el presupuesto.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Represents the allocations to budget line expense items.</rdfs:comment>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">expense</rdfs:label>
-        <rdfs:label xml:lang="es">gasto</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso -->
-
-    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto"/>
-        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"/>
-        <rdfs:comment xml:lang="en">Prevision of the resources that the entity expects to obtain in the year to finance the expenses that appear in its budget.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Previsión de los recursos que la entidad espera obtener en el año para financiar los gastos que figuran en su presupuesto.</rdfs:comment>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">income</rdfs:label>
-        <rdfs:label xml:lang="es">ingreso</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacion -->
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacion">
@@ -530,6 +502,34 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">execution period</rdfs:label>
         <rdfs:label xml:lang="es">período ejecución</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoGasto -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoGasto">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto"/>
+        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"/>
+        <rdfs:comment xml:lang="es">Representa las asignaciones a las aplicaciones presupuestarias de gasto en el presupuesto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Represents the allocations to budget line expense items.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">expense budget</rdfs:label>
+        <rdfs:label xml:lang="es">presupuesto gasto</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoIngreso -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoIngreso">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto"/>
+        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"/>
+        <rdfs:comment xml:lang="en">Prevision of the resources that the entity expects to obtain in the year to finance the expenses that appear in its budget.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Previsión de los recursos que la entidad espera obtener en el año para financiar los gastos que figuran en su presupuesto.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">income budget</rdfs:label>
+        <rdfs:label xml:lang="es">presupuesto ingreso</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -693,7 +693,7 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
     <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoDefinitivoVigente -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoDefinitivoVigente">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="es">El crédito definitivo vigente en cada momento vendrá determinado por el crédito inicial aumentado o disminuido como consecuencia de modificaciones presupuestarias.</rdfs:comment>
         <rdfs:comment xml:lang="en">The active final credit at any time will be determined by the initial credit increased or decreased as a result of budgetary modifications.</rdfs:comment>
@@ -721,7 +721,7 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
     <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoModificaciones -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoModificaciones">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">An initial budget credit may undergo modifications with which you have a valid final credit.</rdfs:comment>
         <rdfs:comment xml:lang="es">Un crédito presupuestario inicial puede sufrir modificaciones  con lo cual se tiene un crédito definitivo vigente.</rdfs:comment>
@@ -858,9 +858,11 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobLiquidacion -->
+    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionLiquidacion -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobLiquidacion">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionLiquidacion">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="en">Date in which the liquidation statement is approved.</rdfs:comment>
         <rdfs:comment xml:lang="es">Fecha de aprobación del estado de liquidación.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
@@ -930,7 +932,7 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
     <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionDefinitiva -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionDefinitiva">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="es">Es la suma de la previsión inicial y sus modificaciones</rdfs:comment>
         <rdfs:comment xml:lang="en">It is the sum of the initial estimate and its modifications</rdfs:comment>
@@ -958,7 +960,7 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
     <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionModificaciones -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionModificaciones">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">An initial income estimate may undergo modifications which leads to a definitive forecast.</rdfs:comment>
         <rdfs:comment xml:lang="es">Una previsión inicial de ingreso puede sufrir modificaciones lo cual conlleva a una previsión definitiva.</rdfs:comment>
@@ -1192,23 +1194,23 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto"/>
+                <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacion"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoGasto"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso"/>
+                <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoIngreso"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacion"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">Los presupuestos generales de las entidades locales constituyen la expresión cifrada, conjunta y sistemática de las obligaciones que, como máximo, pueden reconocer la entidad, y sus organismos autónomos, y de los derechos que prevean liquidar durante el correspondiente ejercicio, así como de las previsiones de ingresos y gastos de las sociedades mercantiles cuyo capital social pertenezca íntegramente a la entidad local correspondiente.</rdfs:comment>
@@ -1267,7 +1269,7 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
         <rdfs:comment xml:lang="es">Previsión de los recursos que la entidad espera obtener en el año para financiar los gastos que figuran en su presupuesto.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Income budget</rdfs:label>
-        <rdfs:label>Presupuesto ingreso</rdfs:label>
+        <rdfs:label xml:lang="es">Presupuesto ingreso</rdfs:label>
     </owl:Class>
     
 

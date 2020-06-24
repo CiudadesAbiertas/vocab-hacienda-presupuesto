@@ -11,20 +11,20 @@ PREFIX espresup:<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#>
 PREFIX time:<http://www.w3.org/2006/time#>
 PREFIX skos:<http://www.w3.org/2004/02/skos/core#>
 
-
 SELECT  ?gasto ?creditoPresInicial  ?labelPrograma ?labelEconomica ?labelOrganica 
 WHERE { ?gasto a espresup:PresupuestoGasto .
         ?gasto espresup:creditoPresupuestarioInicial ?creditoPresInicial .
         ?gasto espresup:clasificacionPrograma ?programa .
-       ?programa skos:prefLabel ?labelPrograma .
-       ?gasto espresup:clasificacionEconomicaGasto ?economica .
-       ?economica skos:prefLabel ?labelEconomica .
-       OPTIONAL {?gasto espresup:clasificacionOrganica ?organica . ?organica skos:prefLabel ?labelOrganica}
+        ?programa skos:prefLabel ?labelPrograma .
+        ?gasto espresup:clasificacionEconomicaGasto ?economica .
+        ?economica skos:prefLabel ?labelEconomica .
+        OPTIONAL {?gasto espresup:clasificacionOrganica ?organica . ?organica skos:prefLabel ?labelOrganica}
 }
 
 
 ```
 En esta [consulta](http://ciudadesabiertas.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fvocab.ciudadesabiertas.es%2Fdatosabiertos%2Fgrafo-recurso%2Fhacienda%2Fpresupuesto%2Fdatos-madrid&query=PREFIX+espresup%3A%3Chttp%3A%2F%2Fvocab.ciudadesabiertas.es%2Fdef%2Fhacienda%2Fpresupuesto%23%3E%0D%0APREFIX+time%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Ftime%23%3E%0D%0APREFIX+skos%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0D%0APREFIX+xsd%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0A%0D%0ASELECT++%3FejecucionGasto+%3FcredInicial+%3FcredModificac+%3FcredDefinitivo+%3FcredAutorizado+%3FobligReconocidas++%0D%0AWHERE+%7B+%3FejecucionGasto+a+espresup%3AEjecucionGasto+.%0D%0A++++++++%3FejecucionGasto+espresup%3AperiodoEjecucion+%3FintervaloPropio+.%0D%0A++++++++%3FintervaloPropio+time%3AhasEnd+%3FintanciaTiempo+.%0D%0A++++++++%3FinstanciaTiempo+time%3AinXSDgYearMonth+%3FfechaEjecucion+.%0D%0A++++++++%3FejecucionGasto+espresup%3AgastoEjecutado+%3Fgasto+.%0D%0A++++++++%3Fgasto+espresup%3AcreditoPresupuestarioInicial+%3FcredInicial+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoModificaciones+%3FcredModificac+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoDefinitivoVigente+%3FcredDefinitivo+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoAutorizado+%3FcredAutorizado+.%0D%0A++++++++%3FejecucionGasto+espresup%3AobligacionesReconocidasNetas+%3FobligReconocidas++.%0D%0A++++++++FILTER%28%3FfechaEjecucion+%3D+%222018-12%22%5E%5Exsd%3AgYearMonth%29+%0D%0A%7D&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+) se pregunta cuál es la ejecución del presupuesto de gastos para diciembre de 2018 (se da una muestra de la ejecución).
+
 PREFIX espresup:<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#>
 PREFIX time:<http://www.w3.org/2006/time#>
 PREFIX skos:<http://www.w3.org/2004/02/skos/core#>
@@ -44,7 +44,7 @@ WHERE { ?ejecucionGasto a espresup:EjecucionGasto .
         FILTER(?fechaEjecucion = "2018-12"^^xsd:gYearMonth) 
 }
 
-En esta [consulta](http://ciudadesabiertas.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fvocab.ciudadesabiertas.es%2Fdatosabiertos%2Fgrafo-recurso%2Fhacienda%2Fpresupuesto%2Fdatos-madrid&query=PREFIX+espresup%3A%3Chttp%3A%2F%2Fvocab.ciudadesabiertas.es%2Fdef%2Fhacienda%2Fpresupuesto%23%3E%0D%0APREFIX+time%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Ftime%23%3E%0D%0APREFIX+skos%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0D%0APREFIX+xsd%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0APREFIX+skos-programa%3A%3Chttp%3A%2F%2Fvocab.linkeddata.es%2Fdatosabiertos%2Fkos%2Fhacienda%2Fpresupuesto%2Fprograma-gasto%2Fmadrid%2F%3E%0D%0APREFIX+skos-economica%3A%3Chttp%3A%2F%2Fvocab.linkeddata.es%2Fdatosabiertos%2Fkos%2Fhacienda%2Fpresupuesto%2Feconomica-gasto%2Fmadrid%2F%3E%0D%0A%0D%0ASELECT++%3FejecucionGasto+%3FcredInicial+%3FcredModificac+%3FcredDefinitivo+%3FcredAutorizado+%3FobligReconocidas+%0D%0AWHERE+%7B+%3FejecucionGasto+a++espresup%3AEjecucionGasto+.%0D%0A++++++++%3FejecucionGasto+espresup%3AperiodoEjecucion+%3FintervaloPropio+.%0D%0A++++++++%3FintervaloPropio+time%3AhasEnd+%3FintanciaTiempo+.%0D%0A++++++++%3FinstanciaTiempo+time%3AinXSDgYearMonth+%3FfechaEjecucion+.%0D%0A++++++++%3FejecucionGasto+espresup%3AgastoEjecutado+%3Fgasto+.%0D%0A++++++++%3Fgasto+espresup%3AcreditoPresupuestarioInicial+%3FcredInicial+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoModificaciones+%3FcredModificac+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoDefinitivoVigente+%3FcredDefinitivo+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoAutorizado+%3FcredAutorizado+.%0D%0A++++++++%3FejecucionGasto+espresup%3AobligacionesReconocidasNetas+%3FobligReconocidas++.%0D%0A++++++++%3Fgasto+espresup%3AclasificacionEconomicaGasto+skos-economica%3A22602+.%0D%0A++++++++%23%3Fgasto+espresup%3AclasificacionPrograma+skos-programa%3A23270+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoAutorizado+%3FcredAutorizado+.%0D%0A++++++++%3FejecucionGasto+espresup%3AobligacionesReconocidasNetas+%3FobligReconocidas++.%0D%0A++++++++FILTER%28%3FfechaEjecucion+%3D+%222018-12%22%5E%5Exsd%3AgYearMonth%29%0D%0A%7D+&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+) se pregunta cuál es el gasto ejecutado para una determinada clasificacion economica y de programa, en este caso el el Programa  23270 - PROMOCIÓN PLAN DERECHOS HUMANOS y la clasificación económica - 22602 - PUBLICIDAD Y PROPAGANDA.
+En esta [consulta](http://ciudadesabiertas.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+espresup%3A%3Chttp%3A%2F%2Fvocab.ciudadesabiertas.es%2Fdef%2Fhacienda%2Fpresupuesto%23%3E%0D%0APREFIX+time%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Ftime%23%3E%0D%0APREFIX+skos%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0D%0APREFIX+xsd%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0APREFIX+skos-programa%3A%3Chttp%3A%2F%2Fvocab.linkeddata.es%2Fdatosabiertos%2Fkos%2Fhacienda%2Fpresupuesto%2Fprograma-gasto%2Fmadrid%2F%3E%0D%0APREFIX+skos-economica%3A%3Chttp%3A%2F%2Fvocab.linkeddata.es%2Fdatosabiertos%2Fkos%2Fhacienda%2Fpresupuesto%2Feconomica-gasto%2Fmadrid%2F%3E%0D%0A%0D%0ASELECT++%3FejecucionGasto+%3FcredInicial+%3FcredModificac+%3FcredDefinitivo+%3FcredAutorizado+%3FobligReconocidas+%0D%0AWHERE+%7B+%3FejecucionGasto+a++espresup%3AEjecucionGasto+.%0D%0A++++++++%3FejecucionGasto+espresup%3AperiodoEjecucion+%3FintervaloPropio+.%0D%0A++++++++%3FintervaloPropio+time%3AhasEnd+%3FintanciaTiempo+.%0D%0A++++++++%3FinstanciaTiempo+time%3AinXSDgYearMonth+%3FfechaEjecucion+.%0D%0A++++++++%3FejecucionGasto+espresup%3AgastoEjecutado+%3Fgasto+.%0D%0A++++++++%3Fgasto+espresup%3AcreditoPresupuestarioInicial+%3FcredInicial+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoModificaciones+%3FcredModificac+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoDefinitivoVigente+%3FcredDefinitivo+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoAutorizado+%3FcredAutorizado+.%0D%0A++++++++%3FejecucionGasto+espresup%3AobligacionesReconocidasNetas+%3FobligReconocidas++.%0D%0A++++++++%3Fgasto+espresup%3AclasificacionEconomicaGasto+skos-economica%3A22602+.%0D%0A++++++++%3Fgasto+espresup%3AclasificacionPrograma+skos-programa%3A23270+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoAutorizado+%3FcredAutorizado+.%0D%0A++++++++%3FejecucionGasto+espresup%3AobligacionesReconocidasNetas+%3FobligReconocidas++.%0D%0A++++++++FILTER%28%3FfechaEjecucion+%3D+%222018-12%22%5E%5Exsd%3AgYearMonth%29%0D%0A%7D+%0D%0A&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+) se pregunta cuál es el gasto ejecutado para una determinada clasificacion economica y de programa, en este caso el el Programa  23270 - PROMOCIÓN PLAN DERECHOS HUMANOS y la clasificación económica - 22602 - PUBLICIDAD Y PROPAGANDA.
 
 PREFIX espresup:<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#>
 PREFIX time:<http://www.w3.org/2006/time#>
@@ -65,7 +65,7 @@ WHERE { ?ejecucionGasto a  espresup:EjecucionGasto .
         ?ejecucionGasto espresup:creditoAutorizado ?credAutorizado .
         ?ejecucionGasto espresup:obligacionesReconocidasNetas ?obligReconocidas  .
         ?gasto espresup:clasificacionEconomicaGasto skos-economica:22602 .
-        #?gasto espresup:clasificacionPrograma skos-programa:23270 .
+        ?gasto espresup:clasificacionPrograma skos-programa:23270 .
         ?ejecucionGasto espresup:creditoAutorizado ?credAutorizado .
         ?ejecucionGasto espresup:obligacionesReconocidasNetas ?obligReconocidas  .
         FILTER(?fechaEjecucion = "2018-12"^^xsd:gYearMonth)

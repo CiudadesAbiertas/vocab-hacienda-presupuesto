@@ -24,7 +24,7 @@ WHERE { ?gasto a espresup:PresupuestoGasto .
 
 ```
 En esta [consulta](http://ciudadesabiertas.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fvocab.ciudadesabiertas.es%2Fdatosabiertos%2Fgrafo-recurso%2Fhacienda%2Fpresupuesto%2Fdatos-madrid&query=PREFIX+espresup%3A%3Chttp%3A%2F%2Fvocab.ciudadesabiertas.es%2Fdef%2Fhacienda%2Fpresupuesto%23%3E%0D%0APREFIX+time%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Ftime%23%3E%0D%0APREFIX+skos%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0D%0APREFIX+xsd%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0A%0D%0ASELECT++%3FejecucionGasto+%3FcredInicial+%3FcredModificac+%3FcredDefinitivo+%3FcredAutorizado+%3FobligReconocidas++%0D%0AWHERE+%7B+%3FejecucionGasto+a+espresup%3AEjecucionGasto+.%0D%0A++++++++%3FejecucionGasto+espresup%3AperiodoEjecucion+%3FintervaloPropio+.%0D%0A++++++++%3FintervaloPropio+time%3AhasEnd+%3FintanciaTiempo+.%0D%0A++++++++%3FinstanciaTiempo+time%3AinXSDgYearMonth+%3FfechaEjecucion+.%0D%0A++++++++%3FejecucionGasto+espresup%3AgastoEjecutado+%3Fgasto+.%0D%0A++++++++%3Fgasto+espresup%3AcreditoPresupuestarioInicial+%3FcredInicial+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoModificaciones+%3FcredModificac+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoDefinitivoVigente+%3FcredDefinitivo+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoAutorizado+%3FcredAutorizado+.%0D%0A++++++++%3FejecucionGasto+espresup%3AobligacionesReconocidasNetas+%3FobligReconocidas++.%0D%0A++++++++FILTER%28%3FfechaEjecucion+%3D+%222018-12%22%5E%5Exsd%3AgYearMonth%29+%0D%0A%7D&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+) se pregunta cuál es la ejecución del presupuesto de gastos para diciembre de 2018 (se da una muestra de la ejecución).
-
+```
 PREFIX espresup:<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#>
 PREFIX time:<http://www.w3.org/2006/time#>
 PREFIX skos:<http://www.w3.org/2004/02/skos/core#>
@@ -43,9 +43,9 @@ WHERE { ?ejecucionGasto a espresup:EjecucionGasto .
         ?ejecucionGasto espresup:obligacionesReconocidasNetas ?obligReconocidas  .
         FILTER(?fechaEjecucion = "2018-12"^^xsd:gYearMonth) 
 }
-
+```
 En esta [consulta](http://ciudadesabiertas.linkeddata.es/sparql?default-graph-uri=&query=PREFIX+espresup%3A%3Chttp%3A%2F%2Fvocab.ciudadesabiertas.es%2Fdef%2Fhacienda%2Fpresupuesto%23%3E%0D%0APREFIX+time%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Ftime%23%3E%0D%0APREFIX+skos%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0D%0APREFIX+xsd%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0APREFIX+skos-programa%3A%3Chttp%3A%2F%2Fvocab.linkeddata.es%2Fdatosabiertos%2Fkos%2Fhacienda%2Fpresupuesto%2Fprograma-gasto%2Fmadrid%2F%3E%0D%0APREFIX+skos-economica%3A%3Chttp%3A%2F%2Fvocab.linkeddata.es%2Fdatosabiertos%2Fkos%2Fhacienda%2Fpresupuesto%2Feconomica-gasto%2Fmadrid%2F%3E%0D%0A%0D%0ASELECT++%3FejecucionGasto+%3FcredInicial+%3FcredModificac+%3FcredDefinitivo+%3FcredAutorizado+%3FobligReconocidas+%0D%0AWHERE+%7B+%3FejecucionGasto+a++espresup%3AEjecucionGasto+.%0D%0A++++++++%3FejecucionGasto+espresup%3AperiodoEjecucion+%3FintervaloPropio+.%0D%0A++++++++%3FintervaloPropio+time%3AhasEnd+%3FintanciaTiempo+.%0D%0A++++++++%3FinstanciaTiempo+time%3AinXSDgYearMonth+%3FfechaEjecucion+.%0D%0A++++++++%3FejecucionGasto+espresup%3AgastoEjecutado+%3Fgasto+.%0D%0A++++++++%3Fgasto+espresup%3AcreditoPresupuestarioInicial+%3FcredInicial+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoModificaciones+%3FcredModificac+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoDefinitivoVigente+%3FcredDefinitivo+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoAutorizado+%3FcredAutorizado+.%0D%0A++++++++%3FejecucionGasto+espresup%3AobligacionesReconocidasNetas+%3FobligReconocidas++.%0D%0A++++++++%3Fgasto+espresup%3AclasificacionEconomicaGasto+skos-economica%3A22602+.%0D%0A++++++++%3Fgasto+espresup%3AclasificacionPrograma+skos-programa%3A23270+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoAutorizado+%3FcredAutorizado+.%0D%0A++++++++%3FejecucionGasto+espresup%3AobligacionesReconocidasNetas+%3FobligReconocidas++.%0D%0A++++++++FILTER%28%3FfechaEjecucion+%3D+%222018-12%22%5E%5Exsd%3AgYearMonth%29%0D%0A%7D+%0D%0A&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+) se pregunta cuál es el gasto ejecutado para una determinada clasificacion economica y de programa, en este caso el el Programa  23270 - PROMOCIÓN PLAN DERECHOS HUMANOS y la clasificación económica - 22602 - PUBLICIDAD Y PROPAGANDA.
-
+```
 PREFIX espresup:<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#>
 PREFIX time:<http://www.w3.org/2006/time#>
 PREFIX skos:<http://www.w3.org/2004/02/skos/core#>
@@ -70,9 +70,9 @@ WHERE { ?ejecucionGasto a  espresup:EjecucionGasto .
         ?ejecucionGasto espresup:obligacionesReconocidasNetas ?obligReconocidas  .
         FILTER(?fechaEjecucion = "2018-12"^^xsd:gYearMonth)
 } 
-
+```
 En esta [consulta](http://ciudadesabiertas.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fvocab.ciudadesabiertas.es%2Fdatosabiertos%2Fgrafo-recurso%2Fhacienda%2Fpresupuesto%2Fdatos-madrid&query=PREFIX+espresup%3A%3Chttp%3A%2F%2Fvocab.ciudadesabiertas.es%2Fdef%2Fhacienda%2Fpresupuesto%23%3E%0D%0APREFIX+skos-inversion%3A%3Chttp%3A%2F%2Fvocab.linkeddata.es%2Fdatosabiertos%2Fkos%2Fhacienda%2Fpresupuesto%2Finversion%2Fmadrid%2F%3E%0D%0APREFIX+skos-programa%3A%3Chttp%3A%2F%2Fvocab.linkeddata.es%2Fdatosabiertos%2Fkos%2Fhacienda%2Fpresupuesto%2Fprogramas-gasto%2Fmadrid%2F%3E%0D%0APREFIX+dct%3A%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A%0D%0ASELECT++%3FidInversion+%3Fdenominacion+%3FlabelLinea+%3FlabelSublinea+%3FlabelDistrito++%0D%0AWHERE+%7B+%0D%0A++++++++%3Finversion+a+espresup%3AInversionFinancieramenteSostenible+.%0D%0A++++++++%3Finversion+dct%3Aidentifier+%3FidInversion+.%0D%0A++++++++%3Finversion+dct%3Adescription+%3Fdenominacion+.%0D%0A++++++++%3Finversion+espresup%3AclasificacionInversion+%3Fsublinea+.%0D%0A++++++++%3Fsublinea+skos%3AprefLabel+%3FlabelSublinea+.%0D%0A++++++++%3Fsublinea+skos%3Abroader+%3Flinea+.%0D%0A++++++++%3Flinea+skos%3AprefLabel+%3FlabelLinea+.%0D%0A++++++++%3Finversion+espresup%3Aambito+%3Fdistrito+.%0D%0A++++++++%3Fdistrito+rdf%3Alabel+%3FlabelDistrito+.%0D%0A++++++++%3Finversion+espresup%3AambitoGlobalCiudad++%22false%22%5E%5Exsd%3Aboolean+.%0D%0A++++++++%7D&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+) se pregunta cuales son las inversiones financieramwente sostenibles de Madrid.
-
+```
 PREFIX espresup:<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#>
 PREFIX skos-inversion:<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/inversion/madrid/>
 PREFIX skos-programa:<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto/madrid/>
@@ -91,9 +91,9 @@ WHERE {
         ?distrito rdf:label ?labelDistrito .
         ?inversion espresup:ambitoGlobalCiudad  "false"^^xsd:boolean .
         }
-
+```
 En esta [consulta](http://ciudadesabiertas.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fvocab.ciudadesabiertas.es%2Fdatosabiertos%2Fgrafo-recurso%2Fhacienda%2Fpresupuesto%2Fdatos-madrid&query=PREFIX+espresup%3A%3Chttp%3A%2F%2Fvocab.ciudadesabiertas.es%2Fdef%2Fhacienda%2Fpresupuesto%23%3E%0D%0APREFIX+skos-inversion%3A%3Chttp%3A%2F%2Fvocab.linkeddata.es%2Fdatosabiertos%2Fkos%2Fhacienda%2Fpresupuesto%2Finversion%2Fmadrid%2F%3E%0D%0APREFIX+skos-programa%3A%3Chttp%3A%2F%2Fvocab.linkeddata.es%2Fdatosabiertos%2Fkos%2Fhacienda%2Fpresupuesto%2Fprogramas-gasto%2Fmadrid%2F%3E%0D%0APREFIX+dct%3A%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A%0D%0A%0D%0A%0D%0ASELECT++%3FidInversion+%3Fdenominacion+%3FlabelLinea+%3FlabelSublinea+%0D%0AWHERE+%7B+%0D%0A++++++++%3Finversion+a+espresup%3AInversionFinancieramenteSostenible+.%0D%0A++++++++%3Finversion+dct%3Aidentifier+%3FidInversion+.%0D%0A++++++++%3Finversion+dct%3Adescription+%3Fdenominacion+.%0D%0A++++++++%3Finversion+espresup%3AclasificacionInversion+%3Fsublinea+.%0D%0A++++++++%3Fsublinea+skos%3AprefLabel+%3FlabelSublinea+.%0D%0A++++++++%3Fsublinea+skos%3Abroader+%3Flinea+.%0D%0A++++++++%3Flinea+skos%3AprefLabel+%3FlabelLinea+.%0D%0A++++++++%3Finversion+espresup%3Aambito+%3Fdistrito+.%0D%0A++++++++%3Fdistrito+rdf%3Alabel+%3FlabelDistrito+.%0D%0A++++++++FILTER+%28CONTAINS%28%3FlabelDistrito%2C%22PUENTE+DE+VALLECAS%22%29%29%0D%0A++++++++%7D&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+) se pregunta cuales son las inversiones financieramente sostenibles de un cierto distrito, en este caso el distrito PUENTE DE VALLECAS.
-
+```
 PREFIX espresup:<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#>
 PREFIX skos-inversion:<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/inversion/madrid/>
 PREFIX skos-programa:<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto/madrid/>
@@ -112,9 +112,9 @@ WHERE {
         ?distrito rdf:label ?labelDistrito .
         FILTER (CONTAINS(?labelDistrito,"PUENTE DE VALLECAS"))
         }
-
+```
 En esta [consulta](http://ciudadesabiertas.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fvocab.ciudadesabiertas.es%2Fdatosabiertos%2Fgrafo-recurso%2Fhacienda%2Fpresupuesto%2Fdatos-madrid&query=PREFIX+espresup%3A%3Chttp%3A%2F%2Fvocab.ciudadesabiertas.es%2Fdef%2Fhacienda%2Fpresupuesto%23%3E%0D%0APREFIX+skos-inversion%3A%3Chttp%3A%2F%2Fvocab.linkeddata.es%2Fdatosabiertos%2Fkos%2Fhacienda%2Fpresupuesto%2Finversion%2Fmadrid%2F%3E%0D%0APREFIX+skos-programa%3A%3Chttp%3A%2F%2Fvocab.linkeddata.es%2Fdatosabiertos%2Fkos%2Fhacienda%2Fpresupuesto%2Fprogramas-gasto%2Fmadrid%2F%3E%0D%0APREFIX+dct%3A%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A%0D%0ASELECT++%3Fdenominacion+%3Fimporte+%3FpresInversion+%3FcredInicial+%3FcredModificac+%3FcredDefinitivo+%3FcredAutorizado+%3FobligReconocidas%0D%0AWHERE+%7B%0D%0A++++++++%3Finversion+a+espresup%3AInversionFinancieramenteSostenible+.%0D%0A++++++++%3Finversion+dct%3Aidentifier+%222018-000536%22+.%0D%0A++++++++%3Finversion+dct%3Adescription+%3Fdenominacion+.%0D%0A++++++++%3Finversion+espresup%3Aimporte+%3Fimporte+.%0D%0A++++++++%3Finversion+espresup%3ApresupuestoInversion+%3FpresInversion+.%0D%0A++++++++%3FpresInversion+espresup%3AcreditoPresupuestarioInicial+%3FcredInicial+.%0D%0A++++++++%3FejecucionGasto+espresup%3AgastoEjecutado+%3FpresInversion+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoModificaciones+%3FcredModificac+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoDefinitivoVigente+%3FcredDefinitivo+.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoAutorizado+%3FcredAutorizado+.%0D%0A++++++++%3FejecucionGasto+espresup%3AobligacionesReconocidasNetas+%3FobligReconocidas++.%0D%0A++++++++%3FejecucionGasto+espresup%3AcreditoAutorizado+%3FcredAutorizado+.%0D%0A++++++++%3FejecucionGasto+espresup%3AobligacionesReconocidasNetas+%3FobligReconocidas++.%0D%0A%7D&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+) se pregunta cuales son los gastos presupuestados y la ejecución para una determinada inversión, en este caso la inversión con el identificador 2018-000536.
-
+```
 PREFIX espresup:<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#>
 PREFIX skos-inversion:<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/inversion/madrid/>
 PREFIX skos-programa:<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto/madrid/>
@@ -136,5 +136,5 @@ WHERE {
         ?ejecucionGasto espresup:creditoAutorizado ?credAutorizado .
         ?ejecucionGasto espresup:obligacionesReconocidasNetas ?obligReconocidas  .
 }
-
+```
 

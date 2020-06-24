@@ -477,9 +477,6 @@
   }, {
     "@language" : "es",
     "@value" : "Inversión Financieramente Sostenible"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion",
@@ -1562,6 +1559,9 @@
     "@language" : "es",
     "@value" : "Presuopuesto de gastos correspondiente al proyecto de inversión."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
   } ],
@@ -1571,6 +1571,9 @@
   }, {
     "@language" : "es",
     "@value" : "presupuesto inversión"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionDefinitiva",

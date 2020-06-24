@@ -318,12 +318,6 @@ This section provides details for each class and property defined by Vocabulary 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#InversionFinancieramenteSostenible"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible">Financially Sustainable Investment</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#creditoModificaciones"
@@ -344,6 +338,8 @@ This section provides details for each class and property defined by Vocabulary 
          <dd>
             <a href="#gasto"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto">expense</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#presupuestoInversion"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion">investment budget</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -420,17 +416,13 @@ This section provides details for each class and property defined by Vocabulary 
          <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
       </dl>
       <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#PresupuestoGasto"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto">Expense budget</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#ambitoGlobalCiudad"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad">global city scope</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#clasificacionInversion"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#presupuestoInversion"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion">investment budget</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#clasificacionInversion"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionInversion">investment classification</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#ambito"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito">scope</a>
@@ -1304,6 +1296,22 @@ Based on their economic nature, the chapters will be broken down into articles, 
          <dt>Is defined by</dt>
          <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
       </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InversionFinancieramenteSostenible"
+                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible">Financially Sustainable Investment</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PresupuestoGasto"
+                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto">Expense budget</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="clasificacionInversion">
       <h3>investment classification<sup class="type-op" title="object property">op</sup>

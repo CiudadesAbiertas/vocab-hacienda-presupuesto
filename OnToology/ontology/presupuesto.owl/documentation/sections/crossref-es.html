@@ -389,16 +389,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
       </dl>
       <dl class="description">
-         <dt>tiene superclases</dt>
-         <dd>
-            <a href="#PresupuestoGasto"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto">Presupuesto gasto</a>
-            <sup class="type-c" title="clase">c</sup>
-         </dd>
          <dt>en dominio de</dt>
          <dd>
             <a href="#clasificacionInversion"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionInversion">clasificación inversión</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#presupuestoInversion"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion">presupuesto inversión</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#ambito"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito">ámbito</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#ambitoGlobalCiudad"
@@ -594,12 +590,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <dl class="description">
          <dt>tiene superclases</dt>
          <dd/>
-         <dt>tiene subclases</dt>
-         <dd>
-            <a href="#InversionFinancieramenteSostenible"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible">Inversión Financieramente Sostenible</a>
-            <sup class="type-c" title="clase">c</sup>
-         </dd>
          <dt>en dominio de</dt>
          <dd>
             <a href="#clasificacionEconomicaGasto"
@@ -620,6 +610,8 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dd>
             <a href="#gasto"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto">gasto</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#presupuestoInversion"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion">presupuesto inversión</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>
          </dd>
       </dl>
@@ -1437,6 +1429,22 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
          <dt>Definida por</dt>
          <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
       </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#InversionFinancieramenteSostenible"
+                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible">Inversión Financieramente Sostenible</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#PresupuestoGasto"
+                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto">Presupuesto gasto</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="ambito">
       <h3>ámbito<sup class="type-op" title="Propiedad entre objetos">op</sup>

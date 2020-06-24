@@ -29,10 +29,10 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacion"
   } ]
 }, {
   "@id" : "_:genid12",
@@ -42,10 +42,10 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoGasto"
   } ]
 }, {
   "@id" : "_:genid13",
@@ -55,10 +55,10 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoIngreso"
   } ]
 }, {
   "@id" : "_:genid14",
@@ -620,6 +620,7 @@
     "@language" : "en",
     "@value" : "Income budget"
   }, {
+    "@language" : "es",
     "@value" : "Presupuesto ingreso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -911,7 +912,7 @@
     "@value" : "The active final credit at any time will be determined by the initial credit increased or decreased as a result of budgetary modifications."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
@@ -962,7 +963,7 @@
     "@value" : "Un crédito presupuestario inicial puede sufrir modificaciones  con lo cual se tiene un crédito definitivo vigente."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
@@ -1264,7 +1265,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobLiquidacion",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionLiquidacion",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1272,6 +1273,9 @@
   }, {
     "@language" : "es",
     "@value" : "Fecha de aprobación del estado de liquidación."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
@@ -1282,6 +1286,9 @@
   }, {
     "@language" : "en",
     "@value" : "liquidation approval date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionPleno",
@@ -1308,58 +1315,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-  } ]
-}, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Representa las asignaciones a las aplicaciones presupuestarias de gasto en el presupuesto."
-  }, {
-    "@language" : "en",
-    "@value" : "Represents the allocations to budget line expense items."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "expense"
-  }, {
-    "@language" : "es",
-    "@value" : "gasto"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
-  } ]
-}, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Prevision of the resources that the entity expects to obtain in the year to finance the expenses that appear in its budget."
-  }, {
-    "@language" : "es",
-    "@value" : "Previsión de los recursos que la entidad espera obtener en el año para financiar los gastos que figuran en su presupuesto."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "income"
-  }, {
-    "@language" : "es",
-    "@value" : "ingreso"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacion",
@@ -1550,6 +1505,58 @@
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoGasto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representa las asignaciones a las aplicaciones presupuestarias de gasto en el presupuesto."
+  }, {
+    "@language" : "en",
+    "@value" : "Represents the allocations to budget line expense items."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "expense budget"
+  }, {
+    "@language" : "es",
+    "@value" : "presupuesto gasto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoIngreso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Prevision of the resources that the entity expects to obtain in the year to finance the expenses that appear in its budget."
+  }, {
+    "@language" : "es",
+    "@value" : "Previsión de los recursos que la entidad espera obtener en el año para financiar los gastos que figuran en su presupuesto."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "income budget"
+  }, {
+    "@language" : "es",
+    "@value" : "presupuesto ingreso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"
+  } ]
+}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1586,7 +1593,7 @@
     "@value" : "It is the sum of the initial estimate and its modifications"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
@@ -1638,7 +1645,7 @@
     "@value" : "Una previsión inicial de ingreso puede sufrir modificaciones lo cual conlleva a una previsión definitiva."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"

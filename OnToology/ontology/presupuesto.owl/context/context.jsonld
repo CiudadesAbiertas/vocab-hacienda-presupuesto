@@ -50,9 +50,6 @@
     "topDataProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
     },
-    "fechaAprobLiquidacion" : {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobLiquidacion"
-    },
     "EjecucionGasto" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto"
     },
@@ -100,10 +97,6 @@
     },
     "PresupuestoGasto" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"
-    },
-    "ingreso" : {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso",
-      "@type" : "@id"
     },
     "Concept" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -157,6 +150,10 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#derechosReconocidosNetos",
       "@type" : "http://www.w3.org/2001/XMLSchema#float"
     },
+    "fechaAprobacionLiquidacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionLiquidacion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
     },
@@ -206,10 +203,6 @@
     },
     "ProperInterval" : {
       "@id" : "http://www.w3.org/2006/time#ProperInterval"
-    },
-    "gasto" : {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto",
-      "@type" : "@id"
     },
     "estadoProrroga" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#estadoProrroga",
@@ -304,6 +297,10 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#pagos",
       "@type" : "http://www.w3.org/2001/XMLSchema#float"
     },
+    "presupuestoIngreso" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoIngreso",
+      "@type" : "@id"
+    },
     "Liquidacion" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion"
     },
@@ -315,6 +312,10 @@
     },
     "liquidacionGasto" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionGasto",
+      "@type" : "@id"
+    },
+    "presupuestoGasto" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoGasto",
       "@type" : "@id"
     },
     "creditoDefinitivoVigente" : {

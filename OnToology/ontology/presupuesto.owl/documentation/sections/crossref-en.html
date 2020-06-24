@@ -1,5 +1,5 @@
-<html><h2 id="crossreference" class="list">Cross reference for the Vocabulary for the representation of budget information and budget execution according to municipal management data. Classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by Vocabulary for the representation of budget information and budget execution according to municipal management data.
+<h2 id="crossreference" class="list">Cross reference for Vocabulario para la representación de la información de los presupuestos y la ejecución presupuestaria de acuerdo a los datos de gestión económica municipal.  classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Vocabulario para la representación de la información de los presupuestos y la ejecución presupuestaria de acuerdo a los datos de gestión económica municipal. .
 <div id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
@@ -96,14 +96,14 @@ This section provides details for each class and property defined by Vocabulary 
          <dd/>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#gasto"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto">expense</a>
+            <a href="#presupuestoGasto"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoGasto">expense budget</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#estadoProrroga"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#estadoProrroga">extension status</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#anioFiscal"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal">fiscal year</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#ingreso"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso">income</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#presupuestoIngreso"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoIngreso">income budget</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#liquidacion"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacion">liquidation</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#fechaAprobacionPleno"
@@ -279,10 +279,14 @@ This section provides details for each class and property defined by Vocabulary 
          <dd>
             <a href="#creditoAutorizado"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoAutorizado">authorized credit</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#creditoModificaciones"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoModificaciones">credit modifications</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#creditoRetenido"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoRetenido">credit withheld</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#creditoDisponible"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoDisponible">crédito disponible</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#creditoDefinitivoVigente"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoDefinitivoVigente">current final credit</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#obligacionesReconocidasNetas"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#obligacionesReconocidasNetas">net recognized duties</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#pagos"
@@ -320,11 +324,7 @@ This section provides details for each class and property defined by Vocabulary 
          <dd/>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#creditoModificaciones"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoModificaciones">credit modifications</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#creditoDefinitivoVigente"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoDefinitivoVigente">current final credit</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#clasificacionEconomicaGasto"
+            <a href="#clasificacionEconomicaGasto"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto">expense economic classification</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#ejecucionGasto"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionGasto">expense execution</a>
@@ -336,8 +336,8 @@ This section provides details for each class and property defined by Vocabulary 
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#gasto"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto">expense</a>
+            <a href="#presupuestoGasto"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoGasto">expense budget</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#presupuestoInversion"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion">investment budget</a>
             <sup class="type-op" title="object property">op</sup>
@@ -449,11 +449,7 @@ This section provides details for each class and property defined by Vocabulary 
          <dd/>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#previsionModificaciones"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionModificaciones">estimats modifications</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#previsionDefinitiva"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionDefinitiva">final estimate</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#clasificacionEconomicaIngreso"
+            <a href="#clasificacionEconomicaIngreso"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso">income economic classification</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#ejecucionIngreso"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionIngreso">income execution</a>
@@ -463,8 +459,8 @@ This section provides details for each class and property defined by Vocabulary 
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#ingreso"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso">income</a>
+            <a href="#presupuestoIngreso"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoIngreso">income budget</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -496,6 +492,10 @@ This section provides details for each class and property defined by Vocabulary 
          <dd>
             <a href="#derechosCancelados"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#derechosCancelados">cancelled rights</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#previsionModificaciones"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionModificaciones">estimats modifications</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#previsionDefinitiva"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionDefinitiva">final estimate</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#recaudacionNeta"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#recaudacionNeta">net collection</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#derechosReconocidosNetos"
@@ -580,7 +580,9 @@ This section provides details for each class and property defined by Vocabulary 
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionGasto">expense liquidation</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#liquidacionIngreso"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacionIngreso">income liquidation</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#remanenteTesoreria"
+            <sup class="type-op" title="object property">op</sup>, <a href="#fechaAprobacionLiquidacion"
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionLiquidacion">liquidation approval date</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#remanenteTesoreria"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteTesoreria">remnant of treasury</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
@@ -761,8 +763,8 @@ This section provides details for each class and property defined by Vocabulary 
             title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#periodoEjecucion">execution period</a>
       </li>
       <li>
-         <a href="#gasto"
-            title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto">expense</a>
+         <a href="#presupuestoGasto"
+            title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoGasto">expense budget</a>
       </li>
       <li>
          <a href="#clasificacionEconomicaGasto"
@@ -793,8 +795,8 @@ This section provides details for each class and property defined by Vocabulary 
          <a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a>
       </li>
       <li>
-         <a href="#ingreso"
-            title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso">income</a>
+         <a href="#presupuestoIngreso"
+            title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoIngreso">income budget</a>
       </li>
       <li>
          <a href="#clasificacionEconomicaIngreso"
@@ -869,13 +871,13 @@ This section provides details for each class and property defined by Vocabulary 
          </dl>
       </div>
    </div>
-   <div class="entity" id="gasto">
-      <h3>expense<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="presupuestoGasto">
+      <h3>expense budget<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto</p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoGasto</p>
       <div class="comment">
          <span class="markdown">Represents the allocations to budget line expense items.</span>
       </div>
@@ -1157,13 +1159,13 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dl>
       </div>
    </div>
-   <div class="entity" id="ingreso">
-      <h3>income<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="presupuestoIngreso">
+      <h3>income budget<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso</p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoIngreso</p>
       <div class="comment">
          <span class="markdown">Prevision of the resources that the entity expects to obtain in the year to finance the expenses that appear in its budget.</span>
       </div>
@@ -1560,8 +1562,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
             title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#excesoDefectoPrevision">lack or excess estimate</a>
       </li>
       <li>
-         <a href="#fechaAprobLiquidacion"
-            title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobLiquidacion">liquidation approval date</a>
+         <a href="#fechaAprobacionLiquidacion"
+            title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionLiquidacion">liquidation approval date</a>
       </li>
       <li>
          <a href="#recaudacionNeta"
@@ -1767,8 +1769,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#PresupuestoGasto"
-                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto">Expense budget</a>
+               <a href="#EjecucionGasto"
+                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto">Ejecución gasto</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1887,8 +1889,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#PresupuestoGasto"
-                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto">Expense budget</a>
+               <a href="#EjecucionGasto"
+                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto">Ejecución gasto</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1916,8 +1918,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#PresupuestoIngreso"
-                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso">Income budget</a>
+               <a href="#EjecucionIngreso"
+                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso">Income execution</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1974,8 +1976,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#PresupuestoIngreso"
-                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso">Income budget</a>
+               <a href="#EjecucionIngreso"
+                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso">Income execution</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2159,13 +2161,13 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dl>
       </div>
    </div>
-   <div class="entity" id="fechaAprobLiquidacion">
+   <div class="entity" id="fechaAprobacionLiquidacion">
       <h3>liquidation approval date<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobLiquidacion</p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionLiquidacion</p>
       <div class="comment">
          <span class="markdown">Date in which the liquidation statement is approved.</span>
       </div>
@@ -2173,6 +2175,20 @@ Based on their economic nature, the chapters will be broken down into articles, 
          <dt>Is defined by</dt>
          <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
       </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Liquidacion"
+                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Liquidacion">Liquidation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="recaudacionNeta">
       <h3>net collection<sup class="type-dp" title="data property">dp</sup>
@@ -2578,4 +2594,3 @@ Based on their economic nature, the chapters will be broken down into articles, 
 <sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>
-</html>

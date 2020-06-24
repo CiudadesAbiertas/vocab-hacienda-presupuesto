@@ -1,9 +1,9 @@
 ## Ejemplos de consultas sobre presupuestos
 
 A continuación se presentan algunos ejemplos de consultas utilizando como referencia un extracto de los  conjuntos de datos de presupuestos publicados por el ayuntamiento de Madrid como datos abiertos. Se han utilizado los grafos de http://vocab.ciudadesabiertas.es/datosabiertos/grafo-recurso/hacienda/presupuesto/datos-madrid. Además se tienen los siguientes grafos:
-skos programa-gasto http://vocab.linkeddata.es/datosabiertos/grafo-skos/hacienda/presupuesto/programa-gasto
-skos economica-ingreso http://vocab.linkeddata.es/datosabiertos/grafo-skos/hacienda/presupuesto/economica-ingreso
-skos economica-gasto http://vocab.linkeddata.es/datosabiertos/grafo-skos/hacienda/presupuesto/economica-gastohttp://vocab.ciudadesabiertas.es/datosabiertos/grafo-recurso/hacienda/presupuesto/datos-madrid
+* skos programa-gasto: http://vocab.linkeddata.es/datosabiertos/grafo-skos/hacienda/presupuesto/programa-gasto
+* skos economica-ingreso: http://vocab.linkeddata.es/datosabiertos/grafo-skos/hacienda/presupuesto/economica-ingreso
+* skos economica-gasto: http://vocab.linkeddata.es/datosabiertos/grafo-skos/hacienda/presupuesto/economica-gastohttp://vocab.ciudadesabiertas.es/datosabiertos/grafo-recurso/hacienda/presupuesto/datos-madrid
 
 Por ejemplo, en esta [consulta](http://ciudadesabiertas.linkeddata.es/sparql?default-graph-uri=http%3A%2F%2Fvocab.ciudadesabiertas.es%2Fdatosabiertos%2Fgrafo-recurso%2Fhacienda%2Fpresupuesto%2Fdatos-madrid&query=PREFIX+espresup%3A%3Chttp%3A%2F%2Fvocab.ciudadesabiertas.es%2Fdef%2Fhacienda%2Fpresupuesto%23%3E%0D%0APREFIX+time%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Ftime%23%3E%0D%0APREFIX+skos%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0D%0A%0D%0A%0D%0ASELECT++%3Fgasto+%3FcreditoPresInicial++%3FlabelPrograma+%3FlabelEconomica+%3FlabelOrganica+%0D%0AWHERE+%7B+%3Fgasto+a+espresup%3APresupuestoGasto+.%0D%0A++++++++%3Fgasto+espresup%3AcreditoPresupuestarioInicial+%3FcreditoPresInicial+.%0D%0A++++++++%3Fgasto+espresup%3AclasificacionPrograma+%3Fprograma+.%0D%0A+++++++%3Fprograma+skos%3AprefLabel+%3FlabelPrograma+.%0D%0A+++++++%3Fgasto+espresup%3AclasificacionEconomicaGasto+%3Feconomica+.%0D%0A+++++++%3Feconomica+skos%3AprefLabel+%3FlabelEconomica+.%0D%0A+++++++OPTIONAL+%7B%3Fgasto+espresup%3AclasificacionOrganica+%3Forganica+.+%3Forganica+skos%3AprefLabel+%3FlabelOrganica%7D%0D%0A%7D%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+) se pregunta el presupuesto de gastos de Madrid para el 2018 (se da una muestra del presupuesto).  
 ```

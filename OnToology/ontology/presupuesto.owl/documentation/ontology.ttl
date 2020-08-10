@@ -188,8 +188,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambito
-:ambito rdf:type owl:ObjectProperty ,
-                 owl:FunctionalProperty ;
+:ambito rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> ;
+        rdf:type owl:FunctionalProperty ;
         rdfs:domain :InversionFinancieramenteSostenible ;
         rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> ;
         rdfs:comment "A financially sustainable investment may have as its scope a specific district, several districts or all districts."@en ,
@@ -203,24 +204,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :clasificacionEconomicaGasto rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf owl:topObjectProperty ;
                              rdf:type owl:FunctionalProperty ;
-                             rdfs:domain :Gasto ;
-                             rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
-                                                               [ rdf:type owl:Class ;
-                                                                 owl:unionOf ( [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                                 owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto>
-                                                                               ]
-                                                                               [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                                 owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto>
-                                                                               ]
-                                                                             )
-                                                               ]
-                                                             ) ;
-                                          rdf:type owl:Class
-                                        ] ;
+                             rdfs:domain :PresupuestoGasto ;
+                             rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
                              rdfs:comment """La clasificación económica del gasto agrupará los créditos por capítulos separando las operaciones corrientes, las de capital y las financieras.
 Atendiendo a su naturaleza económica, los capítulos se desglosarán en artículos, y éstos, a su vez, en conceptos, que se podrán subdividir en subconceptos. Los subconceptos podrán desarrollarse en partidas."""@es ,
+                                          """La clasificación económica puede  referirse a la taxonomía propia del ayuntamiento, es decir a sus propios conceptos o subconceptos (representada como un esquema SKOS) o a la taxonomía general establecida por la Orden EHA/3565/2008, de 3 de diciembre, por la que se aprueba la estructura de los presupuestos de las entidades locales, representada también como un esquema SKOS:
+https://www.boe.es/buscar/act.php?id=BOE-A-2008-19916. 
+En esta ontología se implementa la taxonomía general. Cada ayuntamiento implementa su propia taxonomía y la relaciona con la taxonomía general. Un ejemplo se puede encontrar en la documentación de la ontología: http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto/"""@es ,
                                           """The economic classification of the expenses will group the credits by chapters separating the current operations, those of capital and the financial ones.
 Based on their economic nature, the chapters will be broken down into articles, and these, in turn, into concepts, which can be subdivided into subconcepts. Subconcepts may be developed in budget items."""@en ;
                              rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
@@ -231,23 +221,12 @@ Based on their economic nature, the chapters will be broken down into articles, 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso
 :clasificacionEconomicaIngreso rdf:type owl:ObjectProperty ,
                                         owl:FunctionalProperty ;
-                               rdfs:domain :Ingreso ;
-                               rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
-                                                                 [ rdf:type owl:Class ;
-                                                                   owl:unionOf ( [ rdf:type owl:Restriction ;
-                                                                                   owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                                   owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso>
-                                                                                 ]
-                                                                                 [ rdf:type owl:Restriction ;
-                                                                                   owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                                   owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso>
-                                                                                 ]
-                                                                               )
-                                                                 ]
-                                                               ) ;
-                                            rdf:type owl:Class
-                                          ] ;
-                               rdfs:comment "Las previsiones incluidas en los estados de ingresos del presupuesto de la entidad local se clasificarán separando las operaciones corrientes, las de capital y las financieras, de acuerdo con la estructura por capítulos, artículos, conceptos y subconceptos."@es ,
+                               rdfs:domain :PresupuestoIngreso ;
+                               rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                               rdfs:comment """La clasificación económica puede  referirse a la taxonomía propia del ayuntamiento, es decir a sus propios conceptos o subconceptos (representada como un esquema SKOS) o a la taxonomía general establecida por la Orden EHA/3565/2008, de 3 de diciembre, por la que se aprueba la estructura de los presupuestos de las entidades locales, representada también como un esquema SKOS:
+https://www.boe.es/buscar/act.php?id=BOE-A-2008-19916. 
+En esta ontología se implementa la taxonomía general. Cada ayuntamiento implementa su propia taxonomía y la relaciona con la taxonomía general. Un ejemplo se puede encontrar en la documentación de la ontología: http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto/"""@es ,
+                                            "Las previsiones incluidas en los estados de ingresos del presupuesto de la entidad local se clasificarán separando las operaciones corrientes, las de capital y las financieras, de acuerdo con la estructura por capítulos, artículos, conceptos y subconceptos."@es ,
                                             "The estimates included in the income statements of the budget of the local entity will be classified by separating current, capital and financial operations, according to the structure by chapters, articles, concepts and subconcepts."@en ;
                                rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
                                rdfs:label "clasificación económica ingreso"@es ,
@@ -258,16 +237,9 @@ Based on their economic nature, the chapters will be broken down into articles, 
 :clasificacionInversion rdf:type owl:ObjectProperty ,
                                  owl:FunctionalProperty ;
                         rdfs:domain :InversionFinancieramenteSostenible ;
-                        rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                            owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion>
-                                                          ]
-                                                        ) ;
-                                     rdf:type owl:Class
-                                   ] ;
                         rdfs:comment "Es la clasificación propia que puede utilizar un ayuntamiento para agrupar los proyectos según el destino de las inversiones."@es ,
-                                     "It is the own classification that a city council can use to group the projects according to the destination of the investments."@en ;
+                                     "It is the own classification that a city council can use to group the projects according to the destination of the investments."@en ,
+                                     "La clasificación de una inversión financieramente sostenible puede  referirse a una taxonomía propia del ayuntamiento. Esta taxonomía debe ser implementada por cada ayuntamiento."@es ;
                         rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
                         rdfs:label "clasificación inversión"@es ,
                                    "investment classification"@en .
@@ -277,19 +249,12 @@ Based on their economic nature, the chapters will be broken down into articles, 
 :clasificacionOrganica rdf:type owl:ObjectProperty ,
                                 owl:FunctionalProperty ;
                        rdfs:domain [ rdf:type owl:Class ;
-                                     owl:unionOf ( :Gasto
-                                                   :Ingreso
+                                     owl:unionOf ( :PresupuestoGasto
+                                                   :PresupuestoIngreso
                                                  )
                                    ] ;
-                       rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                           owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica>
-                                                         ]
-                                                       ) ;
-                                    rdf:type owl:Class
-                                  ] ;
                        rdfs:comment "La clasificación orgánica agrupa por secciones y servicios los créditos asignados a los distintos centros gestores de gasto."@es ,
+                                    "La clasificación orgánica puede  referirse a una taxonomía propia del ayuntamiento. Esta taxonomía debe ser implementada por cada ayuntamiento."@es ,
                                     "The organizational classification groups the credits assigned to the different expense management centers by sections and services."@en ;
                        rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
                        rdfs:label "clasificación orgánica"@es ,
@@ -299,23 +264,12 @@ Based on their economic nature, the chapters will be broken down into articles, 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma
 :clasificacionPrograma rdf:type owl:ObjectProperty ,
                                 owl:FunctionalProperty ;
-                       rdfs:domain :Gasto ;
-                       rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
-                                                         [ rdf:type owl:Class ;
-                                                           owl:unionOf ( [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                           owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto>
-                                                                         ]
-                                                                         [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                           owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto>
-                                                                         ]
-                                                                       )
-                                                         ]
-                                                       ) ;
-                                    rdf:type owl:Class
-                                  ] ;
-                       rdfs:comment "Los créditos se ordenarán según su finalidad y los objetivos que con ellos se proponga conseguir, con arreglo a la clasificación por áreas de gasto, políticas de gasto, grupos de programas y programas. Estos últimos podrán desarrollarse en subprogramas."@es ,
+                       rdfs:domain :PresupuestoGasto ;
+                       rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                       rdfs:comment """La clasificación por programa de gasto puede  referirse a la taxonomía propia del ayuntamiento, es decir a sus propios grupos de programas o programas (representada como un esquema SKOS) o a la taxonomía general establecida por la Orden EHA/3565/2008, de 3 de diciembre, por la que se aprueba la estructura de los presupuestos de las entidades locales, representada también como un esquema SKOS:
+https://www.boe.es/buscar/act.php?id=BOE-A-2008-19916. 
+En esta ontología se implementa la taxonomía general. Cada ayuntamiento implementa su propia taxonomía y la relaciona con la taxonomía general. Un ejemplo se puede encontrar en la documentación de la ontología: http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto/"""@es ,
+                                    "Los créditos se ordenarán según su finalidad y los objetivos que con ellos se proponga conseguir, con arreglo a la clasificación por áreas de gasto, políticas de gasto, grupos de programas y programas. Estos últimos podrán desarrollarse en subprogramas."@es ,
                                     "The credits will be arranged according to their purpose and the objectives that they intend to achieve, according to the classification by areas of expenditure, expenditure policies, groups of programs and programs. The latter may be developed in subprograms."@en ;
                        rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
                        rdfs:label "clasificación programa gasto"@es ,
@@ -324,7 +278,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionGasto
 :ejecucionGasto rdf:type owl:ObjectProperty ;
-                rdfs:domain :Gasto ;
+                rdfs:domain :PresupuestoGasto ;
                 rdfs:range :EjecucionGasto ;
                 rdfs:comment "La ejecución presupuestaria del gasto informa de un periodo de actividad contable, generalmente a partir del 1 de enero del año fiscal hasta la fecha de la ejecución."@es ,
                              "The execution of expense reports the income in a period of accounting activity, generally from January 1 of the fiscal year until the date of execution."@en ;
@@ -335,35 +289,13 @@ Based on their economic nature, the chapters will be broken down into articles, 
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionIngreso
 :ejecucionIngreso rdf:type owl:ObjectProperty ;
-                  rdfs:domain :Ingreso ;
+                  rdfs:domain :PresupuestoIngreso ;
                   rdfs:range :EjecucionIngreso ;
                   rdfs:comment "La ejecución presupuestaria del ingreso informa de un periodo de actividad contable, generalmente a partir del 1 de enero del año fiscal hasta la fecha de la ejecución."@es ,
                                "The execution of income reports the income in a period of accounting activity, generally from January 1 of the fiscal year until the date of execution."@en ;
                   rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
                   rdfs:label "ejecución ingreso"@es ,
                              "income execution"@en .
-
-
-###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#gasto
-:gasto rdf:type owl:ObjectProperty ;
-       rdfs:domain :Presupuesto ;
-       rdfs:range :Gasto ;
-       rdfs:comment "Representa las asignaciones a las aplicaciones presupuestarias de gasto en el presupuesto."@es ,
-                    "Represents the allocations to budget line expense items."@en ;
-       rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
-       rdfs:label "expense"@en ,
-                  "gasto"@es .
-
-
-###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ingreso
-:ingreso rdf:type owl:ObjectProperty ;
-         rdfs:domain :Presupuesto ;
-         rdfs:range :Ingreso ;
-         rdfs:comment "Prevision of the resources that the entity expects to obtain in the year to finance the expenses that appear in its budget."@en ,
-                      "Previsión de los recursos que la entidad espera obtener en el año para financiar los gastos que figuran en su presupuesto."@es ;
-         rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
-         rdfs:label "income"@en ,
-                    "ingreso"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#liquidacion
@@ -416,8 +348,55 @@ Based on their economic nature, the chapters will be broken down into articles, 
                              "período ejecución"@es .
 
 
+###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoGasto
+:presupuestoGasto rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Presupuesto ;
+                  rdfs:range :PresupuestoGasto ;
+                  rdfs:comment "Representa las asignaciones a las aplicaciones presupuestarias de gasto en el presupuesto."@es ,
+                               "Represents the allocations to budget line expense items."@en ;
+                  rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
+                  rdfs:label "expense budget"@en ,
+                             "presupuesto gasto"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoIngreso
+:presupuestoIngreso rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Presupuesto ;
+                    rdfs:range :PresupuestoIngreso ;
+                    rdfs:comment "Prevision of the resources that the entity expects to obtain in the year to finance the expenses that appear in its budget."@en ,
+                                 "Previsión de los recursos que la entidad espera obtener en el año para financiar los gastos que figuran en su presupuesto."@es ;
+                    rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
+                    rdfs:label "income budget"@en ,
+                               "presupuesto ingreso"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion
+:presupuestoInversion rdf:type owl:ObjectProperty ;
+                      rdfs:domain :InversionFinancieramenteSostenible ;
+                      rdfs:range :PresupuestoGasto ;
+                      rdfs:comment "Expense budget corresponding to the investment project."@en ,
+                                   "Presuopuesto de gastos correspondiente al proyecto de inversión."@es ;
+                      rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
+                      rdfs:label "investment budget"@en ,
+                                 "presupuesto inversión"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                                                                                  rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> ;
+                                                                                  <http://purl.org/dc/terms/issued> "2014-03-28" ;
+                                                                                  rdfs:comment "Distrito al que pertenece un fenómeno geográfico o una entidad administrativa"@es ;
+                                                                                  rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                  rdfs:label "pertenece al distrito"@es .
+
+
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio> rdf:type owl:ObjectProperty .
+
+
+###  http://www.opengis.net/ont/geosparql#sfWithin
+<http://www.opengis.net/ont/geosparql#sfWithin> rdf:type owl:ObjectProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#inScheme
@@ -461,6 +440,28 @@ Based on their economic nature, the chapters will be broken down into articles, 
 #    Data properties
 #################################################################
 
+###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ajustes
+:ajustes rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Liquidacion ;
+         rdfs:range xsd:float ;
+         rdfs:comment "Los ajustes corresponden a los créditos financiados con el remanente de tesorería y las desviaciones positivas y negativas del ejercicio."@es ,
+                      "The adjustments correspond to the credits financed with the treasury remnant, and the positive and negative deviations for the fiscal year."@en ;
+         rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
+         rdfs:label "adjustements"@en ,
+                    "ajustes"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad
+:ambitoGlobalCiudad rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :InversionFinancieramenteSostenible ;
+                    rdfs:range xsd:boolean ;
+                    rdfs:comment "Indica que el proyecto de inversión financieramente sostenible tiene como ámbito todos los distritos de una ciudad."@es ,
+                                 "Indicates that the financially sustainable investment project has as its scope all the districts of a city."@en ;
+                    rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
+                    rdfs:label "global city scope"@en ,
+                               "ámbito global ciudad"@es .
+
+
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal
 :anioFiscal rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
@@ -471,18 +472,6 @@ Based on their economic nature, the chapters will be broken down into articles, 
             rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
             rdfs:label "año fiscal"@es ,
                        "fiscal year"@en .
-
-
-###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#codigoIdentificador
-:codigoIdentificador rdf:type owl:DatatypeProperty ,
-                              owl:FunctionalProperty ;
-                     rdfs:domain :InversionFinancieramenteSostenible ;
-                     rdfs:range xsd:string ;
-                     rdfs:comment "Código interno del proyecto de inversión."@es ,
-                                  "Internal code for the investment project."@en ;
-                     rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
-                     rdfs:label "código identificador"@es ,
-                                "identifier code"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoAutorizado
@@ -498,7 +487,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoDefinitivoVigente
 :creditoDefinitivoVigente rdf:type owl:DatatypeProperty ;
-                          rdfs:domain :Gasto ;
+                          rdfs:domain :EjecucionGasto ;
                           rdfs:range xsd:float ;
                           rdfs:comment "El crédito definitivo vigente en cada momento vendrá determinado por el crédito inicial aumentado o disminuido como consecuencia de modificaciones presupuestarias."@es ,
                                        "The active final credit at any time will be determined by the initial credit increased or decreased as a result of budgetary modifications."@en ;
@@ -520,7 +509,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoModificaciones
 :creditoModificaciones rdf:type owl:DatatypeProperty ;
-                       rdfs:domain :Gasto ;
+                       rdfs:domain :EjecucionGasto ;
                        rdfs:range xsd:float ;
                        rdfs:comment "An initial budget credit may undergo modifications with which you have a valid final credit."@en ,
                                     "Un crédito presupuestario inicial puede sufrir modificaciones  con lo cual se tiene un crédito definitivo vigente."@es ;
@@ -531,7 +520,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoPresupuestarioInicial
 :creditoPresupuestarioInicial rdf:type owl:DatatypeProperty ;
-                              rdfs:domain :Gasto ;
+                              rdfs:domain :PresupuestoGasto ;
                               rdfs:range xsd:float ;
                               rdfs:comment "Credit initially approved for a specific budget item."@en ,
                                            "Crédito aprobado inicialmente para determinada aplicación presupuestaria."@es ;
@@ -549,17 +538,6 @@ Based on their economic nature, the chapters will be broken down into articles, 
                  rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
                  rdfs:label "credit withheld"@en ,
                             "crédito retenido"@es .
-
-
-###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#denonimacion
-:denonimacion rdf:type owl:DatatypeProperty ;
-              rdfs:domain :InversionFinancieramenteSostenible ;
-              rdfs:range xsd:string ;
-              rdfs:comment "Denonimación del proyecto de inversión."@es ;
-              rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
-              rdfs:label "Denomination of an investment project."@en ,
-                         "denominación"@es ,
-                         "denomination"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#derechosAnulados
@@ -630,7 +608,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#excesoDefectoPrevision
 :excesoDefectoPrevision rdf:type owl:DatatypeProperty ;
-                        rdfs:domain :Liquidacion ;
+                        rdfs:domain :LiquidacionIngreso ;
                         rdfs:range xsd:float ;
                         rdfs:comment "Informa sobre la desviación que ha existido en las previsiones de ingresos. Es el resultado de restar a las previsiones definitivas los derechos reconocidos netos. Si la diferencia es positiva, significa que se estimaron más recursos de los que se han obtenido; y, si la diferencia es negativa, significa que se han obtenido más recursos de los previstos."@es ,
                                      "Reports on the deviation that has existed in the revenue estimates. It is the result of subtracting the net recognized rights from the final estimates. If the difference is positive, it means that more resources were estimated than have been obtained; and, if the difference is negative, it means that more resources have been obtained than expected."@en ;
@@ -639,16 +617,27 @@ Based on their economic nature, the chapters will be broken down into articles, 
                                    "lack or excess estimate"@en .
 
 
-###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacion
-:fechaAprobacion rdf:type owl:DatatypeProperty ,
-                          owl:FunctionalProperty ;
-                 rdfs:domain :Presupuesto ;
-                 rdfs:range xsd:dateTime ;
-                 rdfs:comment "Date of approval in plenary. The final approval of the general budget by the Plenary of the corporation must be carried out before December 31 of the year prior to the year in which it should be applied."@en ,
-                              "Fecha de aprobación en el Pleno. La aprobación definitiva del presupuesto general por el Pleno de la corporación habrá de realizarse antes del día 31 de diciembre del año anterior al del ejercicio en que deba aplicarse"@es ;
-                 rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
-                 rdfs:label "approval date"@en ,
-                            "fecha aprobación"@es .
+###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionLiquidacion
+:fechaAprobacionLiquidacion rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :Liquidacion ;
+                            rdfs:range xsd:dateTime ;
+                            rdfs:comment "Date in which the liquidation statement is approved."@en ,
+                                         "Fecha de aprobación del estado de liquidación."@es ;
+                            rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
+                            rdfs:label "fecha aprobación liquidación"@es ,
+                                       "liquidation approval date"@en .
+
+
+###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionPleno
+:fechaAprobacionPleno rdf:type owl:DatatypeProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain :Presupuesto ;
+                      rdfs:range xsd:dateTime ;
+                      rdfs:comment "Date of approval in plenary. The final approval of the general budget by the Plenary of the corporation must be carried out before December 31 of the year prior to the year in which it should be applied."@en ,
+                                   "Fecha de aprobación en el Pleno. La aprobación definitiva del presupuesto general por el Pleno de la corporación habrá de realizarse antes del día 31 de diciembre del año anterior al del ejercicio en que deba aplicarse"@es ;
+                      rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
+                      rdfs:label "fecha aprobación pleno"@es ,
+                                 "plenary approval date"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#obligacionesPendientes31Dic
@@ -686,7 +675,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionDefinitiva
 :previsionDefinitiva rdf:type owl:DatatypeProperty ;
-                     rdfs:domain :Ingreso ;
+                     rdfs:domain :EjecucionIngreso ;
                      rdfs:range xsd:float ;
                      rdfs:comment "Es la suma de la previsión inicial y sus modificaciones"@es ,
                                   "It is the sum of the initial estimate and its modifications"@en ;
@@ -697,7 +686,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionInicial
 :previsionInicial rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :Ingreso ;
+                  rdfs:domain :PresupuestoIngreso ;
                   rdfs:range xsd:float ;
                   rdfs:comment "Es el importe previsto inicialmente, en términos de recaudación (caja) o derechos reconocidos"@es ,
                                "It is the amount initially planned, in terms of collection (cash) or recognized rights."@en ;
@@ -708,7 +697,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionModificaciones
 :previsionModificaciones rdf:type owl:DatatypeProperty ;
-                         rdfs:domain :Ingreso ;
+                         rdfs:domain :EjecucionIngreso ;
                          rdfs:range xsd:float ;
                          rdfs:comment "An initial income estimate may undergo modifications which leads to a definitive forecast."@en ,
                                       "Una previsión inicial de ingreso puede sufrir modificaciones lo cual conlleva a una previsión definitiva."@es ;
@@ -728,6 +717,39 @@ Based on their economic nature, the chapters will be broken down into articles, 
                             "recaudación neta"@es .
 
 
+###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteCredito
+:remanenteCredito rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :LiquidacionGasto ;
+                  rdfs:range xsd:float ;
+                  rdfs:comment "Amount of the final credits that have not been consumed in the fiscal year. Its amount will be that resulting from deducting the net recognized duties from the final credits."@en ,
+                               "Importe de los créditos definitivos que no se han consumido en el año fiscal. Su importe será el que resulte de deducir de los créditos definitivos las obligaciones reconocidas netas."@es ;
+                  rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
+                  rdfs:label "credit remnant"@en ,
+                             "remanente crédito"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#remanenteTesoreria
+:remanenteTesoreria rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Liquidacion ;
+                    rdfs:range xsd:float ;
+                    rdfs:comment "Las obligaciones reconocidas y liquidadas no satisfechas el último día del ejercicio, los derechos pendientes de cobro y los fondos líquidos a 31 de diciembre configurarán el remanente de tesorería de la entidad local."@es ,
+                                 "The recognized and settled obligations not satisfied on the last day of the fiscal year, the rights pending collection and the liquid funds as of December 31 will configure the remnant of treasury treasury of the local entity."@en ;
+                    rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
+                    rdfs:label "remanente de tesorería"@es ,
+                               "remnant of treasury"@en .
+
+
+###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoAjustado
+:resultadoAjustado rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Liquidacion ;
+                   rdfs:comment "El resultado presupuestario deberá ajustarse, en su caso, en función de las obligaciones financiadas con el remanente de tesorería para gastos generales y las desviaciones de financiación del ejercicio derivadas de los gastos con financiación afectada."@es ,
+                                "The budgetary result should be adjusted, where appropriate, based on the duties financed with the remnant credit for general expenses, and the financing deviations for the year derived from the expenses with affected financing."@en ;
+                   rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
+                   rdfs:label "adjusted result"@en ,
+                              "resultado ajustado"@es .
+
+
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#resultadoPresupuestario
 :resultadoPresupuestario rdf:type owl:DatatypeProperty ;
                          rdfs:domain :Liquidacion ;
@@ -737,17 +759,6 @@ Based on their economic nature, the chapters will be broken down into articles, 
                          rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
                          rdfs:label "budget result"@en ,
                                     "resultado presupuestario"@es .
-
-
-###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#todosLosDistritos
-:todosLosDistritos rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :InversionFinancieramenteSostenible ;
-                   rdfs:range xsd:boolean ;
-                   rdfs:comment "Indica que el proyecto de inversión financieramente sostenible tiene como ámbito todos los distritos de una ciudad."@es ,
-                                "Indicates that the financially sustainable investment project has as its scope all the districts of a city."@en ;
-                   rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
-                   rdfs:label "all districts"@en ,
-                              "todos los distritos"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#totalGastoComprometido
@@ -808,47 +819,8 @@ Based on their economic nature, the chapters will be broken down into articles, 
                              "Income execution"@en .
 
 
-###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Gasto
-:Gasto rdf:type owl:Class ;
-       rdfs:subClassOf [ rdf:type owl:Restriction ;
-                         owl:onProperty :clasificacionEconomicaGasto ;
-                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onClass <http://www.w3.org/2004/02/skos/core#Concept>
-                       ] ,
-                       [ rdf:type owl:Restriction ;
-                         owl:onProperty :clasificacionPrograma ;
-                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onClass <http://www.w3.org/2004/02/skos/core#Concept>
-                       ] ,
-                       [ rdf:type owl:Restriction ;
-                         owl:onProperty :ejecucionGasto ;
-                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onClass :EjecucionGasto
-                       ] ;
-       rdfs:comment "Representa las asignaciones a las aplicaciones presupuestarias de gasto en el presupuesto."@es ,
-                    "Represents the allocations to budget line expense items."@en ;
-       rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
-       rdfs:label "Expense"@en ,
-                  "Gasto"@es .
-
-
-###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Ingreso
-:Ingreso rdf:type owl:Class ;
-         rdfs:subClassOf [ rdf:type owl:Restriction ;
-                           owl:onProperty :ejecucionIngreso ;
-                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                           owl:onClass :EjecucionIngreso
-                         ] ;
-         rdfs:comment "Prevision of the resources that the entity expects to obtain in the year to finance the expenses that appear in its budget."@en ,
-                      "Previsión de los recursos que la entidad espera obtener en el año para financiar los gastos que figuran en su presupuesto."@es ;
-         rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
-         rdfs:label "Income"@en ,
-                    "Ingreso" .
-
-
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible
 :InversionFinancieramenteSostenible rdf:type owl:Class ;
-                                    rdfs:subClassOf :Gasto ;
                                     rdfs:comment "Expenses incurred or planned to be incurred by local entities or their autonomous bodies for the creation of infrastructure, and the creation or acquisition of goods of an inventoried nature, necessary for the operation of the services and those other expenses that are amortizable."@en ,
                                                  "Gastos en los que incurran o prevean incurrir las entidades locales o sus organismos autónomos destinados a la creación de infraestructuras y a la creación o adquisición de bienes de naturaleza inventariable necesarios para el funcionamiento de los servicios y aquellos otros gastos que tengan carácter amortizable"@es ;
                                     rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
@@ -898,25 +870,63 @@ Based on their economic nature, the chapters will be broken down into articles, 
 ###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#Presupuesto
 :Presupuesto rdf:type owl:Class ;
              rdfs:subClassOf [ rdf:type owl:Restriction ;
-                               owl:onProperty :gasto ;
-                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass :Gasto
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :ingreso ;
-                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass :Ingreso
-                             ] ,
-                             [ rdf:type owl:Restriction ;
                                owl:onProperty :liquidacion ;
                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                owl:onClass :Liquidacion
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :presupuestoGasto ;
+                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :PresupuestoGasto
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :presupuestoIngreso ;
+                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :PresupuestoIngreso
                              ] ;
              rdfs:comment "Los presupuestos generales de las entidades locales constituyen la expresión cifrada, conjunta y sistemática de las obligaciones que, como máximo, pueden reconocer la entidad, y sus organismos autónomos, y de los derechos que prevean liquidar durante el correspondiente ejercicio, así como de las previsiones de ingresos y gastos de las sociedades mercantiles cuyo capital social pertenezca íntegramente a la entidad local correspondiente."@es ,
                           "The general budgets of the local entities constitute the systematic expression of the obligations that, at most, the entity and its autonomous bodies can recognize, and of the rights they plan to liquidate during the corresponding fiscal year, as well as of the estimates of income and expenses of mercantile companies whose capital stock belongs entirely to the corresponding local entity."@en ;
              rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
              rdfs:label "Budget"@en ,
                         "Presupuesto"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto
+:PresupuestoGasto rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty :clasificacionEconomicaGasto ;
+                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass <http://www.w3.org/2004/02/skos/core#Concept>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :clasificacionPrograma ;
+                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass <http://www.w3.org/2004/02/skos/core#Concept>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :ejecucionGasto ;
+                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :EjecucionGasto
+                                  ] ;
+                  rdfs:comment "Representa las asignaciones a las aplicaciones presupuestarias de gasto en el presupuesto."@es ,
+                               "Represents the allocations to budget line expense items."@en ;
+                  rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
+                  rdfs:label "Expense budget"@en ,
+                             "Presupuesto gasto"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso
+:PresupuestoIngreso rdf:type owl:Class ;
+                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty :ejecucionIngreso ;
+                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :EjecucionIngreso
+                                    ] ;
+                    rdfs:comment "Prevision of the resources that the entity expects to obtain in the year to finance the expenses that appear in its budget."@en ,
+                                 "Previsión de los recursos que la entidad espera obtener en el año para financiar los gastos que figuran en su presupuesto."@es ;
+                    rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
+                    rdfs:label "Income budget"@en ,
+                               "Presupuesto ingreso"@es .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito
@@ -1023,34 +1033,9 @@ Based on their economic nature, the chapters will be broken down into articles, 
                                                                                                <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programas-gasto> rdf:type owl:NamedIndividual ,
-                                                                                             <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-gasto> rdf:type owl:NamedIndividual ,
-                                                                                                          <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/economica-ingreso> rdf:type owl:NamedIndividual ,
-                                                                                                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/inversion> rdf:type owl:NamedIndividual ,
-                                                                                                    <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/organica> rdf:type owl:NamedIndividual ,
-                                                                                                   <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/ayuntamiento/programas-gasto> rdf:type owl:NamedIndividual ,
-                                                                                                          <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+###  http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto
+<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
 #################################################################
@@ -1070,4 +1055,4 @@ Based on their economic nature, the chapters will be broken down into articles, 
                                   rdfs:label "Date Issued"@en .
 
 
-###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

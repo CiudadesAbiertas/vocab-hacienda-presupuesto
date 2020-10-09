@@ -1106,7 +1106,7 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">La ejecución presupuestaria de gasto informa de un periodo de actividad contable, generalmente a partir del 1 de enero del año fiscal hasta la fecha de la ejecución.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The execution of expense reports the income in a period of accounting activity, generally from January 1 of the fiscal year until the date of execution.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The budget execution of expense reports the income in a period of accounting activity, generally from January 1 of the fiscal year until the date of execution.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">Ejecución gasto</rdfs:label>
         <rdfs:label>Expense execution</rdfs:label>
@@ -1124,8 +1124,8 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
                 <owl:onClass rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="es">La ejecución de ingresos informa de los ingresos en un periodo de actividad contable, generalmente a partir del 1 de enero del año fiscal hasta la fecha de la ejecución.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The execution of income reports the income in a period of accounting activity, generally from January 1 of the fiscal year until the date of execution.</rdfs:comment>
+        <rdfs:comment xml:lang="es">La ejecución presupuestaria de ingresos informa de los ingresos en un periodo de actividad contable, generalmente a partir del 1 de enero del año fiscal hasta la fecha de la ejecución.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The budget execution of income reports the income in a period of accounting activity, generally from January 1 of the fiscal year until the date of execution.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">Ejecución Ingreso</rdfs:label>
         <rdfs:label xml:lang="en">Income execution</rdfs:label>

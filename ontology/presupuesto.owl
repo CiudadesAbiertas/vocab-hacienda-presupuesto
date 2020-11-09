@@ -1136,6 +1136,13 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
     <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible -->
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#InversionFinancieramenteSostenible">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#presupuestoInversion"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Expenses incurred or planned to be incurred by local entities or their autonomous bodies for the creation of infrastructure, and the creation or acquisition of goods of an inventoried nature, necessary for the operation of the services and those other expenses that are amortizable.</rdfs:comment>
         <rdfs:comment xml:lang="es">Gastos en los que incurran o prevean incurrir las entidades locales o sus organismos autónomos destinados a la creación de infraestructuras y a la creación o adquisición de bienes de naturaleza inventariable necesarios para el funcionamiento de los servicios y aquellos otros gastos que tengan carácter amortizable</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>

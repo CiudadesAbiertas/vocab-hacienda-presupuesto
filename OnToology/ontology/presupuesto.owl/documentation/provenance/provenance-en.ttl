@@ -29,3 +29,4 @@
 :agent9 a prov:Agent; foaf:name "Servicio de Informática - Ayuntamiento de Santiago de Compostela".
 :agent10 a prov:Agent; foaf:name "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña".
 :agent11 a prov:Agent; foaf:name "Víctor Morlán Plo - Ayuntamiento de Zaragoza".
+:agent12 a prov:Agent; foaf:name "Laura Gris Pérez - Ayuntamiento de Madrid".

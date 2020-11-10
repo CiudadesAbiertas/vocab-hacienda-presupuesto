@@ -15,19 +15,32 @@ The budget is related with the propety [espresup:presupuestoIngreso](#presupuest
 
 Each income is related with the property [espresup:ejecucionIngreso](#ejecucionIngreso) with the income execution [espresup:EjecucionIngreso](#EjecucionIngreso) that has been generated during the fiscal year. Similarly, each expense is related with the property [espresup:ejecucionGasto](#ejecucionGasto) with the budget execution, [espresup:EjecucionGasto](#ejecucionGasto). Each execution relates through the property [espresup:periodoEjecucion](#periodoEjecucion) to an execution period which has been represented as a time interval using the class [time:ProperInterval](#time:ProperInterval) from the [Time Ontology](https://www.w3.org/TR/owl-time/). The income execution contains all the properties related with the execution stages. Similarly, the expense execution contains all the properties related to the stages of the expense execution. The income liquidation [espresup:LiquidacionIngreso](#LiquidacionIngreso) corresponds to the last income budget execution of the year an contains the excess or defect of the budget estimate. The same can be said of the expense execution, [espresup:LiquidacionGasto](#LiquidacionGasto) that contains the remaining credit.
 
-Figure 2 shows the conceptual model that represents a sustainable financial investment of a municipality. A sustainable financial investment may have its own investment classification, [espresup:clasificacionInversion](#clasificacionInversion) and it is related to one or several budget expenses.
+Figure 2 shows the conceptual model that represents a sustainable financial investment of a city council. A sustainable financial investment may have its own investment classification, [espresup:clasificacionInversion](#clasificacionInversion) and it is related to one or several budget expenses.
 
 Additionally, in this vocabulary SKOS taxonomies have been used to represent the organic classification for income and expenses, [espresup:clasificacionOrganica](#clasificacionOrganica), the expense economic classification [espresup:clasificacionEconomicaGasto](#clasificacionEconomicaGasto) and similarly the one for the incomey [espresup:clasificacionEconomicaIngreso](#clasificacionEconomicaIngreso), and the classification by expense programs, [espresup:clasificacionPrograma](#clasificacionPrograma).
 
-Figure 1 shows several relationships with the class of SKOS concepts. Each class skos:Concept corresponds to a specific taxonomy and its name is indicated between "<< >>". The economic and expense program classifications are "open", that is, the municipalities may create additional levels in the clasification. For example, in the case of the clasification by expense programs, the classification is "closed" in the first three levels, then in the next levels it is optional for each municipality. Thus, each municipality can create new groups of programs, in this case there is a SKOS for the regulated by law classification called clasificacion-programa-gasto, and another  SKOS for the specific classification of the municipality, clasificacion-programa-gasto-ayuntamiento. These two SKOS are related to indicate for example that a new program created by the municipality is related o one of the groups of programs established by law.
+Figure 1 shows several relationships with the class of SKOS concepts. Each class skos:Concept corresponds to a specific taxonomy and its name is indicated between "<< >>". The economic and expense program classifications are "open", that is, the municipalities may create additional levels in the clasification. For example, in the case of the clasification by expense programs, the classification is "closed" in the first three levels, then in the next levels it is optional for each city council. Thus, each city council can create new groups of programs, in this case there is a SKOS for the regulated by law classification called clasificacion-programa-gasto, and another  SKOS for the specific classification of the city council, clasificacion-programa-gasto-ayuntamiento. These two SKOS are related to indicate for example that a new program created by the city council is related o one of the groups of programs established by law.
 </span>
 
-  <h3>3.1 Examples of use<span class="backlink"> volver a <a href="#toc">Index</a></span></h3>
+  <h3>3.1 Examples of use<span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h3>
   <span class="markdown">
-  With the purpose of the comprehension of some classes and properties in this vocabulary, we present several examples.
-
-  In the next example we show an instance of an expense budget in 2018. We have its initial credit of  90.200,00 euros. It corresponds to the classification of the expense program "Promoción Plan Derechos Humanos", to the economic  classification "Patrimonio Histórico, Artístico y Cultural" from the chapter "Inversiones Reales" and its organic classification is the "Pleno" from the City Council.
-  </span>
+  In order to understand the use of some classes and properties in this vocabulary we provide some exampes. In first place we show an instance of the general budget of 2018 with the approval date October 15th, 2017. This instance is associated with the datiled instances of the expense budget and the income budget.
+    </span>
+    <pre>
+    &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/presupuesto-general/2018&gt; a espresup:Presupuesto ; 
+	espresup:fechaAprobacion ”2017-10-15"^^xsd:date ; 
+	espresup:estadoProrroga  ”false"^^xsd:boolean ; 
+	espresup:anioFiscal  ”2018"^^xsd:gYear; 
+	espresup:liquidacion &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/liquidacion/2018&gt;;
+ 	espresup:presupuestoGasto &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/presupuestoGasto/001002-23270-60900&gt;; 
+           .... 
+	espresup:presupuestoIngreso	&lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/presupuestoGasto/001-11600&gt;;
+           ....  
+    </pre> 
+    
+<span class="markdown">
+In the following example we show an instance of the expense budget in 2018. The initial credit is 90.200,00 euros. It corresponds to the classficiation by expense program 23270, "Promotion of the Plan for Human Rights", to the economic classification 60900, "Historical, Artistic and Cultural Heritage" from the chapter 6 on "Real Investments" and the organic classification corresponds to the city council's General Assembly (Pleno). The three classifications are specific to the city council of Madrid and in the case of the program and economic classifications they link to the classifications established in the budget structure for local entities (Orden EHA/3565/2008, de 3 de diciembre), for example the expense economic classification "60900" of Madrid links with the concept "609", "Other new investments in infrastructure and goods for general use".
+</span>
   <pre>
     &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/presupuestoGasto/001002-23270-60900&gt; 
         a espresup:PresupuestoGasto ;
@@ -35,56 +48,74 @@ Figure 1 shows several relationships with the class of SKOS concepts. Each class
         espresup:clasificacionOrganica &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/madrid/002&gt; ;
         espresup:clasificacionPrograma &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/madrid/23270&gt; ;
         espresup:clasificacionEconomicaGasto &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto/madrid/60900&gt; .
-  </pre>
 
-    
-  <span class="markdown">As an example of budget execution of a municipality expense on December 31, 2018, we have the execution associated to the expense shown previously. The execution corresponds to the time interval between January 1 and the December 31, 2018. It has had modifications to the credit for 90.200 euros and therefore its definitive current credit is 0 euros. Its authorized credit, available credit and net recognized duties are 90.200 euros.
+    &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/madrid/002&gt; a skos:Concept ; 
+	   skos:inScheme &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/madrid&gt; ;
+	   skos:prefLabel ”PLENO"@es ; 
+    &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/madrid/23270&gt; a skos:Concept ;
+  	 skos:inScheme &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/madrid&gt; ;
+        skos:prefLabel "PROMOCIÓN PLAN DERECHOS HUMANOS"@es .
+    &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto/madrid/60900&gt; a skos:Concept ;
+  	 skos:inScheme &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto/madrid&gt; ;
+        skos:prefLabel "PATRIMONIO HISTÓRICO. ARTÍSTICO Y CULTURAL"@es .
+  </pre>
+  <span class="markdown"> As an example of budget execution of a city council expense on December 31, 2018, we have the execution associated to the expense shown previously. The execution corresponds to the time interval between January 1 and the December 31, 2018, thus it is the last budget execution (liquidation) of the year. It has had modifications to the credit for 90.200,00 euros and therefore its definitive current credit is 0 euros. Its authorized credit, available credit and net recognized duties are 90.200,00 euros.
   </span>
   <pre>
-  &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/ejecucionGasto/2018-12-31-001002-23270-60900>
-    a espresup:EjecucionGasto ;
-    espresup:creditoModificaciones "90200"^^xsd:float ;
-    espresup:creditoDefinitivoVigente "0"^^xsd:float ;
-    espresup:creditoAutorizado "90200"^^xsd:float ;
-    espresup:creditoDisponible "90200"^^xsd:float ;
-    espresup:obligacionesReconocidasNetas "90200"^^xsd:float ;
-    espresup0:periodoEjecucion &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/intervaloTiempo/2018&gt; ;
-    espresup0:gastoEjecutado &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/presupuestoGasto/001002-23270-60900&gt; .
-  
-  &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/intervaloTiempo/2018&gt;
-    titimens1:hasEnd &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/instanteTiempo/2018-12&gt; ;
-    a time:ProperInterval .
-
-  &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/instanteTiempo/2018-01&gt;
-    a time:Instant ;
-    time:inXSDgYearMonth "2018-01"^^xsd:gYearMonth .
-
-  &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/instanteTiempo/2018-12&gt;
-    a ns1:Instant ;
-    time:inXSDgYearMonth "2018-12"^^xsd:gYearMonth .
-  </pre>
-    
-    <span class="markdown">Follwing we present a sustainable financial investment ssociated to the previous expense. In this case the investment is classified with the taxonomy of line and sub-line of investment "Cultura" and "Estatuas y Monumentos" respectively, it has a scope of several districts (code 998) and an amount of 90.200 euros aligned with the corresponding expense.
+  &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/ejecucionGasto/2018-12-31-001002-23270-60900&gt; 
+	a espresup:EjecucionGasto, espresup:LiquidacionGasto ; 
+	espresup:creditoModificaciones "90200"^^xsd:float ; 
+	espresup:creditoDefinitivoVigente "0"^^xsd:float ; 
+	espresup:creditoAutorizado "90200"^^xsd:float ; 
+	espresup:creditoDisponible "90200"^^xsd:float ; 
+	espresup:obligacionesReconocidasNetas "90200"^^xsd:float ; 
+	espresup:remanenteCredito "0"^^xsd:float ; 
+	espresup:periodoEjecucion &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/intervaloTiempo/2018&gt;   a time:ProperInterval ;
+	time:hasBeginning [a time:Instant; time:inXSDDate "2018-01-01"^^xsd:date];
+	time:hasEnd [a time:Instant; time:inXSDDate "2018-12-31"^^xsd:date].
+  </pre>   
+    <span class="markdown">Following we present a sustainable financial investment associated to the previous expense. In this case the investment is classified with the taxonomy of line and sub-line of investment "Culture" and "Statues and Monuments" respectively, it has a scope of several districts (code 998) and an amount of 90.200,00 euros aligned with the corresponding (previous) budget expense.
   </span>
   <pre>
   &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/InversionFinancieramenteSostenible/2018-000536-23270-60900&gt;
-    a espresup:InversionFinancieramenteSostenible> ;
+    a espresup:InversionFinancieramenteSostenible&gt;  ;
     dct:identifier "2018-000536" ;
     dct:description "MEMORIALES ESCULTÓRICO-ARQUITECTÓNICOS EN LUGARES DE MEMORIA Y ESPACIO PÚBLICO" ;
     espresup:ambitoGlobalCiudad false ;
     espresup:importe "90200.00"^^xsd:float ;
     espresup:clasificacionInversion &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/inversion/madrid/10-06&gt; ;
     espresup:ambito &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/998&gt; ;
-    espresup:presupuestoInversion &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/presupuestoGasto/001002-23270-60900&gt; .
-  
+    espresup:presupuestoInversion &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/presupuestoGasto/001002-23270-60900&gt; .  
   &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/inversion/madrid/10-06&gt; a skos:Concept ;
     skos:inScheme &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/inversion/madrid&gt; ;
     skos:prefLabel "ESTATUAS Y MONUMENTOS"@es ;
-    skos:broader &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/inversion/madrid/10&gt; 
+    skos:broader &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/inversion/madrid/10&gt; .
   </pre>
-  <h3>3.2 Examples of SKOS<span class="backlink"> back to <a href="#toc">Index</a></span></h3>
-  <span class="markdown">Following we will show some examples of SKOS that have been created for the classifications by law and those that are specific to each municipality.
-  First, for the classification by expense program, we have developed a SKOS that contains fot example the group of programs "231" that is a SKOS concept that belongs to the taxonomy of expense programs and that corresponds to "Asistencia social primaria". It has a relation "broader", that is, to a more general concept, the expense politic  "23" of "Servicios sociales y promoción social" and this concept in turn is related with its expense area "2" of "Actuaciones de protección y promoción social".  
+<span class="markdown">
+The following example is related to the income budget corresponding to income by taxes on beer. The initial prevision is 299.507,00 euros and is asspciated to several executions. The execution in the example is the last one of the year where the city council collected 307.412,00 euros, an amount larger than the prevision, thus, there is an excess over the prevision of 7.905,95 euros.
+</span>
+    <pre>
+&lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto#presupuestoIngreso/001-22001&gt; a espresup:PresupuestoIngreso ; 
+	espresup:previsionInicial " 299507 "^^xsd:float
+	espresup:clasificacionOrganica &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/madrid/001&gt; ; 	
+    # Impuesto sobre la cerveza	
+    espresup:clasificacionEconomicaIngreso &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso/madrid/22001&gt; ;	
+	espresup:ejecucionIngreso &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/ejecucionIngreso/2018-12-31-001-220010&gt; .    
+&lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/ejecucionIngreso/2018-12-31-001-220010&gt; 
+	a espresup:EjecucionIngreso, espresup:LiquidacionIngreso; 
+	espresup:previsionModificaciones ”0"^^xsd:float ; 
+	espresup:previsionDefinitiva ”299507"^^xsd:float ; 
+	espresup:derechosReconocidosNetos "307412.95 "^^xsd:float ; 
+	espresup:recaudacionNeta "307412.95 "^^xsd:float ; 
+	 espresup:excesoDefectoPrevision " 7905.95 "^^xsd:float ; 
+	espresup:periodoEjecucion &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/intervaloTiempo/2018&gt; ; 	
+    &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/intervaloTiempo/2018&gt;  a time:ProperInterval 	;
+	time:hasBeginning [a time:Instant; time:inXSDDate "2018-01-01"^^xsd:date];
+	time:hasEnd [a time:Instant; time:inXSDDate "2018-12-31"^^xsd:date].
+    &lt;/http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/intervaloTiempo/2018&gt; 
+    </pre>
+  <h3>3.2 Examples of SKOS<span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h3>
+  <span class="markdown">Following we will show some examples of SKOS that have been created for the classifications by law and those that are specific to each city council. First, for the classification by expense program, we have developed a SKOS that contains for example the group of programs "231" that is a SKOS concept that belongs to the taxonomy of expense programs and that corresponds to "Primary social assistance". It has a relation "broader", that is, to a more general concept, the expense policy "23" of "Social services and social promotion" and this concept in turn is related with its expense area "2" of "Actuations for social protecion and promotion".
   </span>
   <pre>
   &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/231&gt; 
@@ -92,27 +123,27 @@ Figure 1 shows several relationships with the class of SKOS concepts. Each class
     skos:inScheme &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto&gt;  ;
     skos:prefLabel "Asistencia social primaria."@es ;
     skos:broader &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/23&gt;  .
-  &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/23>
-    skos:inScheme &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto> ;
+  &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/23&gt; 
+    skos:inScheme &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto&gt;  ;
     skos:prefLabel "Servicios Sociales y promoción social."@es ;
     a skos:Concept ;
     skos:broader &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/2&gt;  ;
     skos:narrower &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/231&gt;  .
     
     </pre>
-    <span class="markdown">An example of a specific taxonomy of a municipality is the expense subprograms of Madrid. We have the program "13001", "COORDINACIÓN GENERAL DE SEGURIDAD Y EMERGENCIAS" that is related to the (more general) group of programs "130", "Administración general de la seguridad y protección civil".
+    <span class="markdown">An example of a specific taxonomy of a city council is the expense subprograms of Madrid. We have the program "13001", "General coordination of security and emergencies" that is related to the (more general) group of programs "130", "General administration of security and civil protection".
     </span>
     <pre>
-      &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/madrid/13001>
+      &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/madrid/13001&gt; 
         &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://www.w3.org/2004/02/skos/core#Concept&gt;;
         &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt; &lt;http:vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/madrid&gt;;
         &lt;http://www.w3.org/2004/02/skos/core#prefLabel&gt; "COORDINACIÓN GENERAL DE SEGURIDAD Y EMERGENCIAS"@es;
         &lt;http://www.w3.org/2004/02/skos/core#broadMatch&gt; &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/130&gt;.
     </pre>
-    <span class="markdown">Another example of a classification not established by law is the organic classification of a municipality. In the Zaragoza municipality there is the area of government and the autonomous organization or area of expense. So we have for example the government area  "3" that corresponds to the "Área de Urbanismo y Equipamientos".
+    <span class="markdown">Another example of a classification not established by law is the organic classification of a city council. In the Zaragoza city council there is the area of government and the autonomous organization or area of expense. So we have for example the government area "3" that corresponds to the "Urbanism and equipment area".
     </span>
       <pre>
-        &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/zaragoza/3>
+        &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/zaragoza/3&gt; 
           &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://www.w3.org/2004/02/skos/core#Concept&gt;;
           &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt; &lt;http:vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/zaragoza&gt;;
           &lt;http://www.w3.org/2004/02/skos/core#prefLabel&gt; "Área de Urbanismo y Equipamientos"@es.

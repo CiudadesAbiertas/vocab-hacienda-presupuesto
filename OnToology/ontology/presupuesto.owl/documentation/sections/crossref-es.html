@@ -225,7 +225,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto</p>
       <div class="comment">
-         <span class="markdown">La ejecución presupuestaria del gasto informa de un periodo de actividad contable, generalmente a partir del 1 de enero del año fiscal hasta la fecha de la ejecución.</span>
+         <span class="markdown">La ejecución presupuestaria de gasto informa de un periodo de actividad contable, generalmente a partir del 1 de enero del año fiscal hasta la fecha de la ejecución.</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -278,7 +278,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso</p>
       <div class="comment">
-         <span class="markdown">La ejecución de ingresos informa de los ingresos en un periodo de actividad contable, generalmente a partir del 1 de enero del año fiscal hasta la fecha de la ejecución.</span>
+         <span class="markdown">La ejecución presupuestaria de ingresos informa de los ingresos en un periodo de actividad contable, generalmente a partir del 1 de enero del año fiscal hasta la fecha de la ejecución.</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -358,6 +358,8 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
       </dl>
       <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd/>
          <dt>en dominio de</dt>
          <dd>
             <a href="#clasificacionInversion"
@@ -563,11 +565,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dd/>
          <dt>en dominio de</dt>
          <dd>
-            <a href="#clasificacionEconomicaGasto"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto">clasificación económica gasto</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#clasificacionPrograma"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma">clasificación programa gasto</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#creditoPresupuestarioInicial"
+            <a href="#creditoPresupuestarioInicial"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoPresupuestarioInicial">crédito presupuestario inicial</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#ejecucionGasto"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionGasto">ejecución gasto</a>
@@ -602,9 +600,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dd/>
          <dt>en dominio de</dt>
          <dd>
-            <a href="#clasificacionEconomicaIngreso"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso">clasificación económica ingreso</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#ejecucionIngreso"
+            <a href="#ejecucionIngreso"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionIngreso">ejecución ingreso</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#previsionInicial"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionInicial">previsión inicial</a>
@@ -713,7 +709,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dd>
          <dt>en dominio de</dt>
          <dd>
-            <a href="#http://www.w3.org/2006/time#inXSDgYearMonth" title="http://www.w3.org/2006/time#inXSDgYearMonth">in XSD g-YearMonth</a>
+            <a href="#http://www.w3.org/2006/time#inXSDDate" title="http://www.w3.org/2006/time#inXSDDate">en fecha XSD</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>
          </dd>
          <dt>en rango de</dt>
@@ -858,12 +854,6 @@ Atendiendo a su naturaleza económica, los capítulos se desglosarán en artícu
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
             </dd>
-            <dt>dominio</dt>
-            <dd>
-               <a href="#PresupuestoGasto"
-                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto">Presupuesto gasto</a>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
             <dt>rango</dt>
             <dd>
                <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
@@ -892,12 +882,6 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
          <p>
             <strong>tiene características:</strong> funcional</p>
          <dl>
-            <dt>dominio</dt>
-            <dd>
-               <a href="#PresupuestoIngreso"
-                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso">Presupuesto ingreso</a>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
             <dt>rango</dt>
             <dd>
                <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
@@ -947,22 +931,6 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
          <dt>Definida por</dt>
          <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
       </dl>
-      <div class="description">
-         <p>
-            <strong>tiene características:</strong> funcional</p>
-         <dl>
-            <dt>dominio</dt>
-            <dd>
-               <a href="#PresupuestoGasto"
-                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto">Presupuesto gasto</a>
-               <sup class="type-c" title="clase">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#PresupuestoIngreso"
-                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso">Presupuesto ingreso</a>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-         </dl>
-      </div>
    </div>
    <div class="entity" id="clasificacionPrograma">
       <h3>clasificación programa gasto<sup class="type-op" title="Propiedad entre objetos">op</sup>
@@ -984,12 +952,6 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
          <p>
             <strong>tiene características:</strong> funcional</p>
          <dl>
-            <dt>dominio</dt>
-            <dd>
-               <a href="#PresupuestoGasto"
-                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto">Presupuesto gasto</a>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
             <dt>rango</dt>
             <dd>
                <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
@@ -1539,6 +1501,9 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
             title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#derechosReconocidosNetos">derechos reconocidos netos</a>
       </li>
       <li>
+         <a href="#http://www.w3.org/2006/time#inXSDDate" title="http://www.w3.org/2006/time#inXSDDate">en fecha XSD</a>
+      </li>
+      <li>
          <a href="#estadoProrroga"
             title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#estadoProrroga">estado prórroga</a>
       </li>
@@ -1553,9 +1518,6 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
       <li>
          <a href="#fechaAprobacionPleno"
             title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#fechaAprobacionPleno">fecha aprobación pleno</a>
-      </li>
-      <li>
-         <a href="#http://www.w3.org/2006/time#inXSDgYearMonth" title="http://www.w3.org/2006/time#inXSDgYearMonth">in XSD g-YearMonth</a>
       </li>
       <li>
          <a href="#creditoModificaciones"
@@ -1964,6 +1926,33 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://www.w3.org/2006/time#inXSDDate">
+      <h3>en fecha XSD<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2006/time#inXSDDate</p>
+      <div class="comment">
+         <span class="markdown">Posición de un instante, expresado utilizando xsd:date.</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">Posición de un instante, expresado utilizando xsd:date.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#http://www.w3.org/2006/time#Instant" title="http://www.w3.org/2006/time#Instant">Time instant</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="estadoProrroga">
       <h3>estado prórroga<sup class="type-dp" title="Propiedad de datos">dp</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
@@ -2078,33 +2067,6 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
             <dt>rango</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://www.w3.org/2006/time#inXSDgYearMonth">
-      <h3>in XSD g-YearMonth<sup class="type-dp" title="Propiedad de datos">dp</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/2006/time#inXSDgYearMonth</p>
-      <div class="comment">
-         <span class="markdown">Position of an instant, expressed using xsd:gYearMonth</span>
-      </div>
-      <div class="comment">
-         <span class="markdown">Position of an instant, expressed using xsd:gYearMonth</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>dominio</dt>
-            <dd>
-               <a href="#http://www.w3.org/2006/time#Instant" title="http://www.w3.org/2006/time#Instant">Time instant</a>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>rango</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#gYearMonth">g year month</span>
             </dd>
          </dl>
       </div>
@@ -2515,6 +2477,597 @@ En esta ontología se implementa la taxonomía general. Cada ayuntamiento implem
             <dt>rango</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="annotationproperties">
+   <h2>Propiedades de anotación</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract">
+            <span>abstract</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/accessRights" title="http://purl.org/dc/terms/accessRights">
+            <span>access rights</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/alternative" title="http://purl.org/dc/terms/alternative">
+            <span>alternative</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/bibliographicCitation" title="http://purl.org/dc/terms/bibliographicCitation">
+            <span>bibliographic citation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/contributor" title="http://purl.org/dc/elements/1.1/contributor">
+            <span>contributor</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">
+            <span>created</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator">
+            <span>creator</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">
+            <span>creator</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/date" title="http://purl.org/dc/elements/1.1/date">
+            <span>date</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">
+            <span>Date Issued</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#definition" title="http://www.w3.org/2004/02/skos/core#definition">
+            <span>definition</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2008/05/skos#definition" title="http://www.w3.org/2008/05/skos#definition">
+            <span>definition</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/description" title="http://purl.org/dc/elements/1.1/description">
+            <span>description</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">
+            <span>description</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#example" title="http://www.w3.org/2004/02/skos/core#example">
+            <span>example</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/hasFormat" title="http://purl.org/dc/terms/hasFormat">
+            <span>Has Format</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/hasVersion" title="http://purl.org/dc/terms/hasVersion">
+            <span>has version</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/identifier" title="http://purl.org/dc/elements/1.1/identifier">
+            <span>identifier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">
+            <span>identifier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
+            <span>license</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">
+            <span>modified</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#note" title="http://www.w3.org/2004/02/skos/core#note">
+            <span>note</span>
+         </a>
+      </li>
+      <li>
+         <a href="#preferredNamespacePrefix"
+            title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#preferredNamespacePrefix">
+            <span>preferred namespace prefix</span>
+         </a>
+      </li>
+      <li>
+         <a href="#preferredNamespaceUri"
+            title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#preferredNamespaceUri">
+            <span>preferred namespace uri</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/relation" title="http://purl.org/dc/elements/1.1/relation">
+            <span>relation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/relation" title="http://purl.org/dc/terms/relation">
+            <span>relation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/rights" title="http://purl.org/dc/terms/rights">
+            <span>rights</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#scopeNote" title="http://www.w3.org/2004/02/skos/core#scopeNote">
+            <span>scope note</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/tableOfContents" title="http://purl.org/dc/terms/tableOfContents">
+            <span>table of contents</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+            title="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+            <span>term status</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title">
+            <span>title</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
+            <span>title</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://purl.org/dc/terms/abstract">
+      <h3>abstract<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/abstract</p>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/elements/1.1/description">description</span>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/accessRights">
+      <h3>access rights<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/accessRights</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/alternative">
+      <h3>alternative<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/alternative</p>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/elements/1.1/title">title</span>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/bibliographicCitation">
+      <h3>bibliographic citation<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/bibliographicCitation</p>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/elements/1.1/identifier">identifier</span>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/contributor">
+      <h3>contributor<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/contributor</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/created">
+      <h3>created<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/created</p>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/elements/1.1/date">date</span>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/creator">
+      <h3>creator<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/creator</p>
+      <div class="description">
+         <dl>
+            <dt>tiene subpropiedades</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/creator">
+      <h3>creator<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/elements/1.1/creator">creator</span>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/date">
+      <h3>date<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/date</p>
+      <div class="description">
+         <dl>
+            <dt>tiene subpropiedades</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">Date Issued</a>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>, <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">created</a>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/issued">
+      <h3>Date Issued<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/issued</p>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/elements/1.1/date">date</span>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#definition">
+      <h3>definition<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#definition</p>
+   </div>
+   <div class="entity" id="http://www.w3.org/2008/05/skos#definition">
+      <h3>definition<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2008/05/skos#definition</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/description">
+      <h3>description<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/description</p>
+      <div class="description">
+         <dl>
+            <dt>tiene subpropiedades</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract">abstract</a>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>, <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">description</a>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>, <a href="#http://purl.org/dc/terms/tableOfContents" title="http://purl.org/dc/terms/tableOfContents">table of contents</a>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/description">
+      <h3>description<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/elements/1.1/description">description</span>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#example">
+      <h3>example<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#example</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/hasFormat">
+      <h3>Has Format<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/hasFormat</p>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/elements/1.1/relation">relation</span>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>, <span class="dotted" title="http://purl.org/dc/terms/relation">relation</span>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/hasVersion">
+      <h3>has version<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/hasVersion</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/identifier">
+      <h3>identifier<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/identifier</p>
+      <div class="description">
+         <dl>
+            <dt>tiene subpropiedades</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/bibliographicCitation" title="http://purl.org/dc/terms/bibliographicCitation">bibliographic citation</a>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>, <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identifier</a>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/identifier">
+      <h3>identifier<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/identifier</p>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/elements/1.1/identifier">identifier</span>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/license">
+      <h3>license<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/modified">
+      <h3>modified<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/modified</p>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#note">
+      <h3>note<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#note</p>
+   </div>
+   <div class="entity" id="preferredNamespacePrefix">
+      <h3>preferred namespace prefix<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#preferredNamespacePrefix</p>
+   </div>
+   <div class="entity" id="preferredNamespaceUri">
+      <h3>preferred namespace uri<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#preferredNamespaceUri</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/relation">
+      <h3>relation<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/relation</p>
+      <div class="description">
+         <dl>
+            <dt>tiene subpropiedades</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/hasFormat" title="http://purl.org/dc/terms/hasFormat">Has Format</a>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/relation">
+      <h3>relation<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/relation</p>
+      <div class="description">
+         <dl>
+            <dt>tiene subpropiedades</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/hasFormat" title="http://purl.org/dc/terms/hasFormat">Has Format</a>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/rights">
+      <h3>rights<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/rights</p>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#scopeNote">
+      <h3>scope note<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#scopeNote</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/tableOfContents">
+      <h3>table of contents<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/tableOfContents</p>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/elements/1.1/description">description</span>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+      <h3>term status<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2003/06/sw-vocab-status/ns#term_status</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/title">
+      <h3>title<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/title</p>
+      <div class="description">
+         <dl>
+            <dt>tiene subpropiedades</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/alternative" title="http://purl.org/dc/terms/alternative">alternative</a>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>, <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">title</a>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/title">
+      <h3>title<sup class="type-ap" title="propiedad de anotación">ap</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#annotationproperties">Índice de propiedades de anotación</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/elements/1.1/title">title</span>
+               <sup class="type-ap" title="propiedad de anotación">ap</sup>
             </dd>
          </dl>
       </div>

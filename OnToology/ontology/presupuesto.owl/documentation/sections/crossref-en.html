@@ -1,5 +1,5 @@
-<h2 id="crossreference" class="list">Cross reference for Vocabulario para la representación de la información de los presupuestos y la ejecución presupuestaria de acuerdo a los datos de gestión económica municipal.  classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by Vocabulario para la representación de la información de los presupuestos y la ejecución presupuestaria de acuerdo a los datos de gestión económica municipal. .
+<h2 id="crossreference" class="list">Cross reference for Vocabulary for the representation of budget information and budget execution according to the data managed by the economic area of the city council. classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Vocabulary for the representation of budget information and budget execution according to the data managed by the economic area of the city council..
 <div id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
@@ -260,7 +260,7 @@ This section provides details for each class and property defined by Vocabulario
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionGasto</p>
       <div class="comment">
-         <span class="markdown">The execution of expense reports the income in a period of accounting activity, generally from January 1 of the fiscal year until the date of execution.</span>
+         <span class="markdown">The budget execution of expense reports the income in a period of accounting activity, generally from January 1 of the fiscal year until the date of execution.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -324,12 +324,8 @@ This section provides details for each class and property defined by Vocabulario
          <dd/>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#clasificacionEconomicaGasto"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto">expense economic classification</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#ejecucionGasto"
+            <a href="#ejecucionGasto"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionGasto">expense execution</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#clasificacionPrograma"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionPrograma">expense program classification</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#creditoPresupuestarioInicial"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#creditoPresupuestarioInicial">initial budget credit</a>
             <sup class="type-dp" title="data property">dp</sup>
@@ -416,6 +412,8 @@ This section provides details for each class and property defined by Vocabulario
          <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
       </dl>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
          <dt>is in domain of</dt>
          <dd>
             <a href="#ambitoGlobalCiudad"
@@ -449,9 +447,7 @@ This section provides details for each class and property defined by Vocabulario
          <dd/>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#clasificacionEconomicaIngreso"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaIngreso">income economic classification</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#ejecucionIngreso"
+            <a href="#ejecucionIngreso"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ejecucionIngreso">income execution</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#previsionInicial"
                title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#previsionInicial">initial estimate</a>
@@ -473,7 +469,7 @@ This section provides details for each class and property defined by Vocabulario
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#EjecucionIngreso</p>
       <div class="comment">
-         <span class="markdown">The execution of income reports the income in a period of accounting activity, generally from January 1 of the fiscal year until the date of execution.</span>
+         <span class="markdown">The budget execution of income reports the income in a period of accounting activity, generally from January 1 of the fiscal year until the date of execution.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -713,7 +709,7 @@ This section provides details for each class and property defined by Vocabulario
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://www.w3.org/2006/time#inXSDgYearMonth" title="http://www.w3.org/2006/time#inXSDgYearMonth">in XSD g-YearMonth</a>
+            <a href="#http://www.w3.org/2006/time#inXSDDate" title="http://www.w3.org/2006/time#inXSDDate">in XSD date</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
@@ -925,12 +921,6 @@ Based on their economic nature, the chapters will be broken down into articles, 
             <dd>
                <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
             </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#PresupuestoGasto"
-                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto">Expense budget</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
@@ -1019,12 +1009,6 @@ Based on their economic nature, the chapters will be broken down into articles, 
          <p>
             <strong>has characteristics:</strong> functional</p>
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#PresupuestoGasto"
-                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto">Expense budget</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
@@ -1208,12 +1192,6 @@ Based on their economic nature, the chapters will be broken down into articles, 
          <p>
             <strong>has characteristics:</strong> functional</p>
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#PresupuestoIngreso"
-                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso">Income budget</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
@@ -1389,22 +1367,6 @@ Based on their economic nature, the chapters will be broken down into articles, 
          <dt>Is defined by</dt>
          <dd>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</dd>
       </dl>
-      <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#PresupuestoGasto"
-                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoGasto">Expense budget</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#PresupuestoIngreso"
-                  title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#PresupuestoIngreso">Income budget</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
    </div>
    <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito">
       <h3>pertenece al distrito<sup class="type-op" title="object property">op</sup>
@@ -1547,7 +1509,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
             title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#ambitoGlobalCiudad">global city scope</a>
       </li>
       <li>
-         <a href="#http://www.w3.org/2006/time#inXSDgYearMonth" title="http://www.w3.org/2006/time#inXSDgYearMonth">in XSD g-YearMonth</a>
+         <a href="#http://www.w3.org/2006/time#inXSDDate" title="http://www.w3.org/2006/time#inXSDDate">in XSD date</a>
       </li>
       <li>
          <a href="#creditoPresupuestarioInicial"
@@ -2047,18 +2009,18 @@ Based on their economic nature, the chapters will be broken down into articles, 
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://www.w3.org/2006/time#inXSDgYearMonth">
-      <h3>in XSD g-YearMonth<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="http://www.w3.org/2006/time#inXSDDate">
+      <h3>in XSD date<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3.org/2006/time#inXSDgYearMonth</p>
+         <strong>IRI:</strong> http://www.w3.org/2006/time#inXSDDate</p>
       <div class="comment">
-         <span class="markdown">Position of an instant, expressed using xsd:gYearMonth</span>
+         <span class="markdown">Position of an instant, expressed using xsd:date</span>
       </div>
       <div class="comment">
-         <span class="markdown">Position of an instant, expressed using xsd:gYearMonth</span>
+         <span class="markdown">Position of an instant, expressed using xsd:date</span>
       </div>
       <div class="description">
          <dl>
@@ -2069,7 +2031,7 @@ Based on their economic nature, the chapters will be broken down into articles, 
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#gYearMonth">g year month</span>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
             </dd>
          </dl>
       </div>

@@ -24,8 +24,22 @@ En la Figura 1 se muestran varias relaciones con la clase de conceptos SKOS. Cad
   <h3>3.1 Ejemplos de uso<span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h3>
   <span class="markdown">
   Con la finalidad de facilitar la comprensión del uso de algunas clases y propiedades de este vocabulario se proporcionarán a continuación algunos ejemplos.
-
-  En el siguiente ejemplo se muestra una instancia de un presupuesto de gastos del año 2018. Se tiene su crédito inicial de 90.200,00 euros. Corresponde a la clasificación por programas de gasto corresponde al programa de "Promoción Plan Derechos Humanos", a la clasificación económica de "Patrimonio Histórico, Artístico y Cultural" del capítulo de "Inversiones Reales" y como clasificación orgánica se tiene al "Pleno" del Ayuntamiento.
+  En primer lugar se muestra una instancia del Presupuesto general de 2018 con fecha de aprobación del 15 de octubre de 2017. Esta instancia tiene asociadas las instancias detalladas de presupuestos de gastos y presupuestos de ingresos.
+    </span>
+    <pre>
+    &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/presupuesto-general/2018&gt; a espresup:Presupuesto ; 
+	espresup:fechaAprobacion ”2017-10-15"^^xsd:date ; 
+	espresup:estadoProrroga  ”false"^^xsd:boolean ; 
+	espresup:anioFiscal  ”2018"^^xsd:gYear; 
+	espresup:liquidacion &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/liquidacion/2018&gt;;
+ 	espresup:presupuestoGasto &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/presupuestoGasto/001002-23270-60900&gt;; 
+           ....
+	espresup:presupuestoIngreso	&lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/presupuestoGasto/001-11600&gt;;
+           ....
+    </pre>
+    
+<span class="markdown">
+  En el siguiente ejemplo se muestra una instancia de un presupuesto de gastos del año 2018. Se tiene su crédito inicial de 90.200,00 euros. Corresponde a la clasificación por programas de gasto 23270 de "Promoción Plan Derechos Humanos", a la clasificación económica 60900 de "Patrimonio Histórico, Artístico y Cultural" del capítulo 6 de "Inversiones Reales" y como clasificación orgánica se tiene al "Pleno" del Ayuntamiento. Se puede ver que las tres clasificaciones son propias del ayuntamiento de Madrid y en el caso de las clasificaciones por programa y económica enlazarían a las clasificaciones establecidas en la estructura del presupuesto de las entidades locales (Orden EHA/3565/2008, de 3 de diciembre), por ejemplo la clasificación económica de gasto "60900" de Madrid se enlaza con el concepto "609" de "Otras inversiones nuevas en infraestructuras y bienes destinados al uso general".
   </span>
   <pre>
     &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/presupuestoGasto/001002-23270-60900&gt; 
@@ -34,40 +48,39 @@ En la Figura 1 se muestran varias relaciones con la clase de conceptos SKOS. Cad
         espresup:clasificacionOrganica &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/madrid/002&gt; ;
         espresup:clasificacionPrograma &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/madrid/23270&gt; ;
         espresup:clasificacionEconomicaGasto &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto/madrid/60900&gt; .
-  </pre>
 
+    &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/madrid/002&gt; a skos:Concept ; 
+	   skos:inScheme &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/madrid&gt; ;
+	   skos:prefLabel ”PLENO"@es ; 
+    &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/madrid/23270&gt; a skos:Concept ;
+  	     skos:inScheme &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/madrid&gt; ;
+        skos:prefLabel "PROMOCIÓN PLAN DERECHOS HUMANOS"@es .
+    &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto/madrid/60900&gt; a skos:Concept ;
+  	     skos:inScheme &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto/madrid&gt; ;
+        skos:prefLabel "PATRIMONIO HISTÓRICO. ARTÍSTICO Y CULTURAL"@es .
+  </pre>
     
-  <span class="markdown">Como ejemplo de ejecución presupuestaria de un gasto de un ayuntamiento al 31-12-2018 se tiene la ejecución asociada al gasto ejemplificado anteriormente. La ejecución corresponde al intervalo de tiempo entre el 1 de enero y el 31 de diciembre de 2018. Ha tenido modificaciones al crédito por 90.200 euros y por tanto su crédito definitivo vigente es de 0 euros. Su crédito autorizado, crédito disponible y obligaciones reconocidas netas son de 90.200 euros.
+  <span class="markdown">Como ejemplo de ejecución presupuestaria de un gasto de un ayuntamiento al 31-12-2018 se tiene la ejecución asociada al gasto ejemplificado anteriormente. La ejecución corresponde a la útlima ejecución del año (liquidación), es decir al intervalo de tiempo entre el 1 de enero y el 31 de diciembre de 2018. Ha tenido modificaciones al crédito por 90.200 euros y por tanto su crédito definitivo vigente es de 0 euros. Su crédito autorizado, crédito disponible y obligaciones reconocidas netas son de 90.200 euros.
   </span>
   <pre>
-  &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/ejecucionGasto/2018-12-31-001002-23270-60900>
-    a espresup:EjecucionGasto ;
-    espresup:creditoModificaciones "90200"^^xsd:float ;
-    espresup:creditoDefinitivoVigente "0"^^xsd:float ;
-    espresup:creditoAutorizado "90200"^^xsd:float ;
-    espresup:creditoDisponible "90200"^^xsd:float ;
-    espresup:obligacionesReconocidasNetas "90200"^^xsd:float ;
-    espresup0:periodoEjecucion &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/intervaloTiempo/2018&gt; ;
-    espresup0:gastoEjecutado &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/presupuestoGasto/001002-23270-60900&gt; .
-  
-  &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/intervaloTiempo/2018&gt;
-    titimens1:hasEnd &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/instanteTiempo/2018-12&gt; ;
-    a time:ProperInterval .
-
-  &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/instanteTiempo/2018-01&gt;
-    a time:Instant ;
-    time:inXSDDate "2018-01-01"^^xsd:date .
-
-  &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/instanteTiempo/2018-12&gt;
-    a ns1:Instant ;
-    time:inXSDDate "2018-12-31"^^xsd:date .
+  &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/ejecucionGasto/2018-12-31-001002-23270-60900&gt; 
+	a espresup:EjecucionGasto, espresup:LiquidacionGasto ; 
+	espresup:creditoModificaciones "90200"^^xsd:float ; 
+	espresup:creditoDefinitivoVigente "0"^^xsd:float ; 
+	espresup:creditoAutorizado "90200"^^xsd:float ; 
+	espresup:creditoDisponible "90200"^^xsd:float ; 
+	espresup:obligacionesReconocidasNetas "90200"^^xsd:float ; 
+	espresup:remanenteCredito "0"^^xsd:float ; 
+	espresup:periodoEjecucion &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/intervaloTiempo/2018&gt;   a time:ProperInterval ;
+	time:hasBeginning [a time:Instant; time:inXSDDate "2018-01-01"^^xsd:date];
+	time:hasEnd [a time:Instant; time:inXSDDate "2018-12-31"^^xsd:date].
   </pre>
     
     <span class="markdown">A continuación se presenta una inversión financieramente sostenible asociada al gasto anterior. En este caso la inversión está clasificada dentro de la taxonomía de línea y sublínea de inversión como "Cultura" y "Estatuas y Monumentos" respectivamente, tiene como ámbito varios distritos (código 998) y un importe de 90.200 euros alineado con el gasto correspondiente.
   </span>
   <pre>
   &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/InversionFinancieramenteSostenible/2018-000536-23270-60900&gt;
-    a espresup:InversionFinancieramenteSostenible> ;
+    a espresup:InversionFinancieramenteSostenible&gt;  ;
     dct:identifier "2018-000536" ;
     dct:description "MEMORIALES ESCULTÓRICO-ARQUITECTÓNICOS EN LUGARES DE MEMORIA Y ESPACIO PÚBLICO" ;
     espresup:ambitoGlobalCiudad false ;
@@ -79,8 +92,33 @@ En la Figura 1 se muestran varias relaciones con la clase de conceptos SKOS. Cad
   &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/inversion/madrid/10-06&gt; a skos:Concept ;
     skos:inScheme &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/inversion/madrid&gt; ;
     skos:prefLabel "ESTATUAS Y MONUMENTOS"@es ;
-    skos:broader &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/inversion/madrid/10&gt; 
-  </pre>
+    skos:broader &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/inversion/madrid/10&gt; .
+  </pre> 
+    
+<span class="markdown">
+El siguiente ejemplo es de un presupuesto de ingreso correspondiente al ingreso por impuesto sobre la cerveza. La previsión inicial es de 299.507,00 euros y está asociada a una o más ejecuciones. La ejecución ejemplificada es la última del año en donde se tiene una recaudación de 307.412,00 euros superior a la prevista y por tanto un exceso sobre la previsión de 7.905,95 euros.
+</span>
+<pre>
+&lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto#presupuestoIngreso/001-22001&gt; a espresup:PresupuestoIngreso ; 
+	espresup:previsionInicial " 299507 "^^xsd:float
+	espresup:clasificacionOrganica &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/madrid/001&gt; ; 	
+    # Impuesto sobre la cerveza	
+    espresup:clasificacionEconomicaIngreso &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-ingreso/madrid/22001&gt; ;	
+	espresup:ejecucionIngreso &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/ejecucionIngreso/2018-12-31-001-220010&gt; .  
+    
+&lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/ejecucionIngreso/2018-12-31-001-220010&gt; 
+	a espresup:EjecucionIngreso, espresup:LiquidacionIngreso; 
+	espresup:previsionModificaciones ”0"^^xsd:float ; 
+	espresup:previsionDefinitiva ”299507"^^xsd:float ; 
+	espresup:derechosReconocidosNetos "307412.95 "^^xsd:float ; 
+	espresup:recaudacionNeta "307412.95 "^^xsd:float ; 
+    espresup:excesoDefectoPrevision " 7905.95 "^^xsd:float ; 
+	espresup:periodoEjecucion &lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/intervaloTiempo/2018&gt; .
+    
+&lt;http://vocab.ciudadesabiertas.es/recurso/hacienda/presupuesto/intervaloTiempo/2018&gt;  a time:ProperInterval 	;
+	time:hasBeginning [a time:Instant; time:inXSDDate "2018-01-01"^^xsd:date];
+	time:hasEnd [a time:Instant; time:inXSDDate "2018-12-31"^^xsd:date].
+</pre>
   <h3>3.2 Ejemplos de SKOS<span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h3>
   <span class="markdown">A continuación se mostrarán algunos ejemplos de los SKOS que se han creado para las clasificaciones normadas por ley y aquellas que son propias de cada ayuntamiento.
   En primer lugar, para la clasificación por programa se ha desarrollado un SKOS que contiene por ejemplo el grupo de programas "231" que es un  concepto SKOS que pertenece a la taxonomía de programas de gasto y que corresponde a "Asistencia social primaria". Tiene una relación "broader", es decir con su concepto más general que es la política de gasto "23" de "Servicios sociales y promoción social" y esta a su vez con su área de gasto "2" de "Actuaciones de protección y promoción social".  
@@ -91,27 +129,28 @@ En la Figura 1 se muestran varias relaciones con la clase de conceptos SKOS. Cad
     skos:inScheme &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto&gt;  ;
     skos:prefLabel "Asistencia social primaria."@es ;
     skos:broader &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/23&gt;  .
-  &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/23>
-    skos:inScheme &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto> ;
+  &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/23&gt; 
+    skos:inScheme &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto&gt;  ;
     skos:prefLabel "Servicios Sociales y promoción social."@es ;
     a skos:Concept ;
     skos:broader &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/2&gt;  ;
-    skos:narrower &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/231&gt;  .
-    
+    skos:narrower &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/231&gt;  .  
     </pre>
+    
     <span class="markdown">Un ejemplo de una taxonomía propia de un ayuntamiento es el de los subprogramas de gasto de Madrid. Se tiene el programa "13001" de "COORDINACIÓN GENERAL DE SEGURIDAD Y EMERGENCIAS" que corresponde al grupo de programas (más general) "130" de "Administración general de la seguridad y protección civil".
     </span>
     <pre>
-      &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/madrid/13001>
+      &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/madrid/13001&gt; 
         &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://www.w3.org/2004/02/skos/core#Concept&gt;;
         &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt; &lt;http:vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/madrid&gt;;
         &lt;http://www.w3.org/2004/02/skos/core#prefLabel&gt; "COORDINACIÓN GENERAL DE SEGURIDAD Y EMERGENCIAS"@es;
         &lt;http://www.w3.org/2004/02/skos/core#broadMatch&gt; &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/130&gt;.
     </pre>
+    
     <span class="markdown">Otro ejemplo de una clasificación no normativa es la clasificación orgánica que puede tener un ayuntamiento. En el ayuntamiento de Zaragoza se manejan área de gobierno y organismo autónomo o unidad de gasto. Así se tiene por ejemplo el área de gobierno "3" que corresponde al "Área de Urbanismo y Equipamientos".
     </span>
       <pre>
-        &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/zaragoza/3>
+        &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/zaragoza/3&gt; 
           &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://www.w3.org/2004/02/skos/core#Concept&gt;;
           &lt;http://www.w3.org/2004/02/skos/core#inScheme&gt; &lt;http:vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/zaragoza&gt;;
           &lt;http://www.w3.org/2004/02/skos/core#prefLabel&gt; "Área de Urbanismo y Equipamientos"@es.
